@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1 class="title">PolyVar</h1>
+        </div>
+    </body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 6em;
+    color: #303F9F;
+    text-transform: uppercase;
+    position: relative;
+    animation: textglow 10s ease-in-out infinite;
+}
+
+@keyframes textglow {
+    0% { text-shadow: 0 0 1px #303F9F, 0 0 10px #303F9F, 0 0 15px #303F9F, 0 0 20px #303F9F; }
+    50% { text-shadow: 0 0 3px #303F9F, 0 0 20px #303F9F, 0 0 30px #303F9F, 0 0 40px #303F9F; }
+    100% { text-shadow: 0 0 2px #303F9F, 0 0 10px #303F9F, 0 0 15px #303F9F, 0 0 20px #303F9F; }
+}
+  </style>
