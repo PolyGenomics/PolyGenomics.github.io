@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+<style>
+  .order-button {
+      display: inline-block;
+      background-color: #6a1b9a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+      z-index: 1;
+  }
+  
+  .order-button::before {
+      content: "";
+      position: absolute;
+      inline-size: 100%;
+      block-size: 100%;
+      background-color: rgb(196, 84, 208);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.1s ease;
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0.5;
+  }
+  
+  .order-button:hover {
+      background-color: #8e24aa;
+      transform: translateY(-1px);
+  }
+  
+  .order-button:hover::before {
+      transform: scaleX(1);
+  }</style>
+
+
+
+<body class="home page-template-default page page-id-2852 wp-custom-logo theplus-preloader carbon-default carbon-template-full-width carbon-kit-186 carbon-page carbon-page-2852 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit" data-carbon-device-mode="desktop">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-dark-grayscale">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr>
+          <fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg>
+          <fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-grayscale">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0 1"></fefuncr>
+          <fefuncg type="table" tableValues="0 1"></fefuncg>
+          <fefuncb type="table" tableValues="0 1"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-purple-yellow">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr>
+          <fefuncg type="table" tableValues="0 1"></fefuncg>
+          <fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-blue-red">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0 1"></fefuncr>
+          <fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg>
+          <fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-midnight">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0 0"></fefuncr>
+          <fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg>
+          <fefuncb type="table" tableValues="0 1"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-magenta-yellow">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr>
+          <fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg>
+          <fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-purple-green">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr>
+          <fefuncg type="table" tableValues="0 1"></fefuncg>
+          <fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+    <defs>
+      <filter id="wp-duotone-blue-orange">
+        <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+        <fecomponenttransfer color-interpolation-filters="sRGB">
+          <fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr>
+          <fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg>
+          <fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb>
+          <fefunca type="table" tableValues="1 1"></fefunca>
+        </fecomponenttransfer>
+        <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+      </filter>
+    </defs>
+  </svg>
+
+
+
+
+  <a class="skip-link screen-reader-text" href="./PolyCypher.org/#content"> Skip to content</a>
+  <div data-carbon-type="header" data-carbon-id="212" class="carbon carbon-212 carbon-location-header">
+    <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-top-section carbon-element carbon-element-7a6682f4 carbon-section-boxed carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="carbon-container carbon-column-gap-default">     
+        <div>
+          <a href="https://polycypher.org"><img src="https://i.imgur.com/5UFV3aT.png" alt="Logo" style="inline-size: 75px !important; block-size: 66px !important; margin-inline-start: 10px; display: block; margin-inline-end: 50px; margin-block-start: 5px;"></a>
+        </div>          
+        <div class="carbon-column carbon-col-50 carbon-top-column carbon-element carbon-element-3f26a980" data-id="carbonated" data-element_type="column">
+          <div class="carbon-widget-wrap carbon-element-populated">
+            <div class="carbon-element carbon-element-375c3b8 carbon-nav-menu__align-right carbon-nav-menu--dropdown-mobile carbon-nav-menu--stretch carbon-nav-menu__text-align-aside carbon-nav-menu--toggle carbon-nav-menu--burger carbon-widget carbon-widget-nav-menu" data-id="carbonated" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+              <div class="carbon-widget-container">
+                <nav class="carbon-nav-menu--main carbon-nav-menu__container carbon-nav-menu--layout-horizontal e--pointer-none">
+                  <ul id="menu-1-375c3b8" class="carbon-nav-menu" data-smartmenus-id="16772983981068403">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-299">
+                     <a href="https://polycypher.org/embryo-screening/" class="carbon-item has-submenu" id="sm-16772983981068403-1" aria-haspopup="true" aria-controls="sm-16772983981068403-2" aria-expanded="false">Embryo Screening <span class="sub-arrow">
+                          <i class="fas fa-caret-down"></i>
+                        </span>
+                      </a>
+
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                        <a href="https://PolyCypher.org/for-individuals/" class="carbon-item" tabindex="-1">Individual Testing</a>
+                      </li>
+
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                        <a href="https://PolyCypher.org/for-clinicians/" class="carbon-item" tabindex="-1">For Clinicians</a>
+                      </li>
+                      
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                      <a href="https://PolyCypher.org/contact/" class="carbon-item" tabindex="-1">Contact</a>
+                    </li>
+
+
+
+
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="subpage-header">
+      <div class="subpage-header-background"></div>
+      <div class="subpage-header-content">
+        <h1 class="subpage-header-title" style="color: #fff;   margin-block-start: 0%;"><b>Individual Polygenic Testing</b></h1>
+        <p class="subpage-header-description" style="color: rgba(255, 255, 255, 0.803); font-weight: normal"><br><i>Unlock the mysteries of DNA with our cutting-edge technology.</i></p>
+      </div>
+    </header>    
+
+    <div class="container">
+      <div class="header">
+        <div class="title">Individual Polygenic Score Report</div>
+        <div class="subtitle"><i>Your personalized report of polygenic scores</i></div>
+      </div>
+      <div class="text">
+        Many traits and disorders are affected by a multitude of genes, not just one. We can test for thousands of traits and diseases to identify outliers. We believe this information should be available to everyone, so we offer this service at a lower cost than any other company.
+      </div>
+      <div class="text">
+        If you have taken an ancestry test, we can use the raw data to calculate polygenic scores. We'll tell you how many and which variants each score is calculated from. We accept data from all companies.
+      </div>
+      <div class="text">
+        We calculate every polygenic trait score and polygenic disease risk score offered by all other services, and we use only the best scientific findings to do so.
+      </div>
+      <div class="text">
+        The process begins when you email us your raw DNA data file. Once we process your file, you'll get a personalized report containing your polygenic scores. We include the scientific study that the data is from and which genetic variants were used to calculate each score.
+      </div>
+      <div class="text">
+        Your data is never sent outside the U.S. for storage or processing. By default, we'll email the report to you, but we can also send you an encrypted report.
+        <br>
+        <i><br>We accept all raw DNA formats (.vcf, .txt, etc.)<br></i>
+        <div class="file-format highlight">The link to upload your files will appear on this page after payment. <br>Alternatively, email us to get a secure link to upload your raw DNA data file: <a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer">team@polycypher.org</a></div>
+        <div class="file-format highlight"><a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer"></a></div>
+        <div class="button-container">
+          <a href="mailto:team@polycypher.org" class="button">Email Now</a>
+          </div>
+          <div class="file-format">
+          <strong>Note:</strong> Your data is kept strictly confidential. You have the option to request all traces of your DNA data to be deleted from our records once you have received your report.
+          <br>&nbsp;
+        </div>
+      
+        <b><br>Gamete donor screening:</b>
+        <ul>  <li>Comprehensive polygenic screening for gamete donors to identify genetic risks and predispositions to diseases and traits.</li>
+          <li>Detailed analysis of genetic data to provide a comprehensive understanding of the donor's genetic makeup.</li>
+          <li>Identification of potential carriers of genetic disorders not immediately apparent through standard genetic testing.</li>
+          <li>Informed decision-making regarding gamete donor selection.</li>
+          <li>Access to personalized reports containing polygenic scores, scientific study references, and genetic variant information.</li>
+          <br>
+          <div class="button-container">
+            <a href="mailto:team@polycypher.org" class="button">Learn more about gamete donation</a>
+            </div></ul>
+      </div>
+      <div class="text">
+      </div>
+      <img src="https://i.imgur.com/5UFV3aT.png" alt="Logo" style="inline-size: 50px; block-size: 50px;">
+     
+      <script>
+        function showHiddenSection() {
+          var hiddenSection = document.getElementById("hidden-section");
+          hiddenSection.style.display = "block";
+        }
+      </script>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3><b>Get the Complete Report</b></h3>
+          <p><i>I want to see everything (1000+ polygenic scores)</i></p>
+          <h2 style="font-size: 16px;">$349 per individual</h2>
+          <input type="range" min="1" max="50" value="1" id="myRange2">
+          <p>Number of individuals: <span id="demo2">1</span></p>
+          <a href="https://www.paypal.com/paypalme/polycypher/349" id="paypalLink2" class="button" onclick="window.open(this.href, '_blank'); showHiddenSection(); return false;">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><b>Get Individual Polygenic Scores</b></h3>
+          <p><i>I'm interested in only a few polygenic scores</i></p>
+          <h2 style="font-size: 16px;">$10 per score category</h2>
+          <input type="range" min="1" max="50" value="1" id="myRange">
+          <p>Number of diseases or traits: <span id="demo">1</span></p>
+          <a href="https://www.paypal.com/paypalme/polycypher/10" id="paypalLink" class="button" onclick="window.open(this.href, '_blank'); showHiddenSection(); return false;">Buy Now</a>
+        </div>
+      </div>
+      
+      <div style="text-align: center;">
+        <div class="text">
+          <i>After payment, the upload form will appear below.</i>
+        </div>
+      </div>    
+
+  <div class="progress-wrap btn-right-side">
+    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+  </div>
+  <script type="text/javascript">
+    var offset = 50;
+    var duration = 500;
+    jQuery(window).on('load', function() {
+      jQuery(window).on('scroll', function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.progress-wrap').addClass('active-progress');
+        } else {
+          jQuery('.progress-wrap').removeClass('active-progress');
+        }
+      });
+      jQuery('.progress-wrap').on('click', function(e) {
+        e.preventDefault();
+        jQuery('html, body').animate({})
+  </script>
+  </div>
+
+
+  <div id="hidden-section" style="display: none;">
+    <header class="subpage-header-suc" style="position: relative; height: 50vh; width: 100%; overflow: hidden;">
+  <div class="subpage-header-suc-background"></div>
+  <div class="subpage-header-suc-content" style="position: absolute; top: calc(50% - 50px); left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 class="subpage-header-suc-title" style="color: #fff !important; line-height: 1 !important;"><b><strong>Order Complete!</strong></b></h1>
+    <p class="subpage-header-suc-description" style="color: rgba(255, 255, 255, 0.803)"><i></i></p>
+  </div>
+</header>
+
+  <div data-carbon-type="wp-page" data-carbon-id="2852" class="carbon carbon-2852 gradient-background bodye" id="gradient-background" style="padding: 0 !important;">
+  <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-top-section carbon-element carbon-element-5b3f2a73 carbon-section-boxed carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section" style="background-color: #f2f2f2;">
+    <div class="carbon-container carbon-column-gap-default" style="display: flex; justify-content: center; align-items: center; width: 1000vw; height: 30vh;">
+      <div class="carbon-element carbon-element-4eb5ad25 carbon-widget__width-initial animated-fast carbon-widget carbon-widget-text-editor animated fadeIn" data-id="carbonated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+        <div class="carbon-widget-container">
+          <p>
+            <b>Thank you</b> for choosing PolyCypher!
+            <div class="carbon-element carbon-element-10c38a0b animated-fast carbon-widget carbon-widget-image animated fadeIn" data-id="carbonated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+              <div class="carbon-widget-container">
+                <img decoding="async" width="50" height="50" src="../images/blackpcglogo.svg" class="" alt="" loading="lazy">
+              </div>
+            </div>
+            One last step. Upload your raw DNA data at this form:
+          </p>
+          <a onclick="navigateToForm()" target="_blank" class="button" style="display: inline-block; padding: 10px 20px; font-size: 20px; cursor: pointer; text-align: center; text-decoration: none; outline: none; color: #fff; background-color: #55b2c9; border: none; border-radius: 15px; box-shadow: 0 3px rgb(117, 195, 224); transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#3d8ca1'; this.style.boxShadow='0 4px rgb(92, 170, 200)'; this.style.transform='scale(1.02)';" onmouseout="this.style.backgroundColor='#55b2c9'; this.style.boxShadow='0 3px rgb(117, 195, 224)'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.98)';" onmouseup="this.style.transform='scale(1.02)';">Upload</a>
+
+          <script>
+            function navigateToForm() {
+              window.open('https://forms.gle/t1qMqTodspoQwHnR8', '_blank');
+            }
+          </script>              
+        </div>
+        <p style="font-size: 8px; font-style: italic;"></p>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+<script>
+window.addEventListener('mousemove', function(e) {
+  var x = e.clientX / window.innerWidth * 100;
+  var y = e.clientY / window.innerHeight * 100;
+  document.getElementById('gradient-background').style.backgroundPosition = x + '% ' + y + '%';
+});
+</script>
+
+<style>
+.bodye {
+  margin: 0;
+  position: relative;
+  top: -10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: gradientShift 10s ease-in-out infinite;
+  background-image: linear-gradient(60deg, #c9ecf5bf, #edd3ffc0, #fde5f9c3);
+}
+</style>
+
+
+<script>
+  window.addEventListener('message', function(event) {
+    if (event.origin === 'https://polycypher.org' && event.data === 'ready') {
+      var iframe = document.querySelector('#hidden-section iframe');
+      var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+      var header = iframeDocument.querySelector('.header');
+      var footer = iframeDocument.querySelector('.footer');
+      
+      if (header) {
+        header.style.display = 'none';
+      }
+      
+      if (footer) {
+        footer.style.display = 'none';
+      }
+    }
+  });
+</script>
+
+  <h1 class="subpage-header-title" style="color: #fff;   margin-block-start: 0%;"><b><br></b></h1>
+
+  <div class="card-container">
+    <div class="card" style="display: block !important; position: relative !important; inline-size: 85% !important; block-size: auto !important; min-inline-size: 85% !important; max-inline-size: 85% !important; box-sizing: border-box !important; padding: 20px !important; text-align: center !important; border: 1px solid black !important;">
+        <h1 style="font-size: 40px !important;"><b>Our Refund Policy: full refund for any reason</b></h1>
+        <p style="font-size: 16px !important; text-align: start;">Your satisfaction is our top priority. We aim to provide accurate and high-quality polygenic score reports, and we want you to be completely satisfied with the product you receive. If, for any reason, you are not entirely satisfied, we will give you a refund.</p>
+        <p style="font-size: 16px !important; text-align: start;">Our policy offers you a refund <b>at any time</b> if you are unsatisfied with our service <b>for any reason.</b></p>
+        <p style="font-size: 16px !important; text-align: start;">We offer refunds at <b>any percentage</b> of your order. The refund amount is entirely your decision, and we will honor it <b>unconditionally.</b></p>
+    </div>
+</div>
+
+
+  <div data-carbon-type="footer" data-carbon-id="208" class="carbon carbon-208 carbon-location-footer">
+    <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-top-section carbon-element carbon-element-4af68325 carbon-section-full_width carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="carbon-container carbon-column-gap-default">
+        <div class="carbon-column carbon-col-100 carbon-top-column carbon-element carbon-element-48d76fc7" data-id="carbonated" data-element_type="column">
+          <div class="carbon-widget-wrap carbon-element-populated">
+            <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-inner-section carbon-element carbon-element-55fba0f3 carbon-section-boxed carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section">
+              <div class="carbon-container carbon-column-gap-default">
+                <div class="carbon-column carbon-col-25 carbon-inner-column carbon-element carbon-element-757a5cf4" data-id="carbonated" data-element_type="column">
+                  <div class="carbon-widget-wrap carbon-element-populated">
+                    <div class="carbon-element carbon-element-54ca7f5d carbon-widget carbon-widget-text-editor" data-id="carbonated" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="carbon-widget-container">
+                        <p>Genetic testing for <b>everything.</b></p>
+                      </div>
+                    </div>
+                    <div class="carbon-element carbon-element-18aa059d carbon-widget carbon-widget-text-editor" data-id="carbonated" data-element_type="widget" data-widget_type="text-editor.default">
+                      <div class="">
+                        <p>©2023 PolyCypher Genomics, LLC<a style="color: #fff;" href="./PolyCypher.org/legal/" target="_blank" rel="noopener"></a>
+                        </p>
+                      </div>
+                      <img style="transform: scale(0.2); float: inline-start; position: relative; inset-block-start: -150px; inset-inline-start: -160px;" src="https://i.imgur.com/DZZUkqT.png" class="" alt="" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+                <div class="carbon-column carbon-col-25 carbon-inner-column carbon-element carbon-element-bd1409e" data-id="carbonated" data-element_type="column">
+                  <div class="carbon-widget-wrap carbon-element-populated">
+                    <div class="carbon-element carbon-element-34794a23 carbon-widget carbon-widget-heading" data-id="carbonated" data-element_type="widget" data-widget_type="heading.default">
+                      <div class="carbon-widget-container">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carbon-column carbon-col-25 carbon-inner-column carbon-element carbon-element-1322f49" data-id="carbonated" data-element_type="column">
+                  <div class="carbon-widget-wrap carbon-element-populated">
+                    <div class="carbon-element carbon-element-95515fe carbon-icon-list--layout-traditional carbon-list-item-link-full_width carbon-widget carbon-widget-icon-list" data-id="carbonated" data-element_type="widget" data-widget_type="icon-list.default">
+                      <div class="carbon-widget-container">
+                        <ul class="carbon-icon-list-items">
+                          <li class="carbon-icon-list-item">
+                            <a href="./PolyCypher.org/about/">
+                              <span class="carbon-icon-list-text"></span>
+                            </a>
+                          </li>
+                          <li class="carbon-icon-list-item">
+                            <a href="./PolyCypher.org/get-started.html/">
+                              <span class="carbon-icon-list-text"></span>
+                            </a>
+                          </li>
+                          <li class="carbon-icon-list-item">
+                            <a href="./PolyCypher.org/contact/">
+                              <span class="carbon-icon-list-text"></span>
+                            </a>
+                    
+                          </li>
+                          <li class="carbon-icon-list-item">
+                            <a href="./PolyCypher.org/careers/">
+                              <span class="carbon-icon-list-text"></span>
+                            </a>
+                          </li>
+                          <li class="carbon-icon-list-item">
+                            <a href="./PolyCypher.org/contact/">
+                              <span class="carbon-icon-list-text"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carbon-column carbon-col-25 carbon-inner-column carbon-element carbon-element-4e92b033" data-id="carbonated" data-element_type="column">
+                  <div class="carbon-widget-wrap carbon-element-populated">
+                    <div class="carbon-element carbon-element-7afb2364 carbon-widget carbon-widget-heading" data-id="carbonated" data-element_type="widget" data-widget_type="heading.default">
+                      <div class="carbon-widget-container">
+                        <h4 class="carbon-heading-title carbon-size-default">Contact</h4>
+                      </div>
+                    </div>
+                    <div class="carbon-element carbon-element-6e5b6799 carbon-icon-list--layout-traditional carbon-list-item-link-full_width carbon-widget carbon-widget-icon-list" data-id="carbonated" data-element_type="widget" data-widget_type="icon-list.default">
+                      <div class="carbon-widget-container">
+                        <ul class="carbon-icon-list-items">
+                          <li class="carbon-icon-list-item">
+                            <a href="tel:15055101333">
+                              <span class="carbon-icon-list-text"><b>+1(505) 510-1333</b</span>
+                            </a>
+                          </li>
+                          <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                            <a href="mailto:team@polycypher.org">
+                                <span class="carbon-icon-list-text">team@polycypher.org</span>
+                            </a>
+                        </li>
+                        <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                          <a href="https://twitter.com/polycypher">
+                              <span class="carbon-icon-list-text">twitter.com/polycypher</span>
+                          </a>
+                      </li>
+                      <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                        <a href="https://www.instagram.com/polycypher/">
+                            <span class="carbon-icon-list-text">instagram.com/polycypher</span>
+                        </a>
+                    </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="wrapper">
+  <div class="banner" style="background-color:rgba(47, 238, 181, 0.803);">
+  <marquee behavior="scroll" direction="left" scrollamount="10">
+  <span>CTACTCAGCCCCAGCGGAGGTGAAGGACGTCCTTCCCCAGGAGCCGGTGAGAAGCGCAGTCGGGGGCACG GGGATGAGCTCAGGGGCCTCTAGAAAGAGCTGGGACCCTGGGAACCCCTGGCCTCCAGGTAGTCTCAGGA GAGCTACTCGGGGTCGGGCTTGGGGAGAGGAGGAGCGGGGGTGAGGCAAGCAGCAGGGGACTGGACCTGG GAAGGGCTGGGCAGCAGAGACGACCCGACCCGCTAGAAGGTGGGGTGGGGAGAGCAGCTGGACTGGGATG TAAGCCATAGCAGGACTCCACGAGTTGTCACTATCATTTATCGAGCACCTACTGGGTGTCCCCAGTGTCC TCAGATCTCCATAACTGGGGAGCCAGGGGCAGCGACACGGTAGCTAGCCGTCGATTGGAGAACTTTAAAA TGAGGACTGAATTAGCTCATAAATGGAACACGGCGCTTAACTGTGAGGTTGGAGCTTAGAATGTGAAGGG AGAATGAGGAATGCGAGACTGGGACTGAGATGGAACCGGCGGTGGGGAGGGGGTGGGGGGATGGAATTTG AACCCCGGGAGAGGAAGATGGAATTTTCTATGGAGGCCGACCTGGGGATGGGGAGATAAGAGAAGACCAG GAGGGAGTTAAATAGGGAATGGGTTGGGGGCGGCTTGGTAAATGTGCTGGGATTAGGCTGTTGCAGATAA TGCAACAAGGCTTGGAAGGCTAACCTGGGGTGAGGCCGGGTTGGGGCCGGGCTGGGGGTGGGAGGAGTCC TCACTGGCGGTTGATTGACAGTTTCTCCTTCCCCAGACTGGCCAATCACAGGCAGGAAGATGAAGGTTCT GTGGGCTGCGTTGCTGGTCACATTCCTGGCAGGTATGGGGGCGGGGCTTGCTCGGTTCCCCCCGCTCCTC CCCCTCTCATCCTCACCTCAACCTCCTGGCCCCATTCAGGCAGACCCTGGGCCCCCTCTTCTGAGGCTTC TGTGCTGCTTCCTGGCTCTGAACAGCGATTTGACGCTCTCTGGGCCTCGGTTTCCCCCATCCTTGAGATA GGAGTTAGAAGTTGTTTTGTTGTTGTTGTTTGTTGTTGTTGTTTTGTTTTTTTGAGATGAAGTCTCGCTC TGTCGCCCAGGCTGGAGTGCAGTGGCGGGATCTCGGCTCACTGCAAGCTCCGCCTCCCAGGTCCACGCCA TTCTCCTGCCTCAGCCTCCCAAGTAGCTGGGACTACAGGCACATGCCACCACACCCGACTAACTTTTTTG TATTTTCAGTAGAGACGGGGTTTCACCATGTTGGCCAGGCTGGTCTGGAACTCCTGACCTCAGGTGATCT GCCCGTTTCGATCTCCCAAAGTGCTGGGATTACAGGCGTGAGCCACCGCACCTGGCTGGGAGTTAGAGGT TTCTAATGCATTGCAGGCAGATAGTGAATACCAGACACGGGGCAGCTGTGATCTTTATTCTCCATCACCC CCACACAGCCCTGCCTGGGGCACACAAGGACACTCAATACATGCTTTTCCGCTGGGCGCGGTGGCTCACC CCTGTAATCCCAGCACTTTGGGAGGCCAAGGTGGGAGGATCACTTGAGCCCAGGAGTTCAACACCAGCCT GGGCAACATAGTGAGACCCTGTCTCTACTAAAAATACAAAAATTAGCCAGGCATGGTGCCACACACCTGT GCTCTCAGCTACTCAGGAGGCTGAGGCAGGAGGATCGCTTGAGCCCAGAAGGTCAAGGTTGCAGTGAACC ATGTTCAGGCCGCTGCACTCCAGCCTGGGTGACAGAGCAAGACCCTGTTTATAAATACATAATGCTTTCC AAGTGATTAAACCGACTCCCCCCTCACCCTGCCCACCATGGCTCCAAAGAAGCATTTGTGGAGCACCTTC TGTGTGCCCCTAGGTACTAGATGCCTGGACGGGGTCAGAAGGACCCTGACCCACCTTGAACTTGTTCCAC ACAGGATGCCAGGCCAAGGTGGAGCAAGCGGTGGAGACAGAGCCGGAGCCCGAGCTGCGCCAGCAGACCG AGTGGCAGAGCGGCCAGCGCTGGGAACTGGCACTGGGTCGCTTTTGGGATTACCTGCGCTGGGTGCAGAC ACTGTCTGAGCAGGTGCAGGAGGAGCTGCTCAGCTCCCAGGTCACCCAGGAACTGAGGTGAGTGTCCCCA TCCTGGCCCTTGACCCTCCTGGTGGGCGGCTATACCTCCCCAGGTCCAGGTTTCATTCTGCCCCTGTCGC TAAGTCTTGGGGGGCCTGGGTCTCTGCTGGTTCTAGCTTCCTCTTCCCATTTCTGACTCCTGGCTTTAGC TCTCTGGAATTCTCTCTCTCAGCTTTGTCTCTCTCTCTTCCCTTCTGACTCAGTCTCTCACACTCGTCCT GGCTCTGTCTCTGTCCTTCCCTAGCTCTTTTATATAGAGACAGAGAGATGGGGTCTCACTGTGTTGCCCA GGCTGGTCTTGAACTTCTGGGCTCAAGCGATCCTCCCGCCTCGGCCTCCCAAAGTGCTGGGATTAGAGGC ATGAGCCACCTTGCCCGGCCTCCTAGCTCCTTCTTCGTCTCTGCCTCTGCCCTCTGCATCTGCTCTCTGC ATCTGTCTCTGTCTCCTTCTCTCGGCCTCTGCCCCGTTCCTTCTCTCCCTCTTGGGTCTCTCTGGCTCAT CCCCATCTCGCCCGCCCCATCCCAGCCCTTCTCCCCGCCTCCCACTGTGCGACACCCTCCCGCCCTCTCG GCCGCAGGGCGCTGATGGACGAGACCATGAAGGAGTTGAAGGCCTACAAATCGGAACTGGAGGAACAACT GACCCCGGTGGCGGAGGAGACGCGGGCACGGCTGTCCAAGGAGCTGCAGGCGGCGCAGGCCCGGCTGGGC GCGGACATGGAGGACGTGTGCGGCCGCCTGGTGCAGTACCGCGGCGAGGTGCAGGCCATGCTCGGCCAGA GCACCGAGGAGCTGCGGGTGCGCCTCGCCTCCCACCTGCGCAAGCTGCGTAAGCGGCTCCTCCGCGATGC CGATGACCTGCAGAAGCGCCTGGCAGTGTACCAGGCCGGGGCCCGCGAGGGCGCCGAGCGCGGCCTCAGC GCCATCCGCGAGCGCCTGGGGCCCCTGGTGGAACAGGGCCGCGTGCGGGCCGCCACTGTGGGCTCCCTGG CCGGCCAGCCGCTACAGGAGCGGGCCCAGGCCTGGGGCGAGCGGCTGCGCGCGCGGATGGAGGAGATGGG CAGCCGGACCCGCGACCGCCTGGACGAGGTGAAGGAGCAGGTGGCGGAGGTGCGCGCCAAGCTGGAGGAG CAGGCCCAGCAGATACGCCTGCAGGCCGAGGCCTTCCAGGCCCGCCTCAAGAGCTGGTTCGAGCCCCTGG TGGAAGACATGCAGCGCCAGTGGGCCGGGCTGGTGGAGAAGGTGCAGGCTGCCGTGGGCACCAGCGCCGC CCCTGTGCCCAGCGACAATCACTGAACGCCGAAGCCTGCAGCCATGCGACCCCACGCCACCCCGTGCCTC CTGCCTCCGCGCAGCCTGCAGCGGGAGACCCTGTCCCCGCCCCAGCCGTCCTCCTGGGGTGGACCCTAGT TTAATAAAGATTCACCAAGTTTCACGCA CTACTCAGCCCCAGCGGAGGTGAAGGACGTCCTTCCCCAGGAGCCGGTGAGAAGCGCAGTCGGGGGCACG GGGATGAGCTCAGGGGCCTCTAGAAAGAGCTGGGACCCTGGGAAGCCCTGGCCTCCAGGTAGTCTCAGGA GAGCTACTCGGGGTCGGGCTTGGGGAGAGGAGGAGCGGGGGTGAGGCAAGCAGCAGGGGACTGGACCTGG GAAGGGCTGGGCAGCAGAGACGACCCGACCCGCTAGAAGGTGGGGTGGGGAGAGCAGCTGGACTGGGATG TAAGCCATAGCAGGACTCCACGAGTTGTCACTATCATTTATCGAGCACCTACTGGGTGTCCCCAGTGTCC TCAGATCTCCATAACTGGGGAGCCAGGGGCAGCGACACGGTAGCTAGCCGTCGATTGGAGAACTTTAAAA TGAGGACTGAATTAGCTCATAAATGGAACACGGCGCTTAACTGTGAGGTTGGAGCTTAGAATGTGAAGGG AGAATGAGGAATGCGAGACTGGGACTGAGATGGAACCGGCGGTGGGGAGGGGGTGGGGGGATGGAATTTG AACCCCGGGAGAGGAAGATGGAATTTTCTATGGAGGCCGACCTGGGGATGGGGAGATAAGAGAAGACCAG GAGGGAGTTAAATAGGGAATGGGTTGGGGGCGGCTTGGTAAATGTGCTGGGATTAGGCTGTTGCAGATAA TGCAACAAGGCTTGGAAGGCTAACCTGGGGTGAGGCCGGGTTGGGGCCGGGCTGGGGGTGGGAGGAGTCC TCACTGGCGGTTGATTGACAGTTTCTCCTTCCCCAGACTGGCCAATCACAGGCAGGAAGATGAAGGTTCT GTGGGCTGCGTTGCTGGTCACATTCCTGGCAGGTATGGGGGCGGGGCTTGCTCGGTTCCCCCCGCTCCTC CCCCTCTCATCCTCACCTCAACCTCCTGGCCCCATTCAGGCAGACCCTGGGCCCCCTCTTCTGAGGCTTC TGTGCTGCTTCCTGGCTCTGAACAGCGATTTGACGCTCTCTGGGCCTCGGTTTCCCCCATCCTTGAGATA GGAGTTAGAAGTTGTTTTGTTGTTGTTGTTTGTTGTTGTTGTTTTGTTTTTTTGAGATGAAGTCTCGCTC TGTCGCCCAGGCTGGAGTGCAGTGGCGGGATCTCGGCTCACTGCAAGCTCCGCCTCCCAGGTCCACGCCA TTCTCCTGCCTCAGCCTCCCAAGTAGCTGGGACTACAGGCACATGCCACCACACCCGACTAACTTTTTTG TATTTTCAGTAGAGACGGGGTTTCACCATGTTGGCCAGGCTGGTCTGGAACTCCTGACCTCAGGTGATCT GCCCGTTTCGATCTCCCAAAGTGCTGGGATTACAGGCGTGAGCCACCGCACCTGGCTGGGAATTAGAGGT TTCTAATGCATTGCAGGCAGATAGTGAATACCAGACACGGGGCAGCTGTGATCTTTATTCTCCATCACCC CCACACAGCCCTGCCTGGGGCACACAAGGACACTCAATACATGCTTTTCCGCTGGGCGCGGTGGCTCACC CCTGTAATCCCAGCACTTTGGGAGGCCAAGGTGGGAGGATCACTTGAGCCCAGGAGTTCAACACCAGCCT GGGCAACATAGTGAGACCCTGTCTCTACTAAAAATACAAAAATTAGCCAGGCATGGTGCCACACACCTGT GCTCTCAGCTACTCAGGAGGCTGAGGCAGGAGGATCGCTTGAGCCCAGAAGGTCAAGGTTGCAGTGAACC ATGTTCAGGCCGCTGCACTCCAGCCTGGGTGACAGAGCAAGACCCTGTTTATAAATACATAATGCTTTCC AAGTGATTAAACCGACTCCCCCCTCACCCTGCCCACCATGGCTCCAAAGAAGCATTTGTGGAGCACCTTC TGTGTGCCCCTAGGTACTAGATGCCTGGACGGGGTCAGAAGGACCCTGACCCACCTTGAACTTGTTCCAC ACAGGATGCCAGGCCAAGGTGGAGCAAGCGGTGGAGACAGAGCCGGAGCCCGAGCTGCGCCAGCAGACCG AGTGGCAGAGCGGCCAGCGCTGGGAACTGGCACTGGGTCGCTTTTGGGATTACCTGCGCTGGGTGCAGAC ACTGTCTGAGCAGGTGCAGGAGGAGCTGCTCAGCTCCCAGGTCACCCAGGAACTGAGGTGAGTGTCCCCA TCCTGGCCCTTGACCCTCCTGGTGGGCGGCTATACCTCCCCAGGTCCAGGTTTCATTCTGCCCCTGTCGC TAAGTCTTGGGGGGCCTGGGTCTCTGCTGGTTCTAGCTTCCTCTTCCCATTTCTGACTCCTGGCTTTAGC TCTCTGGAATTCTCTCTCTCAGCTTTGTCTCTCTCTCTTCCCTTCTGACTCAGTCTCTCACACTCGTCCT GGCTCTGTCTCTGTCCTTCCCTAGCTCTTTTATATAGAGACAGAGAGATGGGGTCTCACTGTGTTGCCCA GGCTGGTCTTGAACTTCTGGGCTCAAGCGATCCTCCCGCCTCGGCCTCCCAAAGTGCTGGGATTAGAGGC ATGAGCCACCTTGCCCGGCCTCCTAGCTCCTTCTTCGTCTCTGCCTCTGCCCTCTGCATCTGCTCTCTGC ATCTGTCTCTGTCTCCTTCTCTCGGCCTCTGCCCCGTTCCTTCTCTCCCTCTTGGGTCTCTCTGGCTCAT CCCCATCTCGCCCGCCCCATCCCAGCCCTTCTCCCCGCCTCCCACTGTGCGACACCCTCCCGCCCTCTCG GCCGCAGGGCGCTGATGGACGAGACCATGAAGGAGTTGAAGGCCTACAAATCGGAACTGGAGGAACAACT GACCCCGGTGGCGGAGGAGACGCGGGCACGGCTGTCCAAGGAGCTGCAGGCGGCGCAGGCCCGGCTGGGC GCGGACATGGAGGACGTGTGCGGCCGCCTGGTGCAGTACCGCGGCGAGGTGCAGGCCATGCTCGGCCAGA GCACCGAGGAGCTGCGGGTGCGCCTCGCCTCCCACCTGCGCAAGCTGCGTAAGCGGCTCCTCCGCGATGC CGATGACCTGCAGAAGCGCCTGGCAGTGTACCAGGCCGGGGCCCGCGAGGGCGCCGAGCGCGGCCTCAGC GCCATCCGCGAGCGCCTGGGGCCCCTGGTGGAACAGGGCCGCGTGCGGGCCGCCACTGTGGGCTCCCTGG CCGGCCAGCCGCTACAGGAGCGGGCCCAGGCCTGGGGCGAGCGGCTGCGCGCGCGGATGGAGGAGATGGG CAGCCGGACCCGCGACCGCCTGGACGAGGTGAAGGAGCAGGTGGCGGAGGTGCGCGCCAAGCTGGAGGAG CAGGCCCAGCAGATACGCCTGCAGGCCGAGGCCTTCCAGGCCCGCCTCAAGAGCTGGTTCGAGCCCCTGG TGGAAGACATGCAGCGCCAGTGGGCCGGGCTGGTGGAGAAGGTGCAGGCTGCCGTGGGCACCAGCGCCGC CCCTGTGCCCAGCGACAATCACTGAACGCCGAAGCCTGCAGCCATGCGACCCCACGCCACCCCGTGCCTC CTGCCTCCGCGCAGCCTGCAGCGGGAGACCCTGTCCCCGCCCCAGCCGTCCTCCTGGGGTGGACCCTAGT TTAATAAAGATTCACCAAGTTTCACGCA</span>
+  </marquee>
+  </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    var slider1 = document.getElementById("myRange");
+    var output1 = document.getElementById("demo");
+    var paypalLink1 = document.getElementById("paypalLink");
+
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    var paypalLink2 = document.getElementById("paypalLink2");
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider1.oninput = function() {
+        output1.innerHTML = this.value;
+        paypalLink1.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 10;
+    }
+
+    slider2.oninput = function() {
+        output2.innerHTML = this.value;
+        paypalLink2.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 349;
+    }
+</script>
+
+<style>
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-block-end: 1.5em;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 5%;
+  padding-block-end: 5%;
+}
+
+.card {
+  max-inline-size: 350px;
+  min-block-size: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+  max-inline-size: 500px;
+  block-size: 300px;
+  padding: 20px;
+  margin: auto;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .carbon-container carbon-column-gap-default {
+      color: black;
+    }
+  <head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Keyamoon/IcoMoon-Free@4.0.3/Font/icomoon/icomoon.css">
+<link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+</head>
+.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			block-size: 10vh;
+      padding-block-start: 20%;
+      inline-size: 75%;
+		}
+
+		.border {
+			display: flex;
+      margin-block-end: 20%;
+      margin-block-start: 10%;
+			align-items: center;
+			justify-content: center;
+			border: 4px solid #ccc;
+			border-radius: 8px;
+			padding: 0;
+			transition: border-color 0.3s ease-in-out;
+		}
+
+		.border:hover {
+			border-color: #66c2ff;
+		}
+
+		img {
+			block-size: auto;
+			border-radius: 8px;
+      zoom: 0.8;
+		}
+
+		img {
+			display: block;
+			max-inline-size: 100%;
+      align-items: center;
+			justify-content: center;
+			block-size: auto;
+			border-radius: 8px;
+		}
+
+
+    .subpage-header-suc {
+  position: relative;
+}
+
+.subpage-header-suc-background {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 200%;
+  block-size: 70%;
+  background-image: url(../images/longhead.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  animation: parallax 1000s linear infinite;
+}
+
+.subpage-header {
+  position: relative;
+  block-size: 300px;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.subpage-header-background {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-image: url('https://i.imgur.com/81gvfkW.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  filter: brightness(0.8);
+}
+
+.subpage-header-content {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+.subpage-header-suc-content {
+  position: relative;
+  z-index: 1;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.subpage-header-suc-title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subpage-header-suc-description {
+  color: rgba(255, 255, 255, 0.803);
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+@media (max-inline-size: 768px) {
+  .subpage-header-suc-title {
+    font-size: 3rem;
+  }
+  .subpage-header-suc-description {
+    font-size: 1.5rem;
+  }
+}
+
+
+.subpage-header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subpage-header-description {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Failsafe */
+.subpage-header-title::before,
+.subpage-header-title::after {
+  content: "";
+  display: table;
+}
+
+.subpage-header-title:after {
+  clear: both;
+}
+
+  .sec1 {
+    background-color: #15001a;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  
+  ul {
+    padding-inline-start: 100px
+  }
+  
+  /* Set up heading styling */
+  .tilz {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white !important;
+    margin: 0;
+    padding: 50px
+  }
+
+  .tilza {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white !important;
+  margin: 0;
+  padding: 50px;
+  background-image: linear-gradient(to bottom, #1c886d, #053c22);
+}
+  
+  /* Set up widget styles */
+  .elem1 {
+    margin-block-end: 30px;
+    text-align: start;
+    inline-size: 100%;
+    color: white;
+  }
+  
+  .widget-hd {
+    opacity: 0;
+  }
+  
+  .widget-tx {
+    opacity: 0;
+  }
+  
+  /* Animate widgets on load */
+  .elem1.fadeIn {
+    opacity: 1;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  /* Set up list styles */
+  .list-icon ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .list-icon li:before {
+    content: '\2022';
+    margin-inline-end: 10px;
+    color: white;
+  }
+  
+  /* Set up container styles */
+  .contain1 {
+    max-inline-size: 800px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  /* Set up column styles */
+  .col1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+  }
+  
+  /* Set up responsive styles */
+  @media only screen and (max-inline-size: 768px) {
+    .tilz {
+      font-size: 24px;
+      color: white;
+    }
+  }
+
+  </style>
+
+
+
+<html lang="en-US">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>PolyCypher Genomics</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+    <link rel="stylesheet" id="custom-css" href="../css/css2.css">
+    <link rel="canonical" href="./PolyCypher.org/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PolyCypher | Genetic testing for everything.>
+    <meta property="og:site_name" content="PolyCypher">
+    <meta property="article:modified_time" content="2022-12-05T12:34:41+00:00">
+    <link rel="icon" type="image/png" href="../images/favicon.ico"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json" class="yoast-schema-graph">
+      {
+        "@context": "https://schema.org",
+        "@graph": [{
+          "@type": "WebPage",
+          "@id": "./PolyCypher.org/",
+          "url": "./PolyCypher.org/",
+          "name": "PolyCypher, Genetic Testing For Everything",
+          "isPartOf": {
+            "@id": "./PolyCypher.org/"
+          "inLanguage": "en-US",
+          "potentialAction": [{
+            "@type": "ReadAction",
+            "target": ["./PolyCypher.org/"]
+          }]
+        }, {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://i.imgur.com/5UFV3aT.png",
+          "url": "https://i.imgur.com/5UFV3aT.png",
+          "contentUrl": "https://i.imgur.com/5UFV3aT.png",
+          "width": 60,
+          "height": 48
+        }, {
+          "@type": "BreadcrumbList",
+          "@id": "./PolyCypher.org/#breadcrumb",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home"
+          }]
+        }, {
+          "@type": "WebSite",
+          "@id": "./PolyCypher.org/#website",
+          "url": "./PolyCypher.org/",
+          "name": "PolyCypher",
+          "description": "Polygenic testing",
+          "publisher": {
+            "@id": "./PolyCypher.org/#organization"
+          },
+          "potentialAction": [{
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "./PolyCypher.org/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }],
+          "inLanguage": "en-US"
+        }, {
+          "@type": "Organization",
+          "@id": "./PolyCypher.org/#organization",
+          "name": "PolyCypher",
+          "url": "./PolyCypher.org/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "width": 2560,
+            "height": 304,
+            "caption": "PolyCypher"
+          },
+          "image": {
+          },
+        }]
+      }
+    </script>
+    <meta name="google-site-verification" content="CFvrf_bnPNr_8F-MehbVBFadt_VDuGUIMR3KD-7PJlk">
+    <!-- / Yoast SEO plugin. -->
+    <link rel="alternate" type="application/rss+xml" title="PolyCypher » Feed" href="./PolyCypher.org/feed/">
+    <style id="global-styles-inline-css">
+      body {
+        background-image: url(../images/large.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+      }
+
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flow>.alignleft {
+        float: inline-start;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-flow>.alignright {
+        float: inline-end;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-flow>.aligncenter {
+        margin-inline-start: auto !important;
+        margin-inline-end: auto !important;
+      }
+
+      body .is-layout-constrained>.alignleft {
+        float: inline-start;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-constrained>.alignright {
+        float: inline-end;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-constrained>.aligncenter {
+        margin-inline-start: auto !important;
+        margin-inline-end: auto !important;
+      }
+
+      body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-inline-size: var(--wp--style--global--content-size);
+        margin-inline-start: auto !important;
+        margin-inline-end: auto !important;
+      }
+
+      body .is-layout-constrained>.alignwide {
+        max-inline-size: var(--wp--style--global--wide-size);
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      body .is-layout-flex>* {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel="https://api.w.org/" href="PolyCypher.org/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="polyCypher.org">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="PolyCypher.org/wp-includes/wlwmanifest.xml">
+    <link rel="shortlink" href="PolyCypher.org/">
+    <link rel="alternate" type="application/json+oembed" href="./PolyCypher.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2FPolyCypher.org%2F">
+    <style type="text/css">
+      .progress-wrap {
+        inset-block-end: 50px;
+        block-size: 46px;
+        inline-size: 46px;
+        border-radius: 46px;
+        background-color: #ffffff;
+        box-shadow: inset 0 0 0 2px #eeeeee;
+      }
+
+      .progress-wrap.btn-left-side {
+        inset-inline-start: 50px;
+      }
+
+      .progress-wrap.btn-right-side {
+        inset-inline-end: 50px;
+      }
+
+      .progress-wrap::after {
+        inline-size: 46px;
+        block-size: 46px;
+        color: #cf5829;
+        font-size: 24px;
+        content: '\e900';
+        line-height: 46px;
+      }
+
+      .progress-wrap:hover::after {
+        color: #cf5829;
+      }
+
+      .progress-wrap svg.progress-circle path {
+        stroke: #cf5829;
+        stroke-width: 2px;
+      }
+    </style>
+    <script type="text/javascript" data-cfasync="false">
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = "//widget.usersnap.com/load/8d88e709-5271-4d8a-abc9-e35744d68c93";
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+      })();
+    </script>
+    <style>
+      *:not(.carbon-editor-active) .plus-conditions--hidden {
+        display: none;
+      }
+    </style>
+    <meta name="generator" content="carbon 3.11.0; features: e_dom_optimization, e_optimized_assets_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+    <style type="text/css">
+      .tab-boder .carbon-accordion-item {
+        border-block-end: 2px solid #dddddd !important;
+      }
+
+      .content-box img {
+        margin-block-start: 15px;
+      }
+
+      .popup-close-btn .dialog-close-button.dialog-lightbox-close-button {
+        border: 2px solid #CF5829;
+        border-radius: 100%;
+        padding: 2px;
+      }
+
+      .list-before-icon ul li:before {
+        content: "\00BB";
+        font-size: 30px;
+        font-weight: 500;
+        color: #cf5829;
+        padding-inline-end: 5px;
+        margin-inline-start: -25px;
+      }
+
+      .list-before-icon ul li {
+        list-style: none;
+      }
+
+      .advance-box img {
+        margin-block-start: 10px;
+      }
+
+      /* timeline section style */
+      .eael-content-timeline-content img,
+      .eael-horizontal-timeline-item__card-inner img {
+        margin: 0px !important
+      }
+
+      .carbon-240 .carbon-element.carbon-element-71b99510 .eael-content-timeline-content .eael-timeline-title {
+        text-align: end;
+        padding-inline-end: 55px;
+      }
+
+      .timeline-custom-description {
+        text-align: end;
+      }
+
+      .eael-content-timeline-content p {
+        margin: 0px;
+      }
+
+      span.timeline-img,
+      span.timeline-img-left img {
+        position: static !important;
+        margin: 0px;
+      }
+
+      .eael-content-timeline-content .eael-date {
+        inset-inline-start: calc(100% - 160px);
+        inset-block-start: -7px;
+      }
+
+      .eael-content-timeline-block:nth-child(2n) .eael-content-timeline-content .eael-date {
+        inset-inline-end: calc(100% - 160px);
+        inset-block-start: -7px;
+      }
+
+      @media screen and (max-inline-size: 768px) {
+        span.timeline-img {
+          inset-inline-start: 25px !important;
+        }
+
+        h4.eael-timeline-title a .timeline-custom-title {
+          text-align: start !important;
+          margin-inline-start: 10%;
+        }
+
+        .timeline-custom-description {
+          text-align: start;
+        }
+      }
+
+      @media screen and (max-inline-size: 425px) {
+        h4.eael-timeline-title a .timeline-custom-title {
+          margin-inline-start: 20%;
+        }
+      }
+      .blog-post-style .eael-post-list-post {
+        box-shadow: 0px 0px 0px 0px #f7eaea !important;
+        padding-block-start: 25px !important;
+        padding-block-end: 20px !important;
+        padding: 10px;
+        border-block-end: 1px solid #E6EBEF;
+      }
+
+      .blog-post-style .meta span i.far.fa-calendar-alt {
+        display: none;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-4Z4WW8V9XP');
+    </script>
+
+    <style id="wp-custom-css">
+      .twentytwenty-before-label {
+        opacity: 1;
+      }
+
+      .twentytwenty-after-label {
+        opacity: 1;
+      }
+
+      .tab-boder .carbon-accordion-item {
+        border-block-end: 2px solid #dddddd !important;
+      }
+
+      .content-box img {
+        margin-block-start: 15px;
+      }
+
+      .popup-close-btn .dialog-close-button.dialog-lightbox-close-button {
+        border: 2px solid #CF5829;
+        border-radius: 100%;
+        padding: 2px;
+      }
+
+      .list-before-icon ul li:before {
+        content: "\00BB";
+        font-size: 30px;
+        font-weight: 500;
+        color: #cf5829;
+        padding-inline-end: 10px;
+        margin-inline-start: -25px;
+      }
+
+      .list-before-icon ul li {
+        list-style: none;
+      }
+
+      .advance-box img {
+        margin-block-start: 10px;
+      }
+
+      .blog-post-style .eael-post-list-post {
+        box-shadow: 0px 0px 0px 0px #f7eaea !important;
+        padding-block-start: 25px !important;
+        padding-block-end: 20px !important;
+        padding: 10px;
+        border-block-end: 1px solid #E6EBEF;
+      }
+
+      .blog-post-style .meta span i.far.fa-calendar-alt {
+        display: none;
+      }
+
+
+
+
+
+
+
+
+
+
+
+      .button {
+  background-color: #b8f5ee; /* Green background color */
+  color: white; /* Text color */
+  border: none; /* Remove button border */
+  padding: 12px 24px; /* Add some padding */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition effect */
+  text-align: center;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: #b3ecb5; /* Dark green background color on hover */
+}
+
+/* Add animation effect on hover */
+.button:hover {
+  -webkit-animation: shake 0.5s;
+  animation: shake 0.5s;
+}
+
+/* Define the animation */
+@-webkit-keyframes shake {
+  0% { -webkit-transform: translate(0.2px, 0.0.2px); }
+  50% { -webkit-transform: translate(-0.2px, -0.2px); }
+  100% { -webkit-transform: translate(0.2px, 0.2px); }
+}
+@keyframes shake {
+  0% { transform: translate(0.2px, 0.2px); }
+  50% { transform: translate(-0.2px, -0.2px); }
+  100% { transform: translate(0.2px, 0.2px); }
+}
+
+  <style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Helvetica, sans-serif;
+		}
+		.container {
+			max-inline-size: 1500px;
+			margin: auto;
+			padding: 20px;
+      inline-size: 75%;
+      margin-block-start: 20px;
+			background-color: #ffffffb9;
+			border-radius: 5px;
+      backdrop-filter: blur(20px);
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+		}
+		.header {
+			text-align: center;
+			margin-block-end: 20px;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-block-end: 10px;
+		}
+		.subtitle {
+			font-size: 16px;
+			font-weight: bold;
+			margin-block-end: 5px;
+		}
+		.text {
+			font-size: 14px;
+			line-height: 1.5;
+			margin-block-end: 10px;
+		}
+		.highlight {
+			font-weight: bold;
+			color: #3B8AD9;
+		}
+		.file-format {
+			font-size: 14px;
+			margin-block-start: 20px;
+			margin-block-end: 5px;
+		}
+		.note {
+			font-size: 12px;
+			color: #666666;
+			margin-block-start: 20px;
+			text-align: center;
+</style>
