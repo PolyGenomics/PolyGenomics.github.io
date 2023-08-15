@@ -852,7 +852,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
               <div class="mRNA-element mRNA-element-4eb5ad25 mRNA-widget__width-initial animated-fast mRNA-widget mRNA-widget-text-editor animated fadeIn" data-id="mRNAated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
                 <div class="mRNA-widget-container">
                   <p>
-                    PolyVar's artificial intelligence analysis pipeline defines the <strong>gold standard</strong> of predictive genomics.                  </p>
+                    PolyVar's artificial intelligence analysis pipeline defines the <strong>gold standard</strong> of predictive genomics.</p>
                   </div>
                 
               </div>
@@ -866,6 +866,9 @@ body, body div, body span, body p, body a, body button, body input, body select,
           <ul style="list-style-type: none; padding: 0; position: relative; z-index: 10;">
           <ul style="list-style-type: none; padding: 0; position: relative; z-index: 10;">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="block-size: 3%; display: block;">
+          <center>
+            <i>Learn why</i><br>⬇
+        </center>
           <defs>
               <filter id="gooey">
                   <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur"/>
@@ -874,8 +877,6 @@ body, body div, body span, body p, body a, body button, body input, body select,
               </filter>
           </defs>
       </svg>
-  </ul>
-  </ul>
 </section>
       </section>
   
@@ -885,7 +886,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
         <ul style="list-style-type: none; padding: 0; position: relative; z-index: 10;">
 
       <div class="mRNA-widget-container">
-        <h2 style="text-align: left; color: #000000; font-family: Helvetica Neue, Helvetica, Roboto, sans-serif !important; z-index: 10; position: relative;"><bold><b>Applications</b></bold></h2>
+        <h2 style="text-align: start; color: #000000; font-family: Helvetica Neue, Helvetica, Roboto, sans-serif !important; z-index: 10; position: relative;"><bold><b>Applications</b></bold></h2>
         </div>
         <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
           <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #009586; border-radius: 50%; margin-inline-end: 15px;"></span>
@@ -923,6 +924,67 @@ body, body div, body span, body p, body a, body button, body input, body select,
       </svg>
     </section></ul></ul>
 
+    <ol style="font-family: Arial, sans-serif; text-align: center; margin: 0 auto; padding: 20px 20px; background-color: black; color: white; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
+      <div style="font-size: 22px; font-weight: bold;">
+      <b>Our minimum requirements:</b></div>
+      <ol style="font-family: Arial, sans-serif; text-align: start; max-inline-size: 800px; margin: 0 auto; padding: 20px; background-color: black; color: white; border-radius: 5px; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
+        <li style="padding: 10px 0; margin-block-end: 15px;">
+          The polygenic score must perform better than all other scores available for that phenotype. If we don't have the absolute best score, we don't offer it.
+      </li>
+        <li style="padding: 10px 0; margin-block-end: 15px;">
+            The polygenic score should demonstrate non-negligible predictive power in a sample different from the same in which the polygenic score was derived.
+        </li>
+        <li style="padding: 10px 0; margin-block-end: 15px;">
+            The polygenic score should demonstrate an improvement in risk prediction over an existing model if assessing healthy individuals. For example, a polygenic score which predicts heart disease wouldn’t be as useful if all it only predicts obesity, which can be observed directly.
+        </li>
+        <li style="padding: 10px 0; margin-block-end: 15px;">
+            The polygenic score should be evaluated in multiple ancestry groups.
+        </li>
+        <li style="padding: 10px 0; margin-block-end: 15px;">
+            The polygenic score must be sourced from data generated with controls, such as geographical allelic patterns, the genotyping array, or age.
+        </li>
+    </ol>
+  </ol>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; margin-bottom: 20px;">
+      <h2 style="font-size: 24px !important; font-weight: bold !important; margin-bottom: 10px !important; text-align: center;">Our commitment to accessibility & equity</h2>
+      <ul style="list-style-type: disc !important; padding-left: 40px !important; width: 60%; text-align: left;">
+          <li>Ensuring our services are available to everyone, irrespective of their socioeconomic background.</li>
+          <li>Actively working to reduce health disparities by offering free genetic testing.</li>
+          <li>Check if your zip code or income makes you eligible for free genetic analysis.</li>
+          <li>You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address.</li>
+      </ul>
+  </div>  
+
+  <div class="container-wrapper">
+    <div class="main-container">
+        <!-- Zip Code Form -->
+        <div class="main-container-zip" style="clear: both !important;">
+            <form id="zipcodeForm" role="form">
+                <input type="text" id="zipcodeInput" placeholder="Enter Zip Code" maxlength="5" aria-describedby="message" required>
+                <button type="submit" id="checkButton">Check Eligibility</button>
+            </form>
+            <div id="message" role="status" aria-live="polite"></div>
+            <div id="loading" aria-hidden="true"><img src="/loading.gif" alt="Loading..."></div>
+        </div>
+
+        <!-- Eligibility Form -->
+        <div class="main-container-eligibility" style="clear: both !important;">
+            <form id="eligibilityForm" role="form">
+                <input type="number" id="incomeInput" placeholder="Enter Income" required>
+                <div class="slider-container">
+                    <label for="familySizeInput">Family Size: <span id="familySizeLabel">1</span></label>
+                    <input type="range" id="familySizeInput" min="1" max="5" step="1" value="1">
+                </div>
+                <button type="submit" id="eligibilityButton">Check Eligibility</button>
+            </form>
+            <div id="eligibilityMessage" role="status" aria-live="polite"></div>
+        </div>
+
+    </div>
+</div>
+
+
 
       <title>PolyVar Bio</title>
       <div data-mRNA-type="footer" data-mRNA-id="208" class="mRNA mRNA-208 mRNA-location-footer" style="block-size: 0.01px !important; max-block-size: 0.01px !important;">
@@ -936,7 +998,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
                                     <div class="mRNA-widget-wrap mRNA-element-populated">
                                         <div class="mRNA-element mRNA-element-54ca7f5d mRNA-widget mRNA-widget-text-editor" data-id="mRNAated" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="mRNA-widget-container">
-                          <p><del class="thin-strikethrough">Genetic</del> <i>Genomic</i> testing; <b>personalized, precise.</b></p>
+                          <p><del class="thin-strikethrough">Genetic</del> <i>Genomic </i>testing: <b>personalized, precise.</b></p>
                         </div>
                       </div>
                       <div class="mRNA-element mRNA-element-18aa059d mRNA-widget mRNA-widget-text-editor" data-id="mRNAated" data-element_type="widget" data-widget_type="text-editor.default">
@@ -948,7 +1010,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
                       </div>
                     </div>
                   </div>
-                  <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-bd1409e" data-id="mRNAated" data-element_type="column" style="height: 0% !important;">
+                  <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-bd1409e" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
                     <div class="mRNA-widget-wrap mRNA-element-populated">
                         <div class="mRNA-element mRNA-element-34794a23 mRNA-widget mRNA-widget-heading" data-id="mRNAated" data-element_type="widget" data-widget_type="heading.default">
                             <div class="mRNA-widget-container">
@@ -957,7 +1019,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
                     </div>
                 </div>
                 
-                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-1322f49" data-id="mRNAated" data-element_type="column" style="height: 0% !important;">
+                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-1322f49" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
                     <div class="mRNA-widget-wrap mRNA-element-populated">
                         <div class="mRNA-element mRNA-element-95515fe mRNA-icon-list--layout-traditional mRNA-list-item-link-full_width mRNA-widget mRNA-widget-icon-list" data-id="mRNAated" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="mRNA-widget-container">
@@ -965,10 +1027,10 @@ body, body div, body span, body p, body a, body button, body input, body select,
                         </div>
                     </div>
                 </div>
-                                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element" data-id="mRNAated" data-element_type="column" style="height: 0% !important;">
+                                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
                 </div>
                 
-                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-4e92b033" data-id="mRNAated" data-element_type="column" style="height: 0% !important;">
+                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-4e92b033" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
                     <div class="mRNA-widget-wrap mRNA-element-populated">
                         <div class="mRNA-element mRNA-element-7afb2364 mRNA-widget mRNA-widget-heading" data-id="mRNAated" data-element_type="widget" data-widget_type="heading.default">
                             <div class="mRNA-widget-container">
@@ -997,6 +1059,118 @@ body, body div, body span, body p, body a, body button, body input, body select,
     </div>
   </div>
 </div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+// Update label when slider is moved
+document.getElementById("familySizeInput").addEventListener('input', function(e) {
+  document.getElementById("familySizeLabel").textContent = e.target.value;
+});
+
+// Check eligibility on form submission
+document.getElementById("eligibilityForm").addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent form submission
+  
+  const income = parseFloat(document.getElementById("incomeInput").value);
+  const familySize = parseInt(document.getElementById("familySizeInput").value, 10);
+  let maxIncome = 0;
+
+  switch(familySize) {
+    case 1: maxIncome = 80000; break;
+    case 2: maxIncome = 90000; break;
+    case 3: maxIncome = 100000; break;
+    default: maxIncome = 110000; break;
+  }
+
+  const messageDiv = document.getElementById("eligibilityMessage");
+  if (income <= maxIncome) {
+    messageDiv.textContent = 'You are eligible!';
+    messageDiv.style.color = 'green';
+  } else {
+    messageDiv.textContent = 'Sorry, you are not eligible.';
+    messageDiv.style.color = 'red';
+  }
+});
+});
+</script>
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      let zipCodes = [];
+  
+      fetch('/zipcodedata.txt')
+          .then(response => response.text())
+          .then(data => {
+              zipCodes = data.trim().split('\n').map(z => z.trim());
+          });
+  
+      const zipcodeInput = document.getElementById('zipcodeInput');
+      
+      zipcodeInput.addEventListener('input', function(e) {
+          e.preventDefault();
+  
+          // Only accept numeric characters
+          const value = e.target.value.replace(/[^0-9]/g, '');
+          e.target.value = value;
+
+          if (value.length === 5) {
+              hideMessage(); // Hide previous message when a new 5-digit number is entered
+              showLoading(); // Show loading symbol
+              checkEligibility(value, zipCodes);
+          }
+      });
+
+      zipcodeInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+              e.preventDefault();
+          }
+      });
+  });
+
+  function checkEligibility(zip, zipCodes) {
+      hideLoading();
+      if (zipCodes.includes(zip)) {
+          showMessage("Eligible!", "eligible");
+      } else {
+          showMessage("Ineligible!", "ineligible");
+      }
+  }
+
+  function showMessage(text, className) {
+      const messageBox = document.getElementById('message');
+      messageBox.textContent = text;
+      messageBox.className = className;
+      messageBox.style.display = "block";
+      messageBox.style.opacity = "1";
+      messageBox.style.transform = "scale(1)";
+  }
+  
+  function hideMessage() {
+      const messageBox = document.getElementById('message');
+      messageBox.style.opacity = "0";
+      messageBox.style.transform = "scale(0.9)";
+      setTimeout(() => {
+          messageBox.style.display = 'none';
+      }, 1000);
+  }
+  
+  function showLoading() {
+      const loadingBox = document.getElementById('loading');
+      loadingBox.style.display = "block";
+  }
+  
+  function hideLoading() {
+      const loadingBox = document.getElementById('loading');
+      loadingBox.style.display = "none";
+  }
+  </script>
 </body>
 </html>
 <style>
@@ -1065,22 +1239,54 @@ body, body div, body span, body p, body a, body button, body input, body select,
 <script>
 function forceFontFamily() {
     const allElements = document.querySelectorAll('*');
+
+    const exemptPhrases = [
+        "polygenic predisposition", 
+        "predisposition to intellectual", 
+        "unexplained hyperlipidemia",
+        "cutting-edge insights",
+        "into your patients",
+        "multi-gene",
+        "stroke",
+        "ADHD",
+        "unsolved disease", 
+        "certain mental health conditions.",
+        "non-monogenic",
+        "SNP array testing", 
+        "should be evaluated",
+        "in-depth analysis", 
+        "PolyVar enables", 
+        "height, red hair", 
+        "Genomic ",
+        "personalized, precise",
+        "testing:",
+        "The polygenic score must perform",
+"The polygenic score should demonstrate",
+"The polygenic score must be"
+    ];
+
+    // Helper function to remove content from simple style tags
+    function stripStyleTags(content) {
+        const dummyDiv = document.createElement("div");
+        dummyDiv.innerHTML = content;
+        ["b", "i", "del", "small"].forEach(tag => {
+            const elements = dummyDiv.querySelectorAll(tag);
+            elements.forEach(el => el.outerHTML = el.innerHTML);
+        });
+        return dummyDiv.textContent.toLowerCase();
+    }
+
     for (let elem of allElements) {
-        const textContent = elem.textContent.toLowerCase();
+        const strippedTextContent = stripStyleTags(elem.innerHTML);
 
         // Check for the class exemption
         const hasExemptClass = elem.classList.contains('mRNA-heading-title') || elem.classList.contains('mRNA-size-default');
 
-        // Words to check for exemption
-        const exemptWords = ["precision", "genomics", "integrate", "test", "rare", "neurogenomics", "cardiometabolic"];
-        
         // Check for the text content exemption
-        const hasExemptWords = exemptWords.some(word => textContent.includes(word));
+        const hasExemptPhrases = exemptPhrases.some(phrase => strippedTextContent.includes(phrase.toLowerCase()));
         
-        if (hasExemptClass || hasExemptWords) {
-            if (hasExemptWords) {
-                elem.style.setProperty('font-family', 'Helvetica, sans-serif', 'important');
-            }
+        if (hasExemptClass || hasExemptPhrases) {
+            elem.style.setProperty('font-family', 'Helvetica, sans-serif', 'important');
             continue;
         } else {
             elem.style.setProperty('font-family', '"Monaco", sans-serif', 'important');
@@ -1214,7 +1420,7 @@ function enforceFontDirectlyFromURL() {
         document.head.appendChild(styleElement);
         styleSheet = styleElement.sheet;
         window.enforcedStyleSheet = styleSheet;
-        
+
         // Add @font-face rule directly from the provided URL
         styleSheet.insertRule(`
             @font-face {
@@ -1230,7 +1436,7 @@ function enforceFontDirectlyFromURL() {
 
     // Traverse all nodes using TreeWalker
     const walker = document.createTreeWalker(
-        document.documentElement, 
+        document.documentElement,
         NodeFilter.SHOW_ALL,
         null,
         false
@@ -1326,6 +1532,87 @@ enforceFontOnEverything();
 
 
 <style>
+  .container-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  min-block-size: 70vh;
+  background-color: #f0f0f0;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #f0f0f0;
+}
+
+.main-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.main-container-zip,
+.main-container-eligibility {
+  inline-size: 80%;
+  display: flex;
+  justify-content: space-between; /* Spread elements horizontally */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#zipcodeInput, #incomeInput, #familySizeInput {
+  inline-size: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-block-end: 20px;
+}
+
+#zipcodeInput {
+  margin-inline-end: 10px; /* Add spacing between input boxes */
+}
+
+#checkButton, #eligibilityButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-container {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+#message, #loading, #eligibilityMessage {
+  display: none;
+  margin-block-start: 20px;
+}
+
+.eligible {
+  color: green;
+}
+
+.ineligible {
+  color: red;
+}
+  </style>
+
+<style>
 .animatedGradient1 {
     content: '';
 overflow: hidden;
@@ -1384,8 +1671,10 @@ overflow: hidden;
       50% {
           border-radius: 20% 80%;
       }
-  }
-  </style>
+  
+
+
+</style>
 
 <style>
 .animatedGradient {
@@ -1404,6 +1693,10 @@ overflow: hidden;
     rgb(93, 93, 255) 94%, 
     rgb(0, 0, 0) 98%
 );
+}
+#loading {
+    display: none;
+    margin-block-start: 20px;
 }
 
 .blob:before, .blob:after {
@@ -1461,3 +1754,9 @@ overflow: hidden;
 .mRNA-widget-wrap, .mRNA-element:nth-child(3n) {
   block-size: 50% !important;
 </style>
+
+
+
+
+
+<script></script>
