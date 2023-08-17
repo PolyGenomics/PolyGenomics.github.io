@@ -927,6 +927,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
 
     <ol style="font-family: Arial, sans-serif; text-align: center; margin: 0 auto; padding: 20px 20px; background-color: black; color: white; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
       <div style="font-size: 22px; font-weight: bold;">
+        <b><br>&nbsp;</b>
       <b>Our minimum score requirements:</b></div>
       <ol style="font-family: Arial, sans-serif; text-align: start; max-inline-size: 800px; margin: 0 auto; padding: 20px; background-color: black; color: white; border-radius: 5px; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
         <li style="padding: 10px 0; margin-block-end: 15px;">
@@ -946,8 +947,9 @@ body, body div, body span, body p, body a, body button, body input, body select,
         </li>
     </ol>
   </ol>
-  <div class="animated-gradient-divider"></div>
-
+  <section class="animatedGradient3 blob2">
+</section>
+<div style="background-color:  rgba(181, 255, 223, 0.355);">
     <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; inline-size: 100%; margin-block-end: 20px;">
       <h2 style="font-size: 24px !important; font-weight: bold !important; margin-block-end: 10px !important; text-align: center;">Our commitment to accessibility & equity</h2>
       <ul style="list-style-type: disc !important; padding-inline-start: 40px !important; inline-size: 60%; text-align: start;">
@@ -972,33 +974,31 @@ body, body div, body span, body p, body a, body button, body input, body select,
             </filter>
         </defs>
     </svg>
-</section>
+</section><div style="background-color: #ffffff !important; padding: 3.5%;">
 
+  <!-- Contact Info -->
+  <div style="text-align: center; padding-block-start: 20px; background-color: rgba(41, 255, 162, 0) !important; padding: 20px;">
+      <h2 style="background-color: rgba(41, 255, 162, 0) !important;">
+          <style>
+              h2 b {
+                  font-weight: bold;
+                  background-color: rgba(41, 255, 162, 0) !important;
+              }
+          </style>
+          <black><b style="font-weight: bold; background-color: rgba(41, 255, 162, 0) !important;"><strong><style>h2 b { font-weight: bold; }</style>Learn more</strong></b></black>
+      </h2>
+      <p style="margin: 10px 0;">Reach out to us for any inquiries or questions. We're here to help!</p>
 
-    <!-- Contact Us Today Section -->
-    <div style="background-color: rgba(255, 255, 255, 0); padding: 50px 0; transform: translateY(-10%);">
-        
-      <div style="display: flex; align-items: center; justify-content: center; block-size: 300px; padding-block-start: 50px;">
-          <img src="./images/fastgreen.gif" alt="Smooth CLT" style="max-inline-size: 80%; block-size: auto;">
-      </div>
-      
-      <!-- Contact Info -->
-      <div style="text-align: center; padding-block-start: 20px;">
-        <h2>
-            <style>
-                h2 b {
-                    font-weight: bold;
-                }
-            </style>
-            <black><b style="font-weight: bold;"><strong><style>h2 b { font-weight: bold; }</style>Learn more</strong></b></black>
-        </h2>
-        <p>Reach out to us for any inquiries or questions. We're here to help!</p>
-        
-        <!-- Blue Email Button -->
-        <a href="mailto:polyvarbio@gmail.com?subject=Inquiry" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Get In Touch</a>
-    </div>    
-
+      <!-- Blue Email Button -->
+      <a href="mailto:polyvarbio@gmail.com?subject=Inquiry" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Get In Touch</a>
+  </div>
+  <div style="background-color: rgba(73, 255, 176, 0); padding: 0px 0; transform: translateY(-5%);">
+    <div style="display: flex; align-items: center; justify-content: center; block-size: 300px; padding-block-start: 0px;">
+        <img src="./images/fastgreen.gif" alt="Smooth CLT" style="max-inline-size: 80%; block-size: auto;">
     </div>
+</div>
+</div>
+
 
 
       <title>PolyVar Bio</title>
@@ -1080,10 +1080,6 @@ body, body div, body span, body p, body a, body button, body input, body select,
 <script>
   document.addEventListener('DOMContentLoaded', function() {
 
-// Update label when slider is moved
-document.getElementById("familySizeInput").addEventListener('input', function(e) {
-  document.getElementById("familySizeLabel").textContent = e.target.value;
-});
 
 // Check eligibility on form submission
 document.getElementById("eligibilityForm").addEventListener('submit', function(e) {
@@ -1646,6 +1642,19 @@ enforceFontOnEverything();
   color: red;
 }
   </style>
+<style>
+
+.animatedGradient3 {
+    block-size: 30px; /* Example height */
+      overflow: hidden;
+      background: linear-gradient(
+          to bottom,
+          rgb(0, 0, 0) 0%,
+          rgb(8, 180, 140) 50%,
+          rgba(210, 255, 237, 0.699) 100%
+      );
+  }
+</style>
 
 
 
@@ -1655,16 +1664,16 @@ enforceFontOnEverything();
       overflow: hidden;
       background: linear-gradient(
           to bottom,
-          rgb(255, 255, 255) 0%,
-          rgb(255, 255, 255) 48%,
+          rgba(226, 255, 241, 0) 0%,
+          rgb(192, 255, 226) 48%,
           rgb(8, 180, 140) 50%,
-          rgb(255, 255, 255) 100%
+          rgba(255, 255, 255, 0.699) 100%
       );
   }
   
   .blob2:before, .blob2:after {
-      top: 50%;
-      left: 50%;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
       transform: translate(-50%, -50%);
       content: '';
       position: absolute;
