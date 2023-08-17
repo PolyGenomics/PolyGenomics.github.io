@@ -898,7 +898,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
     </li>
       <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
           <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #000c58; border-radius: 50%; margin-inline-end: 15px;"></span>
-          <strong style="color: #000000;"></strong> <i>Rare diseases <small>with complex presentation</small></i> - Have complex unsolved disease cases with potentially <b>non-monogenic phenotypes</b> like idiopathic intellectual disability, or unexplained hyperlipidemia? Use our analysis to determine if there is a polygenic explanation.
+          <strong style="color: #000000;"></strong> <i>Rare diseases with complex presentation</i> - Have complex unsolved disease cases with potentially <b>non-monogenic phenotypes</b> like idiopathic intellectual disability, or unexplained hyperlipidemia? Use our analysis to determine if there is a polygenic explanation.
       </li>
       <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
         <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #480058; border-radius: 50%; margin-inline-end: 15px;"></span>
@@ -909,7 +909,7 @@ body, body div, body span, body p, body a, body button, body input, body select,
       <strong style="color: #000000;"></strong> <i>Integrate precision medicine into your practice</i> - PolyVar enables you to view the most <b>cutting-edge insights</b> into your patients.
   </li>
   <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
-    <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #880076; border-radius: 50%; margin-inline-end: 15px;"></span>
+    <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #c63bb4; border-radius: 50%; margin-inline-end: 15px;"></span>
     <strong style="color: #000000;"></strong> <i>Insights into your own data</i> - View your predicted polygenic predisposition for height, red hair, ease of skin tanning, and the disease predispositions mentioned above.
     <br>
 </li>
@@ -923,10 +923,11 @@ body, body div, body span, body p, body a, body button, body input, body select,
           </defs>
       </svg>
     </section></ul></ul>
+    <div class="animated-gradient-divider"></div>
 
     <ol style="font-family: Arial, sans-serif; text-align: center; margin: 0 auto; padding: 20px 20px; background-color: black; color: white; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
       <div style="font-size: 22px; font-weight: bold;">
-      <b>Our minimum requirements:</b></div>
+      <b>Our minimum score requirements:</b></div>
       <ol style="font-family: Arial, sans-serif; text-align: start; max-inline-size: 800px; margin: 0 auto; padding: 20px; background-color: black; color: white; border-radius: 5px; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);">
         <li style="padding: 10px 0; margin-block-end: 15px;">
           The polygenic score must perform better than all other scores available for that phenotype. If we don't have the absolute best score, we don't offer it.
@@ -945,45 +946,59 @@ body, body div, body span, body p, body a, body button, body input, body select,
         </li>
     </ol>
   </ol>
+  <div class="animated-gradient-divider"></div>
 
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; margin-bottom: 20px;">
-      <h2 style="font-size: 24px !important; font-weight: bold !important; margin-bottom: 10px !important; text-align: center;">Our commitment to accessibility & equity</h2>
-      <ul style="list-style-type: disc !important; padding-left: 40px !important; width: 60%; text-align: left;">
-          <li>Ensuring our services are available to everyone, irrespective of their socioeconomic background.</li>
-          <li>Actively working to reduce health disparities by offering free genetic testing.</li>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; inline-size: 100%; margin-block-end: 20px;">
+      <h2 style="font-size: 24px !important; font-weight: bold !important; margin-block-end: 10px !important; text-align: center;">Our commitment to accessibility & equity</h2>
+      <ul style="list-style-type: disc !important; padding-inline-start: 40px !important; inline-size: 60%; text-align: start;">
+          <li>We ensure our services are available to everyone, irrespective of their socioeconomic background.</li>
+          <li>We actively working to reduce health disparities by offering free genetic testing.</li>
           <li>Check if your zip code or income makes you eligible for free genetic analysis.</li>
+          <li>Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020.</li>
           <li>You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address.</li>
+          <li>Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020.</li>
+          <li>Income eligibility for free analysis: any household income under $90K.</li>
       </ul>
   </div>  
 
-  <div class="container-wrapper">
-    <div class="main-container">
-        <!-- Zip Code Form -->
-        <div class="main-container-zip" style="clear: both !important;">
-            <form id="zipcodeForm" role="form">
-                <input type="text" id="zipcodeInput" placeholder="Enter Zip Code" maxlength="5" aria-describedby="message" required>
-                <button type="submit" id="checkButton">Check Eligibility</button>
-            </form>
-            <div id="message" role="status" aria-live="polite"></div>
-            <div id="loading" aria-hidden="true"><img src="/loading.gif" alt="Loading..."></div>
-        </div>
 
-        <!-- Eligibility Form -->
-        <div class="main-container-eligibility" style="clear: both !important;">
-            <form id="eligibilityForm" role="form">
-                <input type="number" id="incomeInput" placeholder="Enter Income" required>
-                <div class="slider-container">
-                    <label for="familySizeInput">Family Size: <span id="familySizeLabel">1</span></label>
-                    <input type="range" id="familySizeInput" min="1" max="5" step="1" value="1">
-                </div>
-                <button type="submit" id="eligibilityButton">Check Eligibility</button>
-            </form>
-            <div id="eligibilityMessage" role="status" aria-live="polite"></div>
-        </div>
+  <section class="animatedGradient2 blob2">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="block-size: 100%; display: block;">
+        <defs>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur"/>
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10" result="gooey"/>
+                <feBlend in="SourceGraphic" in2="gooey"/>
+            </filter>
+        </defs>
+    </svg>
+</section>
+
+
+    <!-- Contact Us Today Section -->
+    <div style="background-color: rgba(255, 255, 255, 0); padding: 50px 0; transform: translateY(-10%);">
+        
+      <div style="display: flex; align-items: center; justify-content: center; block-size: 300px; padding-block-start: 50px;">
+          <img src="./images/fastgreen.gif" alt="Smooth CLT" style="max-inline-size: 80%; block-size: auto;">
+      </div>
+      
+      <!-- Contact Info -->
+      <div style="text-align: center; padding-block-start: 20px;">
+        <h2>
+            <style>
+                h2 b {
+                    font-weight: bold;
+                }
+            </style>
+            <black><b style="font-weight: bold;"><strong><style>h2 b { font-weight: bold; }</style>Learn more</strong></b></black>
+        </h2>
+        <p>Reach out to us for any inquiries or questions. We're here to help!</p>
+        
+        <!-- Blue Email Button -->
+        <a href="mailto:polyvarbio@gmail.com?subject=Inquiry" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Get In Touch</a>
+    </div>    
 
     </div>
-</div>
-
 
 
       <title>PolyVar Bio</title>
@@ -1206,7 +1221,7 @@ document.getElementById("eligibilityForm").addEventListener('submit', function(e
 }
 
 
-</style>
+</>
 <style>
   /* Basic Global Style */
   * {
@@ -1249,6 +1264,17 @@ function forceFontFamily() {
         "multi-gene",
         "stroke",
         "ADHD",
+        "Cardiovascular & cardiometabolic illnesses",
+        "Neurogenomics",
+        "Rare diseases",
+        "with complex presentation",
+        "Expand test capabilities",
+        "Integrate precision medicine into your practice",
+        "Insights into your own data",
+        "Ensuring our services are available to everyone, irrespective of their socioeconomic background",
+        "Actively working to reduce health disparities by offering free genetic testing",
+        "Check if your zip code or income makes you eligible for free genetic analysis",
+        "You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address",
         "unsolved disease", 
         "certain mental health conditions.",
         "non-monogenic",
@@ -1257,12 +1283,21 @@ function forceFontFamily() {
         "in-depth analysis", 
         "PolyVar enables", 
         "height, red hair", 
+        "We ensure our services are available to everyone, irrespective of their socioeconomic background",
+        "We actively working to reduce health disparities by offering free genetic testing",
+        "Check if your zip code or income makes you eligible for free genetic analysis",
+        "Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020",
+        "You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address",
+        "Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020",
+        "Income eligibility for free analysis: any household income under $90K",
         "Genomic ",
         "personalized, precise",
+        "Reach out to us for any inquiries or questions. We're here to help!",
+        "in touch",
         "testing:",
         "The polygenic score must perform",
-"The polygenic score should demonstrate",
-"The polygenic score must be"
+        "The polygenic score should demonstrate",
+        "The polygenic score must be"
     ];
 
     // Helper function to remove content from simple style tags
@@ -1543,12 +1578,12 @@ enforceFontOnEverything();
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-block-size: 70vh;
   background-color: #f0f0f0;
 }
 
 .main-container {
-  width: 80%;
+  inline-size: 80%;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -1612,6 +1647,72 @@ enforceFontOnEverything();
 }
   </style>
 
+
+
+<style>
+  .animatedGradient2 {
+    block-size: 30px; /* Example height */
+      overflow: hidden;
+      background: linear-gradient(
+          to bottom,
+          rgb(255, 255, 255) 0%,
+          rgb(255, 255, 255) 48%,
+          rgb(8, 180, 140) 50%,
+          rgb(255, 255, 255) 100%
+      );
+  }
+  
+  .blob2:before, .blob2:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      position: absolute;
+      inline-size: 20px;
+      block-size: 20px;
+      background-color: rgb(115, 255, 243);
+      border-radius: 50%;
+      animation: moveAround1 4s infinite alternate, changeShape1 5s infinite alternate;
+      inset-block-start: 20%;
+      inset-inline-start: 10%;
+      filter: blur(100px);
+      z-index: 0;
+  }
+  
+  .blob2:after {
+      background-color: rgb(255, 71, 209);
+      inset-block-start: 25%;
+      inset-inline-start: 70%;
+      animation-delay: 5s, 4s;
+  }
+  
+  .blob2-content {
+      position: relative;
+      z-index: 200;
+  }
+  
+  @keyframes moveAround1 {
+      0%, 100% {
+          transform: translate(0, 0);
+      }
+      50% {
+          transform: translate(3px, 2px);
+      }
+  }
+  
+  @keyframes changeShape1 { 
+      0%, 100% {
+          border-radius: 50%;
+      }
+      50% {
+          border-radius: 20% 80%;
+      }
+  }
+  </style>
+  
+  
+
+
 <style>
 .animatedGradient1 {
     content: '';
@@ -1672,8 +1773,6 @@ overflow: hidden;
           border-radius: 20% 80%;
       }
   
-
-
 </style>
 
 <style>
