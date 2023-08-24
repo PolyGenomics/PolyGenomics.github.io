@@ -1,1 +1,242 @@
-html
+  <div class="lasso-container">
+    <h1 class="lasso-title"><b>How do we decide which genes to use?</b></h1>
+    <h4 class="lasso-subtitle">As we get more data, we are able to figure out which genes are important.<br><br><br></h4>
+    <div class="lasso-grid"></div>
+    <div class="lasso-sample-counter">
+        Sample Size: 0
+    </div>
+    <div class="lasso-control-panel">
+        <button class="lasso-start-button">Start Visualization</button>
+        <button class="lasso-reset-button">Reset Visualization</button>            
+    </div>
+    <style>
+		.lasso-container {
+		border: 3px solid #3498db !important;
+		padding: 30px !important;
+		border-radius: 15px !important;
+		justify-content: center !important;
+		align-items: center !important;
+    font-family: helvetica;
+		position: relative !important;
+		background-color: white !important;
+		margin: 0 auto !important; /* Center the container if it doesn't take full width */
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) !important;
+		inline-size: 100% !important; /* Full width */
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		inline-size: 100vw !important;
+		flex: 1 !important;
+		position: absolute !important;
+		inset-inline-start: 0 !important;
+		inset-inline-end: 0 !important;
+		grid-column: 1 / -1 !important;
+		max-inline-size: none !important;
+		float: none !important;
+		overflow: hidden !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		inline-size: 100vw !important;
+		flex: 1 !important;
+		position: absolute !important;
+		inset-inline-start: 0 !important;
+		inset-inline-end: 0 !important;
+		grid-column: 1 / -1 !important;
+		max-inline-size: none !important;
+		float: none !important;
+		overflow: hidden !important;
+		z-index: 999999 !important;
+		transform: scale(1) !important;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+	}
+
+	.lasso-container {
+    + * {
+        margin-block-start: 50px !important;
+          font-family: helvetica;
+
+    }
+    
+    .parent-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .parent-container {
+        display: grid !important;
+        grid-template-rows: auto 1fr !important;
+    }
+
+    .clear-float {
+        clear: both !important;
+          font-family: helvetica;
+
+    }
+
+    .some-other-elements {
+        position: relative !important;
+          font-family: helvetica;
+
+    }
+
+    const containerHeight = document.querySelector('.lasso-container').offsetHeight;
+    document.querySelector('.lasso-container + *').style.marginTop = containerHeight + 'px';
+
+
+    .spacer {
+    }
+
+    min-block-size: 400px !important;
+
+    padding-block-end: 50px !important;
+        font-family: helvetica;
+
+}
+
+        .lasso-title, .lasso-subtitle {
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+              font-family: helvetica;
+
+        }
+
+        .lasso-grid {
+            display: grid !important;
+            grid-template-columns: repeat(20, 1fr) !important;
+            gap: 5px !important;
+            justify-content: center !important;
+            align-items: center !important;
+            position: relative !important;
+              font-family: helvetica;
+
+            inline-size: 80% !important;
+            margin: 0 auto !important;
+        }
+
+        .lasso-circle {
+            inline-size: 30px !important;
+            block-size: 30px !important;
+            border-radius: 50% !important;
+            display: flex !important;
+              font-family: helvetica;
+
+            justify-content: center !important;
+            align-items: center !important;
+            font-weight: bold !important;
+            transition: all 3s !important;
+        }
+
+        .lassoA { background-color: teal !important; }
+        .lassoC { background-color: purple !important; }
+        .lassoT { background-color: dodgerblue !important; }
+        .lassoG { background-color: deeppink !important; }
+
+        .goldenGlow {
+            box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700 !important;
+        }
+
+        .lasso-control-panel {
+            margin-block-start: 20px !important;
+              font-family: helvetica;
+
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+        }
+
+        .lasso-start-button, .lasso-reset-button {
+            padding: 10px 20px !important;
+            background-color: #3498db !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 5px !important;
+              font-family: helvetica;
+
+            cursor: pointer !important;
+            margin-inline-end: 10px !important;
+            transition: background-color 0.3s !important;
+        }
+
+        .lasso-start-button:hover, .lasso-reset-button:hover {
+            background-color: #2c82c9 !important;
+        }
+
+        .lasso-sample-counter {
+            font-size: 20px !important;
+            justify-content: center !important;
+              font-family: helvetica;
+
+            align-items: center !important;
+            position: relative !important;
+            margin-block-start: 20px !important;
+            text-align: center !important;
+        }
+    </style>
+
+    <script>
+        const letters = ['A', 'C', 'T', 'G'];
+        const container = document.querySelector(".lasso-grid");
+        const sampleSizeDisplay = document.querySelector(".lasso-sample-counter");
+        let targetSampleSize;
+        if (Math.random() < 0.6) {
+            targetSampleSize = Math.floor(Math.random() * (1000000 - 35000)) + 35000;
+        } else {
+            targetSampleSize = Math.floor(Math.random() * (3000200 - 1000000)) + 1000000;
+        }
+
+        for (let i = 0; i < 200; i++) {
+            const letter = letters[Math.floor(Math.random() * 4)];
+            const feature = document.createElement('div');
+            feature.className = 'lasso-circle lasso' + letter;
+            feature.innerText = letter;
+            container.appendChild(feature);
+        }
+
+        document.querySelector(".lasso-start-button").onclick = function() {
+            const features = document.querySelectorAll(".lasso-circle");
+            features.forEach((feature, index) => {
+                setTimeout(() => {
+                    const shrinkValue = Math.random();
+                    const scaleValue = shrinkValue > 0.8 ? 0.5 + (Math.random() * 0.7) : 0;
+                    feature.style.transform = 'scale(' + scaleValue + ')';
+                    feature.style.fontSize = (scaleValue * 15) + 'px';
+                }, index * 15);
+            });
+
+            setTimeout(() => {
+                features.forEach((feature) => {
+                    if (feature.style.transform != 'scale(0)') {
+                        feature.classList.add('goldenGlow');
+                    }
+                });
+            }, 3100);
+
+            let currentSampleSize = 0;
+            const duration = 3100;
+            const chunks = 50;
+            const chunkSize = targetSampleSize / chunks;
+            const intervalDuration = duration / chunks;
+
+            const sampleSizeInterval = setInterval(() => {
+                currentSampleSize += chunkSize;
+                if (currentSampleSize >= targetSampleSize) {
+                    currentSampleSize = targetSampleSize;
+                    clearInterval(sampleSizeInterval);
+                }
+                sampleSizeDisplay.innerText = "Sample Size: " + Math.round(currentSampleSize).toLocaleString();
+            }, intervalDuration);
+        }
+
+        document.querySelector(".lasso-reset-button").onclick = function() {
+            const features = document.querySelectorAll(".lasso-circle");
+            features.forEach((feature) => {
+                feature.style.transform = 'scale(1)';
+                feature.style.fontSize = '15px';
+                feature.classList.remove('goldenGlow');
+            });
+            sampleSizeDisplay.innerText = "Sample Size: 0";
+        }
+    </script>
+</div>
