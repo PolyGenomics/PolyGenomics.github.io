@@ -1,138 +1,2317 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+<title>PolyVar Bio</title>
+<html lang="en-US">
+  <style>
+/* Universal selector for base specificity */
+body, body * {
+    font-family: 'Monaco', 'Futura', Arial, sans-serif !important;
+}
+
+html body *,
+html body *::before,
+html body *::after {
+    font-family: 'Monaco', 'Futura', Arial, sans-serif !important;
+}
+
+html, body, 
+html *:not(:root),
+body *:not(:root),
+html body *::before,
+html body *::after,
+h1, h2, h3, h4, h5, h6,
+p, a, span, div, img, svg, 
+button, input, textarea, select, 
+table, tr, td, th, tbody, tfoot, thead,
+ul, ol, li, dl, dt, dd,
+blockquote, q, cite, 
+iframe, object, embed, 
+form, label, legend, fieldset,
+audio, video, canvas, progress, meter,
+details, summary, command, datalist, keygen,
+output, article, aside, figure, figcaption, 
+footer, header, hgroup, menu, nav, section, mark,
+time, ruby, rt, rp, bdi, wbr,
+abbr, address, b, br, cite, code, 
+del, dfn, em, i, ins, kbd, 
+pre, samp, small, strong, sub, sup,
+var, acronym, bdo, big, center, font, 
+strike, tt,
+html body *:not(:root) *::before,
+html body *:not(:root) *::after,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
+p *, a *, span *, div *, img *, svg *, 
+button *, input *, textarea *, select *, 
+table *, tr *, td *, th *, tbody *, tfoot *, thead *,
+ul *, ol *, li *, dl *, dt *, dd *,
+blockquote *, q *, cite *, 
+iframe *, object *, embed *, 
+form *, label *, legend *, fieldset *,
+audio *, video *, canvas *, progress *, meter *,
+details *, summary *, command *, datalist *, keygen *,
+output *, article *, aside *, figure *, figcaption *, 
+footer *, header *, hgroup *, menu *, nav *, section *, mark *,
+time *, ruby *, rt *, rp *, bdi *, wbr *,
+abbr *, address *, b *, br *, cite *, code *, 
+del *, dfn *, em *, i *, ins *, kbd *, 
+pre *, samp *, small *, strong *, sub *, sup *,
+var *, acronym *, bdo *, big *, center *, font *, 
+strike *, tt * {
+    font-family: 'Monaco', 'Futura', Arial, sans-serif !important;
+}
+
+/* Increased specificity for provided classes */
+body .skip-link, body .screen-reader-text, body .mRNA, body .mRNA-212, 
+body .mRNA-location-header, body .mRNA-section, body .mRNA-top-section, 
+body .mRNA-element, body .mRNA-element-7a6682f4, body .mRNA-section-boxed, 
+body .mRNA-section-height-default, body .mRNA-container, body .mRNA-column-gap-default,
+body .mRNA-column, body .mRNA-col-50, body .mRNA-top-column, body .mRNA-element-3f26a980, 
+body .mRNA-widget-wrap, body .mRNA-element-populated, body .mRNA-element-375c3b8, 
+body .mRNA-nav-menu__align-right, body .mRNA-nav-menu--dropdown-mobile, body .mRNA-nav-menu--stretch, 
+body .mRNA-nav-menu__text-align-aside, body .mRNA-nav-menu--toggle, body .mRNA-nav-menu--burger, 
+body .mRNA-widget, body .mRNA-widget-nav-menu, body .mRNA-widget-container, 
+body .mRNA-nav-menu--main, body .mRNA-nav-menu__container, body .mRNA-nav-menu--layout-horizontal,
+body .mRNA-nav-menu, body .menu-item, body .menu-item-type-post_type, body .menu-item-object-page, 
+body .menu-item-has-children, body .mRNA-item, body .has-submenu, body .sub-arrow, body .fas, 
+body .fa-caret-down, body .mRNA-2852, body .mRNA-element-2ff95246, body .DNA, body .mRNA-section-height-min-height, 
+body .mRNA-section-items-middle, body .mRNA-background-video-container, body .mRNA-background-video-hosted, 
+body .mRNA-html5-video, body .mRNA-background-overlay, body .mRNA-col-100, body .mRNA-element-eda8b61, 
+body .mRNA-element-1897d903, body .animated-fast, body .mRNA-widget-heading, body .animated, 
+body .fadeIn, body .mRNA-heading-title, body .mRNA-size-default, body .mRNA-element-60bac05, 
+body .mRNA-widget-text-editor, body .mRNA-element-195791d9, body .mRNA-widget-button, 
+body .mRNA-button-wrapper, body .mRNA-button-link, body .mRNA-button, body .mRNA-size-sm, 
+body .mRNA-button-content-wrapper, body .mRNA-button-icon, body .mRNA-align-icon-right, 
+body .mRNA-button-text {
+    font-family: 'Monaco' !important;
+}
+
+/* Targeting data attributes */
+body [data-mRNA-type="header"], body [data-mRNA-type="wp-page"],
+body [data-mRNA-id="212"], body [data-mRNA-id="2852"],
+body [data-particle_enable="false"], body [data-particle-mobile-disabled="false"],
+body [data-id="mRNAated"],
+body [data-element_type="section"], body [data-element_type="column"], body [data-element_type="widget"],
+body [data-settings],
+body [data-widget_type="nav-menu.default"], body [data-widget_type="heading.default"], 
+body [data-widget_type="text-editor.default"], body [data-widget_type="button.default"],
+body [data-smartmenus-id="16772983981068403"] {
+    font-family: 'Monaco' !important;
+}
+
+body, body div, body span, body p, body a, body button, body input, body select, body textarea, body *[class*=""], body *[id*=""] {
+    font-family: 'Monaco' !important;
+}
+    /* Basic Global Style */
+    * {
+        font-family: "Monaco", sans-serif !important;
+    }
+
+    /* Target known tags */
+    body, div, span, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
+        font-family: "Monaco", sans-serif !important;
+    }
+
+    /* Handle iframe content (assuming they can be accessed) */
+    iframe::content body, iframe::content div, iframe::content p {
+        font-family: "Monaco", sans-serif !important;
+    }
+</style>
+<head>
+  <title>PolyVar Bio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PolyVar</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="../images/borderwhitebackgroundlogo.ico" />
+
+    <!-- Font and Icon Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Keyamoon/IcoMoon-Free@4.0.3/Font/icomoon/icomoon.css">
+
+    <style>
+        /* Default Styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding-inline-start: 100px;
+        }
+
+        /* Branding Color */
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #003366;
+            --tertiary-color: #66B2FF;
+        }
+
+        .sec1 {
+            background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        * {
+          font-family: "Monaco", sans-serif;
+
+          }
+
+          body {
+            font-family: "Monaco", sans-serif;
+
+          }
+
+          html {
+            font-family: "Monaco", sans-serif;
+
+          }
+
+          [data*=""] {
+            font-family: sans-serif !important;
+          }
+
+          #body-id {
+            font-family: "Monaco", sans-serif;
+
+          }
+
+        .tilz {
+          font-family: "Monaco", sans-serif;
+
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: white;
+            padding: 50px;
+        }
+        .thin-strikethrough {
+          position: relative;
+        }
+
+        .thin-strikethrough::before {
+          content: "";
+          position: absolute;
+          inset-inline-start: 0;
+          inset-block-start: 50%;
+          inline-size: 100%;
+          block-size: 1px;
+          background-color: black; /* You can adjust the color */
+          transform: translateY(-50%);
+        }
+
+
+        .elem1 {
+            margin-block-end: 30px;
+            text-align: start;
+            color: white;
+        }
+
+        .widget-hd,
+        .widget-tx {
+            opacity: 0;
+        }
+
+        .elem1.fadeIn {
+            opacity: 1;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .list-icon li:before {
+            content: '\2022';
+            margin-inline-end: 10px;
+            color: white;
+        }
+
+        .contain1 {
+            max-inline-size: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .col1 {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+        }
+
+        @media only screen and (max-inline-size: 768px) {
+            .tilz {
+                font-size: 24px;
+            }
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            block-size: 100vh;
+            margin-block-start: -100px;
+        }
+
+        .card {
+            position: relative;
+            inline-size: 300px;
+            block-size: 450px;
+            margin: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+        }
+
+        .card h2c, .card pc {
+          font-family: "Monaco", sans-serif;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.3);
+        }
+
+        .card h2c {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .card pc {
+            position: absolute;
+            inset-block-start: 40px;
+            inset-inline-start: 20px;
+            inset-inline-end: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        
+
+        .card h2c {
+  font-family: "Monaco", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007BFF;  /* Main Blue Color */
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card pc {
+  position: absolute;
+  inset-block-start: 40px;
+  inset-inline-start: 20px;
+  inset-inline-end: 20px;
+  font-weight: normal;
+  font-family: "Monaco", sans-serif;
+  font-size: 16px;
+  color: #007BFF; /* Main Blue Color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 128, 0.3); /* Adjusted for blue shade */
+  margin: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+
+<body>
+</html>
+  </style>
+
+  <html lang="en-US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+      <title>PolyVar</title>
+      <link rel="shortcut icon" type="image/ico" href="../images/borderwhitebackgroundlogo.ico"/>
+      <link rel="stylesheet" id="custom-css" href="../css/css2.css">
+      <link rel="canonical" href="./PolyVar.org/">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="PolyVar | The Polygenic Standard">
+      <meta property="og:url" content="./PolyVar.org/">
+      <meta property="og:site_name" content="PolyVar">
+      <meta property="article:modified_time" content="2022-12-05T12:34:41+00:00">
+      <meta name="twitter:card" content="summary_large_image">
+      <script type="application/ld+json" class="yoast-schema-graph">
+        {
+          "@context": "https://schema.org",
+          "@graph": [{
+            "@type": "WebPage",
+            "@id": "./PolyVar.org/",
+            "url": "./PolyVar.org/",
+            "name": "PolyVar, Advanced Genetic Testing",
+            "isPartOf": {
+              "@id": "./PolyVar.org/"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [{
+              "@type": "ReadAction",
+              "target": ["./PolyVar.org/"]
+            }]
+          }, 
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "../images/colorpolyvarlogo.png",
+            "url": "../images/colorpolyvarlogo.png",
+            "contentUrl": "../images/colorpolyvarlogo.png",
+            "width": 60,
+            "height": 48
+          }, 
+          {
+            "@type": "BreadcrumbList",
+            "@id": "./PolyVar.org/#breadcrumb",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home"
+            }]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "./PolyVar.org/#website",
+            "url": "./PolyVar.org/",
+            "name": "PolyVar",
+            "description": "Innovative genetic testing solutions",
+            "publisher": {
+              "@id": "./PolyVar.org/#organization"
+            },
+            "potentialAction": [{
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "./PolyVar.org/?s={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }],
+            "inLanguage": "en-US"
+          }, 
+          {
+            "@type": "Organization",
+            "@id": "./PolyVar.org/#organization",
+            "name": "PolyVar",
+            "url": "./PolyVar.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "width": 2560,
+              "height": 304,
+              "caption": "PolyVar"
+            }
+          }]
+        }
+      </script>
+      <style id="polyvar-global-styles">
+
+        body {
+            --primary-color: #0693e3;
+            --secondary-color: #8ed1fc;
+            --neutral-dark: #000000;
+            --neutral-light: #abb8c3;
+            --background-color: #ffffff;
+            --error-color: #cf2e2e;
+            --warning-color: #ff6900;
+            --success-color: #00d084;
+            --primary-gradient: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --font-size-small: 13px;
+            --font-size-medium: 20px;
+            --font-size-large: 36px;
+            --font-size-xlarge: 42px;
+            --spacing-small: 0.44rem;
+            --spacing-medium: 1rem;
+            --spacing-large: 3.38rem;
+            --spacing-xlarge: 5.06rem;
+        }
+    
+        .flex-layout {
+            display: flex;
+            gap: 0.5em;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .flex-layout>* {
+            margin: 0;
+        }
+    
+        .column-flex {
+            gap: 2em;
+        }
+    
+        body .layout-flow {
+            float: inline-start;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+    
+        body .layout-constrained {
+            float: inline-end;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+    
+        .align-center {
+            margin-inline-start: auto !important;
+            margin-inline-end: auto !important;
+        }
+    
+        .align-wide {
+            max-inline-size: var(--primary-color);
+        }
+    
+        /* Color classes */
+    
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+    
+        .text-secondary {
+            color: var(--secondary-color) !important;
+        }
+    
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+    
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+    
+        .border-primary {
+            border-color: var(--primary-color) !important;
+        }
+    
+        .border-secondary {
+            border-color: var(--secondary-color) !important;
+        }
+    
+        /* Gradient classes */
+    
+        .bg-gradient-primary {
+            background: var(--primary-gradient) !important;
+        }
+    
+        /* SEO and Usability enhancements */
+        
+        body {
+            font-size: var(--font-size-medium);
+            color: var(--neutral-dark);
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
+    
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+    
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+    </style>
+    
+    <style type="text/css">
+      /* Main Styling */
+      .progress-wrap {
+        inset-block-end: 50px;
+        block-size: 46px;
+        inline-size: 46px;
+        border-radius: 46px;
+        background-color: #ffffff;
+        box-shadow: inset 0 0 0 2px #007BFF; /* Blue branding */
+      }
+    
+      .progress-wrap.btn-left-side {
+        inset-inline-start: 50px;
+      }
+    
+      .progress-wrap.btn-right-side {
+        inset-inline-end: 50px;
+      }
+    
+      .progress-wrap::after {
+        inline-size: 46px;
+        block-size: 46px;
+        color: #007BFF; /* Blue branding */
+        font-size: 24px;
+        content: '\e900';
+        line-height: 46px;
+      }
+    
+      .progress-wrap:hover::after,
+      .progress-wrap svg.progress-circle path {
+        color: #007BFF; /* Blue branding */
+        stroke: #007BFF; /* Blue branding */
+        stroke-width: 2px;
+      }
+    
+      /* Additional Styles */
+      .tab-boder .mRNA-accordion-item,
+      .popup-close-btn .dialog-close-button.dialog-lightbox-close-button {
+        border: 2px solid #007BFF; /* Blue branding */
+        border-radius: 100%;
+        padding: 2px;
+      }
+    
+      .list-before-icon ul li:before {
+        content: "\00BB";
+        font-size: 30px;
+        font-weight: 500;
+        color: #007BFF; /* Blue branding */
+        padding-inline-end: 10px;
+        margin-inline-start: -25px;
+      }
+    
+      .list-before-icon ul li {
+        list-style: none;
+      }
+    
+      .content-box img, 
+      .advance-box img {
+        margin-block-start: 15px;
+      }
+    
+      /* Timeline Styles */
+      .eael-content-timeline-content img,
+      .eael-horizontal-timeline-item__card-inner img {
+        margin: 0px !important;
+      }
+    
+      /* Responsive Media Queries */
+      @media screen and (max-inline-size: 768px) {
+        /* Adjustments for medium-sized devices */
+        span.timeline-img {
+          inset-inline-start: 25px !important;
+        }
+        h4.eael-timeline-title a .timeline-custom-title {
+          text-align: start !important;
+          margin-inline-start: 10%;
+        }
+        .timeline-custom-description {
+          text-align: start;
+        }
+      }
+    
+      @media screen and (max-inline-size: 425px) {
+        /* Adjustments for small devices */
+        h4.eael-timeline-title a .timeline-custom-title {
+          margin-inline-start: 20%;
+        }
+      }
+    </style>
+    
+    <script type="text/javascript" data-cfasync="false">
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = "//widget.usersnap.com/load/8d88e709-5271-4d8a-abc9-e35744d68c93";
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+      })();
+    </script>
+    
+    <meta name="generator" content="mRNA 3.11.0; features: e_dom_optimization, e_optimized_assets_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+    </head>
+    
 
 
 
-<div class="overlay"></div>
-<div class="stars" aria-hidden="true"></div>
-<div class="starts2" aria-hidden="true"></div>
-<div class="stars3" aria-hidden="true"></div>
-<main class="main">
-	<section class="contact">
-		<h1 class="title">Come back in 24 hours!</h1>
-		<h2 class="sub-title">Site Under Construction. <br><small></small>The GeGnomes are busy building this webpage.</small></h2>
-	</section>
-</main>
+
+
+  <body class="home page-template-default page page-id-2852 wp-custom-logo theplus-preloader mRNA-default mRNA-template-full-width mRNA-kit-186 mRNA-page mRNA-page-2852 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit" data-mRNA-device-mode="desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-dark-grayscale">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr>
+            <fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg>
+            <fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-grayscale">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0 1"></fefuncr>
+            <fefuncg type="table" tableValues="0 1"></fefuncg>
+            <fefuncb type="table" tableValues="0 1"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-purple-yellow">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr>
+            <fefuncg type="table" tableValues="0 1"></fefuncg>
+            <fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-blue-red">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0 1"></fefuncr>
+            <fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg>
+            <fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-midnight">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0 0"></fefuncr>
+            <fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg>
+            <fefuncb type="table" tableValues="0 1"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-magenta-yellow">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr>
+            <fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg>
+            <fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-purple-green">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr>
+            <fefuncg type="table" tableValues="0 1"></fefuncg>
+            <fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; inset-inline-start: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-blue-orange">
+          <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
+          <fecomponenttransfer color-interpolation-filters="sRGB">
+            <fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr>
+            <fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg>
+            <fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb>
+            <fefunca type="table" tableValues="1 1"></fefunca>
+          </fecomponenttransfer>
+          <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+        </filter>
+      </defs>
+    </svg>
+    <a class="skip-link screen-reader-text" href="./PolyVar.org/#content"> Skip to content</a>
+    <div data-mRNA-type="header" data-mRNA-id="212" class="mRNA mRNA-212 mRNA-location-header">
+      <section data-particle_enable="false" data-particle-mobile-disabled="false" class="mRNA-section mRNA-top-section mRNA-element mRNA-element-7a6682f4 mRNA-section-boxed mRNA-section-height-default mRNA-section-height-default" data-id="mRNAated" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="mRNA-container mRNA-column-gap-default">
+          <div>
+            <a href="https://PolyVar.org"><img src="../images/colorpolyvarlogo.png" alt="Logo" style="inline-size: 90px; block-size: 50px; margin-inline-start: 10px; display: block; margin-inline-end: 50px; margin-block-start: 5px;"></a>
+        </div>
+          <div class="mRNA-column mRNA-col-50 mRNA-top-column mRNA-element mRNA-element-3f26a980" data-id="mRNAated" data-element_type="column">
+            <div class="mRNA-widget-wrap mRNA-element-populated">
+              <div class="mRNA-element mRNA-element-375c3b8 mRNA-nav-menu__align-right mRNA-nav-menu--dropdown-mobile mRNA-nav-menu--stretch mRNA-nav-menu__text-align-aside mRNA-nav-menu--toggle mRNA-nav-menu--burger mRNA-widget mRNA-widget-nav-menu" data-id="mRNAated" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+                <div class="mRNA-widget-container">
+                  <nav class="mRNA-nav-menu--main mRNA-nav-menu__container mRNA-nav-menu--layout-horizontal e--pointer-none">
+                    <ul id="menu-1-375c3b8" class="mRNA-nav-menu" data-smartmenus-id="16772983981068403">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-299">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                          <a href="https://PolyVar.org/for-individuals/" class="mRNA-item" tabindex="-1">Individual Testing</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                          <a href="https://PolyVar.org/for-clinicians/" class="mRNA-item" tabindex="-1">Clinical Testing</a>
+                        </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303">
+                        <a href="https://PolyVar.org/contact/" class="mRNA-item" tabindex="-1">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+	<div data-mRNA-type="wp-page" data-mRNA-id="2852" class="mRNA mRNA-2852">
+		<section class="DNA" data-particle_enable="false" data-particle-mobile-disabled="false" data-id="mRNAated" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+			<div id="dnaMatrixEmbeddableWindow" style="inline-size:100%; block-size:700px; overflow:hidden; position:absolute; inset-block-start:0; inset-inline-start:0; background-color:black; z-index:0;">
+				<canvas id="dnaMatrixEmbeddableCanvas" style="position:absolute; inset-block-start:0; inset-inline-start:0;"></canvas>
+			</div>
+			<div class="mRNA-background-video-container">
+				<video class="mRNA-background-video-hosted mRNA-html5-video" autoplay="" muted="" playsinline="" loop="" src="" style="inline-size: 1920px; block-size: 1080px;"></video>
+			</div>
+			<div class="mRNA-background-overlay"></div>
+			<div class="mRNA-container mRNA-column-gap-default">
+				<div class="mRNA-column mRNA-col-100 mRNA-top-column mRNA-element mRNA-element-eda8b61" data-id="mRNAated" data-element_type="column">
+					<div class="mRNA-widget-wrap mRNA-element-populated">
+						<div class="mRNA-element mRNA-element-1897d903 animated-fast mRNA-widget mRNA-widget-heading animated fadeIn" data-id="mRNAated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+							<div class="mRNA-widget-container">
+								<div>
+									<h1 class="mRNA-heading-title mRNA-size-default" style="font-family: Monaco, sans-serif; !important">
+										<span style="inset-inline-start: 10%; font-weight: 190 !important; font-stretch: ultra-condensed !important;"><u><b>Highest quality</b></u> scores,<i><small><br>directly to you.</small></i></span>
+									</h1>
+									<style>
+										.blurred-highlight {
+											position: relative !important;
+											padding: 5px 0 !important;
+											display: inline-block !important;
+											margin-inline-end: 5px !important;
+											z-index: 2 !important;
+										}
+									
+										.blurred-highlight::before {
+											content: "" !important;
+											position: absolute !important;
+											inset-block-start: 0 !important;
+											inset-inline-start: 0 !important;
+											inset-inline-end: 0 !important;
+											inset-block-end: 0 !important;
+											background-color: black !important;
+											filter: blur(5px) !important;
+											z-index: -1 !important;
+										}
+									</style>
+									
+									<p style="text-align: justify !important; font-weight: bold !important; inset-inline-start: 0 !important; padding-inline-start: 15% !important; font-size: 20px !important; color: white !important; font-family: Monaco, sans-serif !important; margin-block-start: 20px !important; margin-block-end: 20px !important; letter-spacing: 0.5px !important; line-height: 1.5 !important; inline-size: 80% !important; word-wrap: break-word !important;">
+										<span class="blurred-highlight">Your genome is a symphony, </span>
+										<span class="blurred-highlight">with each letter a note. </span>
+										<span class="blurred-highlight">You don’t listen to just single notes of music. </span>
+										<span class="blurred-highlight">So why analyze your genome one gene at a time? </span>
+										<span class="blurred-highlight">At PolyVar, we don’t look at single genes: </span>
+										<span class="blurred-highlight">our cutting-edge report contains millions of genetic contributions, </span>
+										<span class="blurred-highlight">added up into a final set of scores.</span>
+									</p>
+									
+									
+									
+									<div class="mRNA-element mRNA-element-60bac05 animated-fast mRNA-widget mRNA-widget-text-editor animated fadeIn" data-id="mRNAated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+      <section class="animatedGradient blob" style="padding: 30px 50px;">
+        <ul style="list-style-type: none; padding: 0; position: relative; z-index: 10;">
+        <ul style="list-style-type: none; padding: 0; position: relative; z-index: 10;">
+			<div class="mRNA-widget-container">
+				<h2 style="text-align: start; color: #000000; font-family: Helvetica Neue, Helvetica, Roboto, sans-serif !important; z-index: 10; position: relative;"><b><br>What can we predict?</b></h2>
+			  </div>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #009586; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Heart & Metabolic Insights</i> - Discover your genetic predisposition for <b>heart conditions (coronary artery disease), obesity & BMI, ischemic stroke, and cholesterol levels (LDL, HDL, & total), and type 2 diabetes.</b>
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #003f37; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Mental & Cognitive Wellness</i> - Understand your genetic links to <b>focus, mood stability,</b> and other brain health factors.
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #000c58; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Rare Disease Detection</i> - Dive deeper into complex health conditions to uncover potential genetic causes.
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #480058; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Enhance Your Genetic Understanding</i> - Elevate your current genetic knowledge with our <b>advanced analytics.</b>
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #880076; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Empowered Health Decisions</i> - With PolyVar, access the latest genetic insights to make informed choices about your health.
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #c63bb4; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Personalized Attributes</i> - Learn about unique genetic attributes like height, hair color, skin response, and more.
+			  </li>
+			  <li style="margin-block-end: 20px; font-family: 'Monaco', monospace;">
+				  <span style="display:inline-block; inline-size: 12px; block-size: 12px; background-color: #f274b0; border-radius: 50%; margin-inline-end: 15px;"></span>
+				  <strong style="color: #000000;"></strong> <i>Family Health Insights</i> - Use the data to understand potential genetic predispositions in your family lineage.
+			  </li>
+			  
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="block-size: 15%; display: block;">
+  <defs>
+      <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur"/>
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10" result="gooey"/>
+          <feBlend in="SourceGraphic" in2="gooey"/>
+      </filter>
+  </defs>
+</svg>
+</section></ul></ul>
+
+
+
+<div class="animated-gradient-divider"></div>
+
+<div style="background-color:  rgb(0, 0, 0);">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; inline-size: 100%; margin-block-end: 20px;">
+<h2 style="font-size: 24px !important; color: white !important; font-weight: bold !important; margin-block-end: 10px !important; text-align: center;">Financial accessibility & free testing</h2>
+<ul style="list-style-type: disc !important; color: white !important; padding-inline-start: 40px !important; inline-size: 60%; text-align: start;">
+  <li>We will work with you to ensure your financial background doesn't prevent you from using our services.</li>
+  <li>Some people are eligible to receive free or discounted genetic testing.</li>
+  <li>If you live in a zip code with an average of less than $42,000 in adjusted gross income in 2020, you are eligible for free analysis.</li>
+  <li>If you live in a household with total combined income under $90K, you are eligible for free testing.</li>
+  <small><br><i>Having an understanding of your genome shouldn't be a privilege for just a few people; it's a right that should be afforded to all. PolyVar is staunchly committed to ensuring that predictive genomics are accessible to all. If you have other circumstances besides the above criteria that makes accessing your personalized report difficult, reach out and we can make a special accomodation.</i></small>
+</ul>
+</div>
+
+<section class="animatedGradient2 blob2">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="block-size: 100%; display: block;">
+<defs>
+    <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur"/>
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10" result="gooey"/>
+        <feBlend in="SourceGraphic" in2="gooey"/>
+    </filter>
+</defs>
+</svg>
+</section><div style="background-color: #ffffff !important; padding: 3.5%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	
+		html, body {
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			position: relative;
+		}
+	
+		#iframe-container {
+			position: absolute;
+			width: 80vw !important;
+			height: 95vh !important;
+		}
+	
+		iframe {
+			width: 100% !important;
+			height: 100% !important;
+			border: none !important;
+		}
+	</style>
+	
+	<div id="iframe-container">
+		<iframe id="extreme-iframe" src="https://polyvar.org/pickalleles/" style="width:100%!important; height:100%!important;"></iframe>
+	</div>
+	
+	<script>
+		function nuclearCentering() {
+			const container = document.getElementById('iframe-container');
+	
+			// Calculate width and height
+			const containerWidth = container.offsetWidth;
+			const containerHeight = container.offsetHeight;
+	
+			// Determine the exact X and Y coordinates to place the iframe dead center
+			const xPos = (window.innerWidth - containerWidth) / 2;
+			const yPos = (window.innerHeight - containerHeight) / 2;
+	
+			// Override any other styles or influences and force the position
+			container.style.left = `${xPos}px`;
+			container.style.top = `${yPos}px`;
+		}
+	
+		// Constantly check and re-center the iframe every 10 milliseconds
+		setInterval(nuclearCentering, 10);
+
+
+
+		function nuclearVerticalExpansion() {
+		const container = document.getElementById('iframe-container');
+
+		// Override and set the height
+		container.style.height = '77.3vh';
+		
+		const iframeElement = document.getElementById('extreme-iframe');
+		iframeElement.style.height = '100%';
+		}
+
+		// Constantly ensure that the iframe takes up the desired vertical space
+		setInterval(nuclearVerticalExpansion, 10);
+
+	</script>
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+  <!-- Contact Info -->
+  <div style="text-align: center; padding-block-start: 20px; background-color: rgba(41, 255, 162, 0) !important; padding: 20px;">
+      <h2 style="background-color: rgba(41, 255, 162, 0) !important;">
+          <style>
+              h2 b {
+                  font-weight: bold;
+                  background-color: rgba(41, 255, 162, 0) !important;
+              }
+          </style>
+          <black><b style="font-weight: bold; background-color: rgba(41, 255, 162, 0) !important;"><strong><style>h2 b { font-weight: bold; }</style>Learn more</strong></b></black>
+      </h2>
+      <p style="margin: 10px 0;">Reach out to us for any inquiries or questions. We're here to help!</p>
+
+      <!-- Blue Email Button -->
+      <a href="mailto:polyvarbio@gmail.com?subject=Inquiry" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Get In Touch</a>
+  </div>
+  <div style="background-color: rgba(73, 255, 176, 0); padding: 0px 0; transform: translateY(-5%);">
+    <div style="display: flex; align-items: center; justify-content: center; block-size: 300px; padding-block-start: 0px;">
+        <img src="../images/clt_spinning_hd.gif" alt="Smooth CLT" style="max-inline-size: 20%; block-size: auto;">
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <title>PolyVar Bio</title>
+	  
+      <div data-mRNA-type="footer" data-mRNA-id="208" class="mRNA mRNA-208 mRNA-location-footer" style="block-size: 0.01px !important; max-block-size: 0.01px !important;">
+        <section data-particle_enable="false" data-particle-mobile-disabled="false" class="mRNA-section mRNA-top-section mRNA-element mRNA-element-4af68325 mRNA-section-full_width mRNA-section-height-default" data-id="mRNAated" data-element_type="section">
+            <div class="mRNA-container mRNA-column-gap-default">
+                <div class="mRNA-column mRNA-col-100 mRNA-top-column mRNA-element mRNA-element-48d76fc7" data-id="mRNAated" data-element_type="column">
+                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                        <section data-particle_enable="false" data-particle-mobile-disabled="false" class="mRNA-section mRNA-inner-section mRNA-element mRNA-element-55fba0f3 mRNA-section-boxed mRNA-section-height-default" data-id="mRNAated" data-element_type="section">
+                            <div class="mRNA-container mRNA-column-gap-default">
+                                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-757a5cf4" data-id="mRNAated" data-element_type="column">
+                                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                                        <div class="mRNA-element mRNA-element-54ca7f5d mRNA-widget mRNA-widget-text-editor" data-id="mRNAated" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="mRNA-widget-container">
+                          <p><del class="thin-strikethrough">Genetic</del> <i>Genomic </i>testing: <b>personalized, precise.</b></p>
+                        </div>
+                      </div>
+                      <div class="mRNA-element mRNA-element-18aa059d mRNA-widget mRNA-widget-text-editor" data-id="mRNAated" data-element_type="widget" data-widget_type="text-editor.default">
+                        <div class="">
+                          <p>©2023 PolyVar Bio<a style="color: #fff;" href="./PolyVar.org/legal/" target="_blank" rel="noopener"></a>
+                          </p>
+                        </div>
+                        <img style="transform: scale(0.2); position: relative; inset-block-start: -100px; inset-inline-start: -160px;" src="../images/polyvarlogowide.png" alt="" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-bd1409e" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
+                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                        <div class="mRNA-element mRNA-element-34794a23 mRNA-widget mRNA-widget-heading" data-id="mRNAated" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="mRNA-widget-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-1322f49" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
+                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                        <div class="mRNA-element mRNA-element-95515fe mRNA-icon-list--layout-traditional mRNA-list-item-link-full_width mRNA-widget mRNA-widget-icon-list" data-id="mRNAated" data-element_type="widget" data-widget_type="icon-list.default">
+                            <div class="mRNA-widget-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
+                </div>
+
+				<div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-4e92b033" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
+                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                        <div class="mRNA-element mRNA-element-7afb2364 mRNA-widget mRNA-widget-heading" data-id="mRNAated" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="mRNA-widget-container">
+                            </div>
+                        </div>
+                        <div class="mRNA-element mRNA-element-6e5b6799 mRNA-icon-list--layout-traditional mRNA-list-item-link-full_width mRNA-widget mRNA-widget-icon-list" data-id="mRNAated" data-element_type="widget" data-widget_type="icon-list.default">
+                            <div class="mRNA-widget-container">
+                                <ul class="mRNA-icon-list-items">
+                                    <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                                        <a href="mailto:polyvarbio@gmail.com">
+                                            <span class="mRNA-icon-list-text">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                                        <a href="https://twitter.com/PolyVar">
+                                            <span class="mRNA-icon-list-text"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                <div class="mRNA-column mRNA-col-25 mRNA-inner-column mRNA-element mRNA-element-4e92b033" data-id="mRNAated" data-element_type="column" style="block-size: 0% !important;">
+                    <div class="mRNA-widget-wrap mRNA-element-populated">
+                        <div class="mRNA-element mRNA-element-7afb2364 mRNA-widget mRNA-widget-heading" data-id="mRNAated" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="mRNA-widget-container">
+                                <h4 class="mRNA-heading-title mRNA-size-default">Contact</h4>
+                            </div>
+                        </div>
+                        <div class="mRNA-element mRNA-element-6e5b6799 mRNA-icon-list--layout-traditional mRNA-list-item-link-full_width mRNA-widget mRNA-widget-icon-list" data-id="mRNAated" data-element_type="widget" data-widget_type="icon-list.default">
+                            <div class="mRNA-widget-container">
+                                <ul class="mRNA-icon-list-items">
+                                    <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                                        <a href="mailto:polyvarbio@gmail.com">
+                                            <span class="mRNA-icon-list-text">polyvarbio@gmail.com
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="h5" style="text-transform: lowercase !important; font-size: medium">
+                                        <a href="https://twitter.com/PolyVar">
+                                            <span class="mRNA-icon-list-text">twitter.com/PolyVarTwitter</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+
+// Check eligibility on form submission
+document.getElementById("eligibilityForm").addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent form submission
+  
+  const income = parseFloat(document.getElementById("incomeInput").value);
+  const familySize = parseInt(document.getElementById("familySizeInput").value, 10);
+  let maxIncome = 0;
+
+  switch(familySize) {
+    case 1: maxIncome = 80000; break;
+    case 2: maxIncome = 90000; break;
+    case 3: maxIncome = 100000; break;
+    default: maxIncome = 110000; break;
+  }
+
+  const messageDiv = document.getElementById("eligibilityMessage");
+  if (income <= maxIncome) {
+    messageDiv.textContent = 'You are eligible!';
+    messageDiv.style.color = 'green';
+  } else {
+    messageDiv.textContent = 'Sorry, you are not eligible.';
+    messageDiv.style.color = 'red';
+  }
+});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      let zipCodes = [];
+  
+      fetch('/zipcodedata.txt')
+          .then(response => response.text())
+          .then(data => {
+              zipCodes = data.trim().split('\n').map(z => z.trim());
+          });
+  
+      const zipcodeInput = document.getElementById('zipcodeInput');
+      
+      zipcodeInput.addEventListener('input', function(e) {
+          e.preventDefault();
+  
+          // Only accept numeric characters
+          const value = e.target.value.replace(/[^0-9]/g, '');
+          e.target.value = value;
+
+          if (value.length === 5) {
+              hideMessage(); // Hide previous message when a new 5-digit number is entered
+              showLoading(); // Show loading symbol
+              checkEligibility(value, zipCodes);
+          }
+      });
+
+      zipcodeInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+              e.preventDefault();
+          }
+      });
+  });
+
+  function checkEligibility(zip, zipCodes) {
+      hideLoading();
+      if (zipCodes.includes(zip)) {
+          showMessage("Eligible!", "eligible");
+      } else {
+          showMessage("Ineligible!", "ineligible");
+      }
+  }
+
+  function showMessage(text, className) {
+      const messageBox = document.getElementById('message');
+      messageBox.textContent = text;
+      messageBox.className = className;
+      messageBox.style.display = "block";
+      messageBox.style.opacity = "1";
+      messageBox.style.transform = "scale(1)";
+  }
+  
+  function hideMessage() {
+      const messageBox = document.getElementById('message');
+      messageBox.style.opacity = "0";
+      messageBox.style.transform = "scale(0.9)";
+      setTimeout(() => {
+          messageBox.style.display = 'none';
+      }, 1000);
+  }
+  
+  function showLoading() {
+      const loadingBox = document.getElementById('loading');
+      loadingBox.style.display = "block";
+  }
+  
+  function hideLoading() {
+      const loadingBox = document.getElementById('loading');
+      loadingBox.style.display = "none";
+  }
+  </script>
+</body>
+</html>
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Source+Sans+Pro');
+    #dnaMatrixEmbeddableWindow canvas {
+        display: block;
+    }
+</style>
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+<script>
+    const dnaMatrixEmbeddableCanvas = document.getElementById('dnaMatrixEmbeddableCanvas');
+    const dnaMatrixEmbeddableCtx = dnaMatrixEmbeddableCanvas.getContext('2d');
+
+    dnaMatrixEmbeddableCanvas.width = dnaMatrixEmbeddableCanvas.parentElement.offsetWidth;
+    dnaMatrixEmbeddableCanvas.height = dnaMatrixEmbeddableCanvas.parentElement.offsetHeight;
+
+    const dnaMatrixEmbeddableLetters = ['G', 'C', 'T', 'A'];
+    const dnaMatrixEmbeddableBaseColors = {
+        'A': 'hsl(330, 100%, 75%)', 
+        'G': 'hsl(180, 100%, 40%)', 
+        'C': 'hsl(240, 100%, 35%)', 
+        'T': 'hsl(300, 100%, 40%)'
+    };
+    const dnaMatrixEmbeddableParticles = [];
+
+    function dnaMatrixEmbeddableAdjustColor(baseColor) {
+        const [hue, sat, light] = baseColor.match(/\d+/g).map(Number);
+        const randomSat = sat + (Math.random() - 0.5) * 20;  
+        const randomLight = light + (Math.random() - 0.5) * 10;
+        return `hsl(${hue}, ${Math.min(100, Math.max(0, randomSat))}%, ${Math.min(100, Math.max(0, randomLight))}%)`;
+    }
+
+    class DnaMatrixEmbeddableParticle {
+        constructor(fontSize, baseSpeed) {
+            this.x = Math.random() * dnaMatrixEmbeddableCanvas.width;
+            this.y = Math.random() * dnaMatrixEmbeddableCanvas.height;
+            this.originalX = this.x;
+            this.fontSize = fontSize;
+            this.speed = baseSpeed; 
+            this.letter = dnaMatrixEmbeddableLetters[Math.floor(Math.random() * dnaMatrixEmbeddableLetters.length)];
+            this.color = dnaMatrixEmbeddableAdjustColor(dnaMatrixEmbeddableBaseColors[this.letter]);
+            this.opacity = 0.8;
+            this.angle = Math.random() * Math.PI * 2;
+            this.shouldMoveHorizontally = Math.random() < 0.1;
+            this.directionFactor = Math.random() < 0.5 ? -1 : 1;
+        }
+
+        draw() {
+            dnaMatrixEmbeddableCtx.globalAlpha = this.opacity;
+            dnaMatrixEmbeddableCtx.font = `${this.fontSize}px monospace`;
+            dnaMatrixEmbeddableCtx.fillStyle = this.color;
+            dnaMatrixEmbeddableCtx.shadowColor = this.color;
+            dnaMatrixEmbeddableCtx.shadowBlur = (this.fontSize / 2) * 0.95;
+            dnaMatrixEmbeddableCtx.fillText(this.letter, this.x, this.y);
+            dnaMatrixEmbeddableCtx.shadowBlur = 0;
+        }
+
+        update() {
+            if (this.shouldMoveHorizontally) {
+                this.angle += 0.01 * this.directionFactor;
+                this.x = this.originalX + Math.sin(this.angle) * (dnaMatrixEmbeddableCanvas.width * 0.01);
+            }
+            this.y -= this.speed;
+            if (this.y < -this.fontSize) {
+                this.y = dnaMatrixEmbeddableCanvas.height + this.fontSize;
+                this.x = Math.random() * dnaMatrixEmbeddableCanvas.width;
+                this.originalX = this.x;
+                this.angle = Math.random() * Math.PI * 2;
+                this.directionFactor = Math.random() < 0.5 ? -1 : 1;
+            }
+        }
+    }
+
+    function dnaMatrixEmbeddableInit() {
+        dnaMatrixEmbeddableParticles.length = 0;
+        const numberOfParticles = 2200;
+
+        for (let i = 0; i < numberOfParticles; i++) {
+            let fontSize, baseSpeed;
+
+            const rand = Math.random();
+            if (rand < 0.25) {
+                fontSize = 4;
+                baseSpeed = 0.15 + Math.random() * 0.2;
+            } else if (rand < 0.35) {
+                fontSize = 8;
+                baseSpeed = 0.2 + Math.random() * 0.2;
+            } else if (rand < 0.55) {
+                fontSize = 16;
+                baseSpeed = 0.4 + Math.random() * 0.4;
+            } else if (rand < 0.8) {
+                fontSize = 32;
+                baseSpeed = 0.8 + Math.random() * 0.6;
+            } else if (rand < 0.95) {
+                fontSize = 64;
+                baseSpeed = 1.6 + Math.random() * 0.8;
+            } else {
+                fontSize = 96;
+                baseSpeed = 2 + Math.random() * 1;
+            }
+
+            dnaMatrixEmbeddableParticles.push(new DnaMatrixEmbeddableParticle(fontSize, baseSpeed));
+        }
+
+        dnaMatrixEmbeddableParticles.sort((a, b) => a.fontSize - b.fontSize);
+    }
+
+    function dnaMatrixEmbeddableAnimate() {
+        dnaMatrixEmbeddableCtx.clearRect(0, 0, dnaMatrixEmbeddableCanvas.width, dnaMatrixEmbeddableCanvas.height);
+        dnaMatrixEmbeddableParticles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+        requestAnimationFrame(dnaMatrixEmbeddableAnimate);
+    }
+
+    dnaMatrixEmbeddableInit();
+    dnaMatrixEmbeddableAnimate();
+</script>
+
+
+<style>
+  .wrapper2 {
+  background-color: #01504a;
 }
 
-html,
-body {
-	height: 100%;
-}
-
-body {
-	font-size: 110%;
-	color: #ecf0f1;
-	font-family: 'Source Sans Pro', sans-serif;
-	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-}
-
-.main {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.title {
-		font-family: 'Poiret One', cursive;
-	font-size: 4rem;
-  margin-bottom: .5rem;
-	width: 100%;
-}
-
-.sub-title {
-  border-top: .1rem solid #fff;
-  padding: 1rem 4rem;
-	text-align: center;
+.banner2 {
+  font-family: "Monaco", sans-serif;
+  position: relative;
+  background-color: #420150;
+  color: #f4bfe9;
+  font-size:22px
 }
 
 
-/* CSS hack using multiple box-shadows to get them **Stars** */
-
-.stars {
-	width: 1px;
-	height: 1px;
-	background: transparent;
-	box-shadow: 1983px 1070px #FFF, 1625px 734px #FFF, 1505px 1218px #FFF, 1288px 1382px #FFF, 1023px 982px #FFF, 184px 1501px #FFF, 1352px 1072px #FFF, 966px 577px #FFF, 1928px 1505px #FFF, 284px 1863px #FFF, 871px 390px #FFF, 1591px 1017px #FFF, 1919px 1315px #FFF, 1552px 697px #FFF, 1775px 1722px #FFF, 61px 321px #FFF, 1108px 1281px #FFF, 1795px 22px #FFF, 1808px 716px #FFF, 797px 374px #FFF, 796px 1149px #FFF, 952px 1px #FFF, 1361px 1185px #FFF, 1110px 1577px #FFF, 1058px 1925px #FFF, 160px 1987px #FFF, 1274px 1205px #FFF, 39px 85px #FFF, 1835px 484px #FFF, 495px 1670px #FFF, 986px 691px #FFF, 2px 1486px #FFF, 719px 805px #FFF, 1601px 89px #FFF, 591px 565px #FFF, 1317px 1604px #FFF, 1805px 1486px #FFF, 703px 236px #FFF, 1950px 1089px #FFF, 1527px 1923px #FFF, 1690px 36px #FFF, 1252px 245px #FFF, 343px 903px #FFF, 143px 874px #FFF, 939px 1705px #FFF, 1733px 372px #FFF, 362px 830px #FFF, 1580px 1181px #FFF, 251px 535px #FFF, 1666px 1111px #FFF, 1276px 1530px #FFF, 958px 1989px #FFF, 75px 987px #FFF, 256px 217px #FFF, 635px 1194px #FFF, 1004px 1546px #FFF, 1910px 878px #FFF, 520px 506px #FFF, 1000px 210px #FFF, 1455px 1027px #FFF, 417px 1714px #FFF, 1376px 674px #FFF, 1744px 1390px #FFF, 195px 283px #FFF, 621px 1638px #FFF, 962px 997px #FFF, 283px 1219px #FFF, 1591px 1953px #FFF, 160px 652px #FFF, 1430px 948px #FFF, 1589px 1722px #FFF, 614px 1305px #FFF, 167px 342px #FFF, 1172px 1861px #FFF, 1097px 1249px #FFF, 1094px 1743px #FFF, 1988px 1361px #FFF, 461px 694px #FFF, 1096px 584px #FFF, 1876px 1984px #FFF, 315px 245px #FFF, 441px 258px #FFF, 1219px 1887px #FFF, 480px 245px #FFF, 285px 819px #FFF, 1753px 1833px #FFF, 816px 1780px #FFF, 245px 1927px #FFF, 715px 1523px #FFF, 475px 1595px #FFF, 1162px 66px #FFF, 543px 1758px #FFF, 112px 1847px #FFF, 1604px 1243px #FFF, 1888px 1758px #FFF, 162px 1385px #FFF, 1587px 1863px #FFF, 1059px 48px #FFF, 1161px 1650px #FFF, 1881px 289px #FFF, 475px 363px #FFF, 160px 911px #FFF, 487px 291px #FFF, 496px 70px #FFF, 1107px 90px #FFF, 731px 1771px #FFF, 1517px 918px #FFF, 1013px 716px #FFF, 1832px 882px #FFF, 107px 393px #FFF, 1503px 1860px #FFF, 31px 94px #FFF, 1640px 1112px #FFF, 697px 1657px #FFF, 435px 81px #FFF, 1526px 1467px #FFF, 602px 1001px #FFF, 1409px 306px #FFF, 1631px 1005px #FFF, 302px 1886px #FFF, 1262px 522px #FFF, 1606px 776px #FFF, 1813px 1471px #FFF, 1784px 1953px #FFF, 499px 1841px #FFF, 805px 1191px #FFF, 786px 864px #FFF, 940px 1562px #FFF, 1016px 1362px #FFF, 1036px 961px #FFF, 1666px 173px #FFF, 1214px 979px #FFF, 54px 1293px #FFF, 231px 710px #FFF, 434px 1321px #FFF, 259px 1716px #FFF, 1463px 380px #FFF, 1406px 1130px #FFF, 913px 611px #FFF, 1489px 1218px #FFF, 1777px 61px #FFF, 967px 63px #FFF, 1598px 1504px #FFF, 1528px 1134px #FFF, 1641px 111px #FFF, 1980px 1181px #FFF, 945px 1698px #FFF, 430px 1617px #FFF, 482px 85px #FFF, 554px 1473px #FFF, 1112px 614px #FFF, 1030px 1349px #FFF, 1666px 1753px #FFF, 1049px 978px #FFF, 1817px 1144px #FFF, 759px 1687px #FFF, 1371px 1720px #FFF, 1393px 461px #FFF, 26px 983px #FFF, 85px 1821px #FFF, 1193px 321px #FFF, 240px 64px #FFF, 220px 973px #FFF, 607px 312px #FFF, 1102px 679px #FFF, 1314px 329px #FFF, 1802px 1079px #FFF, 1997px 85px #FFF, 782px 479px #FFF, 1647px 52px #FFF, 1945px 514px #FFF, 938px 351px #FFF, 1140px 1813px #FFF, 1348px 1582px #FFF, 1188px 1188px #FFF, 1494px 1341px #FFF, 1552px 834px #FFF, 1592px 1952px #FFF, 450px 98px #FFF, 581px 1213px #FFF, 1736px 1193px #FFF, 944px 1950px #FFF, 526px 1044px #FFF, 1869px 788px #FFF, 911px 1295px #FFF, 1521px 1135px #FFF, 1725px 1438px #FFF, 1691px 110px #FFF, 1903px 1777px #FFF, 643px 1826px #FFF, 222px 1810px #FFF, 1613px 1035px #FFF, 201px 24px #FFF, 1325px 557px #FFF, 1169px 1652px #FFF, 385px 290px #FFF, 1733px 168px #FFF, 1886px 438px #FFF, 1533px 315px #FFF, 388px 960px #FFF, 312px 1818px #FFF, 1605px 6px #FFF, 231px 1794px #FFF, 686px 1810px #FFF, 1301px 577px #FFF, 1583px 474px #FFF, 1916px 756px #FFF, 694px 1494px #FFF, 1877px 1341px #FFF, 25px 6px #FFF, 1717px 316px #FFF, 1906px 1307px #FFF, 1555px 316px #FFF, 699px 690px #FFF, 1335px 368px #FFF, 1871px 668px #FFF, 301px 492px #FFF, 1899px 747px #FFF, 680px 444px #FFF, 654px 1063px #FFF, 45px 1797px #FFF, 826px 281px #FFF, 1041px 1859px #FFF, 1690px 7px #FFF, 797px 1473px #FFF, 1697px 1680px #FFF, 1704px 572px #FFF, 144px 49px #FFF, 1099px 264px #FFF, 789px 1804px #FFF, 186px 741px #FFF, 306px 1496px #FFF, 473px 209px #FFF, 1763px 127px #FFF, 116px 288px #FFF, 450px 385px #FFF, 210px 457px #FFF, 1433px 1540px #FFF, 1766px 1459px #FFF, 1426px 215px #FFF, 1313px 296px #FFF, 410px 81px #FFF, 1809px 593px #FFF, 515px 216px #FFF, 1903px 1912px #FFF, 564px 1545px #FFF, 99px 302px #FFF, 164px 1465px #FFF, 1560px 801px #FFF, 1839px 663px #FFF, 191px 1903px #FFF, 5px 537px #FFF, 1150px 38px #FFF, 1310px 647px #FFF, 1257px 555px #FFF, 487px 1470px #FFF, 1769px 1121px #FFF, 1698px 1155px #FFF, 1176px 1916px #FFF, 1192px 583px #FFF, 1778px 1511px #FFF, 1330px 354px #FFF, 705px 737px #FFF, 449px 665px #FFF, 89px 1486px #FFF, 751px 1974px #FFF, 1733px 1742px #FFF, 1289px 1386px #FFF, 1621px 1363px #FFF, 571px 1861px #FFF, 1697px 1850px #FFF, 504px 624px #FFF, 889px 238px #FFF, 1627px 1435px #FFF, 1379px 1367px #FFF, 872px 550px #FFF, 472px 532px #FFF, 466px 1997px #FFF, 932px 1896px #FFF, 1044px 83px #FFF, 1262px 1593px #FFF, 1953px 1478px #FFF, 1127px 1716px #FFF, 325px 176px #FFF, 1742px 1505px #FFF, 1088px 288px #FFF, 1212px 472px #FFF, 1365px 985px #FFF, 1086px 803px #FFF, 256px 263px #FFF, 1300px 1444px #FFF, 1673px 201px #FFF, 188px 1133px #FFF, 404px 483px #FFF, 59px 1006px #FFF, 1013px 1651px #FFF, 947px 239px #FFF, 18px 178px #FFF, 1430px 1851px #FFF, 763px 1777px #FFF, 1737px 196px #FFF, 643px 977px #FFF, 1335px 1275px #FFF, 1513px 1200px #FFF, 497px 659px #FFF, 1929px 800px #FFF, 1481px 283px #FFF, 1232px 331px #FFF, 1518px 1754px #FFF, 515px 869px #FFF, 1127px 1290px #FFF, 726px 1453px #FFF, 864px 267px #FFF, 313px 1634px #FFF, 1562px 606px #FFF, 91px 1803px #FFF, 40px 1789px #FFF, 1097px 944px #FFF, 1949px 1949px #FFF, 17px 1495px #FFF, 1786px 93px #FFF, 577px 1866px #FFF, 1252px 546px #FFF, 564px 151px #FFF, 1096px 1675px #FFF, 1743px 1694px #FFF, 1332px 311px #FFF, 1935px 1625px #FFF, 1251px 900px #FFF, 840px 1126px #FFF, 763px 669px #FFF, 1414px 1146px #FFF, 32px 1287px #FFF, 950px 739px #FFF, 1730px 856px #FFF, 1032px 1754px #FFF, 155px 201px #FFF, 1999px 1250px #FFF, 1811px 1488px #FFF, 805px 281px #FFF, 875px 1358px #FFF, 1757px 86px #FFF, 1824px 605px #FFF, 429px 453px #FFF, 1955px 1159px #FFF, 19px 1874px #FFF, 1549px 109px #FFF, 1684px 145px #FFF, 1973px 685px #FFF, 338px 839px #FFF, 659px 46px #FFF, 1600px 344px #FFF, 838px 994px #FFF, 337px 1918px #FFF, 583px 740px #FFF, 687px 251px #FFF, 1900px 1031px #FFF, 1296px 449px #FFF, 1268px 592px #FFF, 383px 1226px #FFF, 868px 101px #FFF, 891px 67px #FFF, 1957px 940px #FFF, 74px 1445px #FFF, 1432px 898px #FFF, 430px 1783px #FFF, 954px 185px #FFF, 359px 1455px #FFF, 635px 1786px #FFF, 1186px 1259px #FFF, 1445px 1505px #FFF, 1177px 781px #FFF, 1407px 603px #FFF, 1257px 980px #FFF, 96px 562px #FFF, 1999px 1560px #FFF, 1153px 1554px #FFF, 1033px 672px #FFF, 1051px 546px #FFF, 753px 876px #FFF, 1763px 145px #FFF, 1704px 1207px #FFF, 34px 1261px #FFF, 817px 1041px #FFF, 247px 1674px #FFF, 121px 429px #FFF, 515px 570px #FFF, 1762px 1489px #FFF, 234px 940px #FFF, 1095px 1028px #FFF, 720px 1119px #FFF, 1238px 334px #FFF, 91px 113px #FFF, 147px 897px #FFF, 1029px 1805px #FFF, 1680px 1957px #FFF, 475px 1503px #FFF, 1557px 917px #FFF, 1458px 1762px #FFF, 612px 1707px #FFF, 1329px 393px #FFF, 160px 1167px #FFF, 1631px 1887px #FFF, 1125px 141px #FFF, 257px 376px #FFF, 809px 26px #FFF, 1349px 199px #FFF, 1805px 88px #FFF, 69px 1953px #FFF, 1206px 529px #FFF, 646px 227px #FFF, 1097px 1664px #FFF, 42px 1261px #FFF, 1604px 360px #FFF, 1939px 187px #FFF, 1220px 1264px #FFF, 1044px 995px #FFF, 1005px 16px #FFF, 1648px 1612px #FFF, 847px 1014px #FFF, 339px 1584px #FFF, 1329px 1304px #FFF, 961px 1970px #FFF, 711px 221px #FFF, 888px 566px #FFF, 53px 704px #FFF, 1369px 846px #FFF, 1261px 1775px #FFF, 737px 1277px #FFF, 1071px 1570px #FFF, 77px 1872px #FFF, 1268px 1501px #FFF, 598px 1640px #FFF, 1769px 297px #FFF, 1074px 656px #FFF, 1006px 1154px #FFF, 672px 1969px #FFF, 922px 243px #FFF, 622px 773px #FFF, 1875px 804px #FFF, 1873px 600px #FFF, 1844px 1794px #FFF, 1253px 1995px #FFF, 616px 1198px #FFF, 1829px 1743px #FFF, 1321px 504px #FFF, 1340px 566px #FFF, 1520px 1825px #FFF, 1696px 1333px #FFF, 537px 158px #FFF, 1106px 162px #FFF, 25px 514px #FFF, 1022px 422px #FFF, 1955px 391px #FFF, 1126px 1741px #FFF, 754px 905px #FFF, 1217px 1696px #FFF, 351px 270px #FFF, 950px 1260px #FFF, 1847px 658px #FFF, 23px 684px #FFF, 1295px 572px #FFF, 257px 1053px #FFF, 87px 303px #FFF, 798px 1748px #FFF, 1150px 142px #FFF, 48px 1641px #FFF, 1492px 1328px #FFF, 1385px 1766px #FFF, 296px 1726px #FFF, 1299px 1780px #FFF, 1316px 522px #FFF, 1953px 1526px #FFF, 1007px 1089px #FFF, 1824px 1598px #FFF, 1720px 480px #FFF, 555px 1942px #FFF, 367px 432px #FFF, 957px 1162px #FFF, 384px 1044px #FFF, 738px 618px #FFF, 1568px 1432px #FFF, 211px 788px #FFF, 198px 1761px #FFF, 745px 177px #FFF, 1700px 159px #FFF, 316px 498px #FFF, 65px 1610px #FFF, 1948px 1638px #FFF, 936px 1461px #FFF, 1656px 622px #FFF, 575px 1437px #FFF, 336px 1424px #FFF, 1215px 690px #FFF, 1641px 1542px #FFF, 998px 1685px #FFF, 952px 1274px #FFF, 1448px 1165px #FFF, 904px 1783px #FFF, 1788px 1404px #FFF, 1748px 1717px #FFF, 793px 922px #FFF, 1032px 355px #FFF, 1158px 38px #FFF, 1573px 1855px #FFF, 751px 1199px #FFF, 1284px 227px #FFF, 391px 416px #FFF, 55px 204px #FFF, 962px 1918px #FFF, 668px 1347px #FFF, 613px 1215px #FFF, 615px 732px #FFF, 1442px 1752px #FFF, 1086px 1779px #FFF, 532px 320px #FFF, 1228px 1321px #FFF, 1796px 1906px #FFF, 150px 715px #FFF, 1694px 1005px #FFF, 1509px 391px #FFF, 262px 303px #FFF, 1743px 909px #FFF, 1966px 1203px #FFF, 707px 1033px #FFF, 82px 1332px #FFF, 104px 794px #FFF, 246px 759px #FFF, 507px 1380px #FFF, 1227px 616px #FFF, 917px 1354px #FFF, 1941px 759px #FFF, 451px 852px #FFF, 17px 131px #FFF, 780px 476px #FFF, 816px 211px #FFF, 1039px 1245px #FFF, 1521px 1036px #FFF, 1509px 1542px #FFF, 1368px 960px #FFF, 1104px 1437px #FFF, 1171px 976px #FFF, 681px 1305px #FFF, 1741px 579px #FFF, 953px 704px #FFF, 1810px 328px #FFF, 1960px 1396px #FFF, 1098px 295px #FFF, 1409px 919px #FFF, 1830px 1176px #FFF, 492px 1063px #FFF, 1277px 515px #FFF, 602px 1546px #FFF, 1832px 236px #FFF, 1513px 274px #FFF, 1983px 794px #FFF, 2000px 1505px #FFF, 920px 382px #FFF, 1374px 1235px #FFF, 692px 310px #FFF, 1028px 1782px #FFF, 1007px 887px #FFF, 1492px 858px #FFF, 877px 1817px #FFF, 1024px 1942px #FFF, 658px 82px #FFF, 526px 742px #FFF, 755px 880px #FFF, 301px 1186px #FFF, 318px 31px #FFF, 1517px 1244px #FFF, 1996px 1126px #FFF, 464px 1861px #FFF, 334px 674px #FFF, 768px 1103px #FFF, 628px 890px #FFF, 1054px 1534px #FFF, 59px 1576px #FFF, 189px 693px #FFF, 16px 1097px #FFF, 563px 1186px #FFF, 428px 523px #FFF, 1047px 1231px #FFF, 1940px 1262px #FFF, 643px 971px #FFF, 611px 1794px #FFF, 1676px 21px #FFF, 1882px 1523px #FFF, 258px 1584px #FFF, 768px 295px #FFF, 1253px 1431px #FFF, 1855px 362px #FFF, 576px 987px #FFF, 1904px 470px #FFF, 895px 1390px #FFF, 771px 966px #FFF, 1034px 1815px #FFF, 203px 1292px #FFF, 566px 893px #FFF, 63px 913px #FFF, 1340px 1416px #FFF, 528px 967px #FFF, 1965px 444px #FFF, 1961px 132px #FFF, 1049px 577px #FFF, 459px 1031px #FFF, 261px 1780px #FFF, 1092px 1480px #FFF, 286px 759px #FFF, 1014px 1604px #FFF, 144px 1461px #FFF, 1180px 1694px #FFF, 1348px 613px #FFF, 518px 1479px #FFF, 478px 649px #FFF, 1303px 629px #FFF, 1713px 258px #FFF, 1912px 501px #FFF, 300px 227px #FFF, 989px 1068px #FFF, 197px 158px #FFF, 244px 420px #FFF, 889px 486px #FFF, 1517px 1812px #FFF, 965px 308px #FFF, 409px 1293px #FFF, 47px 1400px #FFF, 1473px 1150px #FFF, 311px 1711px #FFF, 1938px 1000px #FFF, 717px 1331px #FFF, 282px 881px #FFF, 1305px 382px #FFF, 1639px 52px #FFF, 1466px 1228px #FFF, 574px 26px #FFF, 1310px 899px #FFF, 15px 1795px #FFF, 1138px 941px #FFF, 1235px 1416px #FFF, 27px 375px #FFF, 1333px 1470px #FFF, 1462px 1837px #FFF, 1830px 1217px #FFF, 1521px 1848px #FFF, 730px 515px #FFF, 514px 1869px #FFF, 468px 1906px #FFF, 1931px 259px #FFF, 1612px 151px #FFF, 1495px 735px #FFF, 710px 1096px #FFF, 1976px 546px #FFF, 50px 741px #FFF, 1313px 381px #FFF, 54px 102px #FFF, 1873px 1009px #FFF, 1696px 688px #FFF, 626px 922px #FFF, 244px 1438px #FFF, 1746px 1787px #FFF, 1824px 1437px #FFF, 1730px 1219px #FFF, 785px 198px #FFF, 1174px 931px #FFF, 909px 517px #FFF, 1283px 662px #FFF, 1074px 194px #FFF, 847px 1945px #FFF, 113px 427px #FFF, 728px 352px #FFF, 1205px 1316px #FFF, 786px 668px #FFF, 64px 427px #FFF, 548px 1370px #FFF, 1102px 616px #FFF, 676px 1192px #FFF, 1652px 1264px #FFF, 649px 69px #FFF, 1593px 645px #FFF, 1651px 816px #FFF, 1914px 977px #FFF, 80px 1006px #FFF, 1252px 742px #FFF, 1291px 981px #FFF, 1325px 273px #FFF, 831px 1581px #FFF, 344px 1503px #FFF, 1885px 1849px #FFF, 745px 1030px #FFF, 764px 1396px #FFF, 1241px 829px #FFF, 1281px 160px #FFF, 1210px 1860px #FFF, 1998px 411px #FFF, 1752px 1816px #FFF, 21px 1656px #FFF, 1863px 1988px #FFF, 1860px 331px #FFF, 79px 512px #FFF;
-	animation: animStar 50s linear infinite;
+  .wrapper {
+  background-color: #01504a;
 }
 
-.stars:after {
-	content: " ";
-	position: absolute;
-	top: 2000px;
-	width: 1px;
-	height: 1px;
-	background: transparent;
-	box-shadow: 1983px 1070px #FFF, 1625px 734px #FFF, 1505px 1218px #FFF, 1288px 1382px #FFF, 1023px 982px #FFF, 184px 1501px #FFF, 1352px 1072px #FFF, 966px 577px #FFF, 1928px 1505px #FFF, 284px 1863px #FFF, 871px 390px #FFF, 1591px 1017px #FFF, 1919px 1315px #FFF, 1552px 697px #FFF, 1775px 1722px #FFF, 61px 321px #FFF, 1108px 1281px #FFF, 1795px 22px #FFF, 1808px 716px #FFF, 797px 374px #FFF, 796px 1149px #FFF, 952px 1px #FFF, 1361px 1185px #FFF, 1110px 1577px #FFF, 1058px 1925px #FFF, 160px 1987px #FFF, 1274px 1205px #FFF, 39px 85px #FFF, 1835px 484px #FFF, 495px 1670px #FFF, 986px 691px #FFF, 2px 1486px #FFF, 719px 805px #FFF, 1601px 89px #FFF, 591px 565px #FFF, 1317px 1604px #FFF, 1805px 1486px #FFF, 703px 236px #FFF, 1950px 1089px #FFF, 1527px 1923px #FFF, 1690px 36px #FFF, 1252px 245px #FFF, 343px 903px #FFF, 143px 874px #FFF, 939px 1705px #FFF, 1733px 372px #FFF, 362px 830px #FFF, 1580px 1181px #FFF, 251px 535px #FFF, 1666px 1111px #FFF, 1276px 1530px #FFF, 958px 1989px #FFF, 75px 987px #FFF, 256px 217px #FFF, 635px 1194px #FFF, 1004px 1546px #FFF, 1910px 878px #FFF, 520px 506px #FFF, 1000px 210px #FFF, 1455px 1027px #FFF, 417px 1714px #FFF, 1376px 674px #FFF, 1744px 1390px #FFF, 195px 283px #FFF, 621px 1638px #FFF, 962px 997px #FFF, 283px 1219px #FFF, 1591px 1953px #FFF, 160px 652px #FFF, 1430px 948px #FFF, 1589px 1722px #FFF, 614px 1305px #FFF, 167px 342px #FFF, 1172px 1861px #FFF, 1097px 1249px #FFF, 1094px 1743px #FFF, 1988px 1361px #FFF, 461px 694px #FFF, 1096px 584px #FFF, 1876px 1984px #FFF, 315px 245px #FFF, 441px 258px #FFF, 1219px 1887px #FFF, 480px 245px #FFF, 285px 819px #FFF, 1753px 1833px #FFF, 816px 1780px #FFF, 245px 1927px #FFF, 715px 1523px #FFF, 475px 1595px #FFF, 1162px 66px #FFF, 543px 1758px #FFF, 112px 1847px #FFF, 1604px 1243px #FFF, 1888px 1758px #FFF, 162px 1385px #FFF, 1587px 1863px #FFF, 1059px 48px #FFF, 1161px 1650px #FFF, 1881px 289px #FFF, 475px 363px #FFF, 160px 911px #FFF, 487px 291px #FFF, 496px 70px #FFF, 1107px 90px #FFF, 731px 1771px #FFF, 1517px 918px #FFF, 1013px 716px #FFF, 1832px 882px #FFF, 107px 393px #FFF, 1503px 1860px #FFF, 31px 94px #FFF, 1640px 1112px #FFF, 697px 1657px #FFF, 435px 81px #FFF, 1526px 1467px #FFF, 602px 1001px #FFF, 1409px 306px #FFF, 1631px 1005px #FFF, 302px 1886px #FFF, 1262px 522px #FFF, 1606px 776px #FFF, 1813px 1471px #FFF, 1784px 1953px #FFF, 499px 1841px #FFF, 805px 1191px #FFF, 786px 864px #FFF, 940px 1562px #FFF, 1016px 1362px #FFF, 1036px 961px #FFF, 1666px 173px #FFF, 1214px 979px #FFF, 54px 1293px #FFF, 231px 710px #FFF, 434px 1321px #FFF, 259px 1716px #FFF, 1463px 380px #FFF, 1406px 1130px #FFF, 913px 611px #FFF, 1489px 1218px #FFF, 1777px 61px #FFF, 967px 63px #FFF, 1598px 1504px #FFF, 1528px 1134px #FFF, 1641px 111px #FFF, 1980px 1181px #FFF, 945px 1698px #FFF, 430px 1617px #FFF, 482px 85px #FFF, 554px 1473px #FFF, 1112px 614px #FFF, 1030px 1349px #FFF, 1666px 1753px #FFF, 1049px 978px #FFF, 1817px 1144px #FFF, 759px 1687px #FFF, 1371px 1720px #FFF, 1393px 461px #FFF, 26px 983px #FFF, 85px 1821px #FFF, 1193px 321px #FFF, 240px 64px #FFF, 220px 973px #FFF, 607px 312px #FFF, 1102px 679px #FFF, 1314px 329px #FFF, 1802px 1079px #FFF, 1997px 85px #FFF, 782px 479px #FFF, 1647px 52px #FFF, 1945px 514px #FFF, 938px 351px #FFF, 1140px 1813px #FFF, 1348px 1582px #FFF, 1188px 1188px #FFF, 1494px 1341px #FFF, 1552px 834px #FFF, 1592px 1952px #FFF, 450px 98px #FFF, 581px 1213px #FFF, 1736px 1193px #FFF, 944px 1950px #FFF, 526px 1044px #FFF, 1869px 788px #FFF, 911px 1295px #FFF, 1521px 1135px #FFF, 1725px 1438px #FFF, 1691px 110px #FFF, 1903px 1777px #FFF, 643px 1826px #FFF, 222px 1810px #FFF, 1613px 1035px #FFF, 201px 24px #FFF, 1325px 557px #FFF, 1169px 1652px #FFF, 385px 290px #FFF, 1733px 168px #FFF, 1886px 438px #FFF, 1533px 315px #FFF, 388px 960px #FFF, 312px 1818px #FFF, 1605px 6px #FFF, 231px 1794px #FFF, 686px 1810px #FFF, 1301px 577px #FFF, 1583px 474px #FFF, 1916px 756px #FFF, 694px 1494px #FFF, 1877px 1341px #FFF, 25px 6px #FFF, 1717px 316px #FFF, 1906px 1307px #FFF, 1555px 316px #FFF, 699px 690px #FFF, 1335px 368px #FFF, 1871px 668px #FFF, 301px 492px #FFF, 1899px 747px #FFF, 680px 444px #FFF, 654px 1063px #FFF, 45px 1797px #FFF, 826px 281px #FFF, 1041px 1859px #FFF, 1690px 7px #FFF, 797px 1473px #FFF, 1697px 1680px #FFF, 1704px 572px #FFF, 144px 49px #FFF, 1099px 264px #FFF, 789px 1804px #FFF, 186px 741px #FFF, 306px 1496px #FFF, 473px 209px #FFF, 1763px 127px #FFF, 116px 288px #FFF, 450px 385px #FFF, 210px 457px #FFF, 1433px 1540px #FFF, 1766px 1459px #FFF, 1426px 215px #FFF, 1313px 296px #FFF, 410px 81px #FFF, 1809px 593px #FFF, 515px 216px #FFF, 1903px 1912px #FFF, 564px 1545px #FFF, 99px 302px #FFF, 164px 1465px #FFF, 1560px 801px #FFF, 1839px 663px #FFF, 191px 1903px #FFF, 5px 537px #FFF, 1150px 38px #FFF, 1310px 647px #FFF, 1257px 555px #FFF, 487px 1470px #FFF, 1769px 1121px #FFF, 1698px 1155px #FFF, 1176px 1916px #FFF, 1192px 583px #FFF, 1778px 1511px #FFF, 1330px 354px #FFF, 705px 737px #FFF, 449px 665px #FFF, 89px 1486px #FFF, 751px 1974px #FFF, 1733px 1742px #FFF, 1289px 1386px #FFF, 1621px 1363px #FFF, 571px 1861px #FFF, 1697px 1850px #FFF, 504px 624px #FFF, 889px 238px #FFF, 1627px 1435px #FFF, 1379px 1367px #FFF, 872px 550px #FFF, 472px 532px #FFF, 466px 1997px #FFF, 932px 1896px #FFF, 1044px 83px #FFF, 1262px 1593px #FFF, 1953px 1478px #FFF, 1127px 1716px #FFF, 325px 176px #FFF, 1742px 1505px #FFF, 1088px 288px #FFF, 1212px 472px #FFF, 1365px 985px #FFF, 1086px 803px #FFF, 256px 263px #FFF, 1300px 1444px #FFF, 1673px 201px #FFF, 188px 1133px #FFF, 404px 483px #FFF, 59px 1006px #FFF, 1013px 1651px #FFF, 947px 239px #FFF, 18px 178px #FFF, 1430px 1851px #FFF, 763px 1777px #FFF, 1737px 196px #FFF, 643px 977px #FFF, 1335px 1275px #FFF, 1513px 1200px #FFF, 497px 659px #FFF, 1929px 800px #FFF, 1481px 283px #FFF, 1232px 331px #FFF, 1518px 1754px #FFF, 515px 869px #FFF, 1127px 1290px #FFF, 726px 1453px #FFF, 864px 267px #FFF, 313px 1634px #FFF, 1562px 606px #FFF, 91px 1803px #FFF, 40px 1789px #FFF, 1097px 944px #FFF, 1949px 1949px #FFF, 17px 1495px #FFF, 1786px 93px #FFF, 577px 1866px #FFF, 1252px 546px #FFF, 564px 151px #FFF, 1096px 1675px #FFF, 1743px 1694px #FFF, 1332px 311px #FFF, 1935px 1625px #FFF, 1251px 900px #FFF, 840px 1126px #FFF, 763px 669px #FFF, 1414px 1146px #FFF, 32px 1287px #FFF, 950px 739px #FFF, 1730px 856px #FFF, 1032px 1754px #FFF, 155px 201px #FFF, 1999px 1250px #FFF, 1811px 1488px #FFF, 805px 281px #FFF, 875px 1358px #FFF, 1757px 86px #FFF, 1824px 605px #FFF, 429px 453px #FFF, 1955px 1159px #FFF, 19px 1874px #FFF, 1549px 109px #FFF, 1684px 145px #FFF, 1973px 685px #FFF, 338px 839px #FFF, 659px 46px #FFF, 1600px 344px #FFF, 838px 994px #FFF, 337px 1918px #FFF, 583px 740px #FFF, 687px 251px #FFF, 1900px 1031px #FFF, 1296px 449px #FFF, 1268px 592px #FFF, 383px 1226px #FFF, 868px 101px #FFF, 891px 67px #FFF, 1957px 940px #FFF, 74px 1445px #FFF, 1432px 898px #FFF, 430px 1783px #FFF, 954px 185px #FFF, 359px 1455px #FFF, 635px 1786px #FFF, 1186px 1259px #FFF, 1445px 1505px #FFF, 1177px 781px #FFF, 1407px 603px #FFF, 1257px 980px #FFF, 96px 562px #FFF, 1999px 1560px #FFF, 1153px 1554px #FFF, 1033px 672px #FFF, 1051px 546px #FFF, 753px 876px #FFF, 1763px 145px #FFF, 1704px 1207px #FFF, 34px 1261px #FFF, 817px 1041px #FFF, 247px 1674px #FFF, 121px 429px #FFF, 515px 570px #FFF, 1762px 1489px #FFF, 234px 940px #FFF, 1095px 1028px #FFF, 720px 1119px #FFF, 1238px 334px #FFF, 91px 113px #FFF, 147px 897px #FFF, 1029px 1805px #FFF, 1680px 1957px #FFF, 475px 1503px #FFF, 1557px 917px #FFF, 1458px 1762px #FFF, 612px 1707px #FFF, 1329px 393px #FFF, 160px 1167px #FFF, 1631px 1887px #FFF, 1125px 141px #FFF, 257px 376px #FFF, 809px 26px #FFF, 1349px 199px #FFF, 1805px 88px #FFF, 69px 1953px #FFF, 1206px 529px #FFF, 646px 227px #FFF, 1097px 1664px #FFF, 42px 1261px #FFF, 1604px 360px #FFF, 1939px 187px #FFF, 1220px 1264px #FFF, 1044px 995px #FFF, 1005px 16px #FFF, 1648px 1612px #FFF, 847px 1014px #FFF, 339px 1584px #FFF, 1329px 1304px #FFF, 961px 1970px #FFF, 711px 221px #FFF, 888px 566px #FFF, 53px 704px #FFF, 1369px 846px #FFF, 1261px 1775px #FFF, 737px 1277px #FFF, 1071px 1570px #FFF, 77px 1872px #FFF, 1268px 1501px #FFF, 598px 1640px #FFF, 1769px 297px #FFF, 1074px 656px #FFF, 1006px 1154px #FFF, 672px 1969px #FFF, 922px 243px #FFF, 622px 773px #FFF, 1875px 804px #FFF, 1873px 600px #FFF, 1844px 1794px #FFF, 1253px 1995px #FFF, 616px 1198px #FFF, 1829px 1743px #FFF, 1321px 504px #FFF, 1340px 566px #FFF, 1520px 1825px #FFF, 1696px 1333px #FFF, 537px 158px #FFF, 1106px 162px #FFF, 25px 514px #FFF, 1022px 422px #FFF, 1955px 391px #FFF, 1126px 1741px #FFF, 754px 905px #FFF, 1217px 1696px #FFF, 351px 270px #FFF, 950px 1260px #FFF, 1847px 658px #FFF, 23px 684px #FFF, 1295px 572px #FFF, 257px 1053px #FFF, 87px 303px #FFF, 798px 1748px #FFF, 1150px 142px #FFF, 48px 1641px #FFF, 1492px 1328px #FFF, 1385px 1766px #FFF, 296px 1726px #FFF, 1299px 1780px #FFF, 1316px 522px #FFF, 1953px 1526px #FFF, 1007px 1089px #FFF, 1824px 1598px #FFF, 1720px 480px #FFF, 555px 1942px #FFF, 367px 432px #FFF, 957px 1162px #FFF, 384px 1044px #FFF, 738px 618px #FFF, 1568px 1432px #FFF, 211px 788px #FFF, 198px 1761px #FFF, 745px 177px #FFF, 1700px 159px #FFF, 316px 498px #FFF, 65px 1610px #FFF, 1948px 1638px #FFF, 936px 1461px #FFF, 1656px 622px #FFF, 575px 1437px #FFF, 336px 1424px #FFF, 1215px 690px #FFF, 1641px 1542px #FFF, 998px 1685px #FFF, 952px 1274px #FFF, 1448px 1165px #FFF, 904px 1783px #FFF, 1788px 1404px #FFF, 1748px 1717px #FFF, 793px 922px #FFF, 1032px 355px #FFF, 1158px 38px #FFF, 1573px 1855px #FFF, 751px 1199px #FFF, 1284px 227px #FFF, 391px 416px #FFF, 55px 204px #FFF, 962px 1918px #FFF, 668px 1347px #FFF, 613px 1215px #FFF, 615px 732px #FFF, 1442px 1752px #FFF, 1086px 1779px #FFF, 532px 320px #FFF, 1228px 1321px #FFF, 1796px 1906px #FFF, 150px 715px #FFF, 1694px 1005px #FFF, 1509px 391px #FFF, 262px 303px #FFF, 1743px 909px #FFF, 1966px 1203px #FFF, 707px 1033px #FFF, 82px 1332px #FFF, 104px 794px #FFF, 246px 759px #FFF, 507px 1380px #FFF, 1227px 616px #FFF, 917px 1354px #FFF, 1941px 759px #FFF, 451px 852px #FFF, 17px 131px #FFF, 780px 476px #FFF, 816px 211px #FFF, 1039px 1245px #FFF, 1521px 1036px #FFF, 1509px 1542px #FFF, 1368px 960px #FFF, 1104px 1437px #FFF, 1171px 976px #FFF, 681px 1305px #FFF, 1741px 579px #FFF, 953px 704px #FFF, 1810px 328px #FFF, 1960px 1396px #FFF, 1098px 295px #FFF, 1409px 919px #FFF, 1830px 1176px #FFF, 492px 1063px #FFF, 1277px 515px #FFF, 602px 1546px #FFF, 1832px 236px #FFF, 1513px 274px #FFF, 1983px 794px #FFF, 2000px 1505px #FFF, 920px 382px #FFF, 1374px 1235px #FFF, 692px 310px #FFF, 1028px 1782px #FFF, 1007px 887px #FFF, 1492px 858px #FFF, 877px 1817px #FFF, 1024px 1942px #FFF, 658px 82px #FFF, 526px 742px #FFF, 755px 880px #FFF, 301px 1186px #FFF, 318px 31px #FFF, 1517px 1244px #FFF, 1996px 1126px #FFF, 464px 1861px #FFF, 334px 674px #FFF, 768px 1103px #FFF, 628px 890px #FFF, 1054px 1534px #FFF, 59px 1576px #FFF, 189px 693px #FFF, 16px 1097px #FFF, 563px 1186px #FFF, 428px 523px #FFF, 1047px 1231px #FFF, 1940px 1262px #FFF, 643px 971px #FFF, 611px 1794px #FFF, 1676px 21px #FFF, 1882px 1523px #FFF, 258px 1584px #FFF, 768px 295px #FFF, 1253px 1431px #FFF, 1855px 362px #FFF, 576px 987px #FFF, 1904px 470px #FFF, 895px 1390px #FFF, 771px 966px #FFF, 1034px 1815px #FFF, 203px 1292px #FFF, 566px 893px #FFF, 63px 913px #FFF, 1340px 1416px #FFF, 528px 967px #FFF, 1965px 444px #FFF, 1961px 132px #FFF, 1049px 577px #FFF, 459px 1031px #FFF, 261px 1780px #FFF, 1092px 1480px #FFF, 286px 759px #FFF, 1014px 1604px #FFF, 144px 1461px #FFF, 1180px 1694px #FFF, 1348px 613px #FFF, 518px 1479px #FFF, 478px 649px #FFF, 1303px 629px #FFF, 1713px 258px #FFF, 1912px 501px #FFF, 300px 227px #FFF, 989px 1068px #FFF, 197px 158px #FFF, 244px 420px #FFF, 889px 486px #FFF, 1517px 1812px #FFF, 965px 308px #FFF, 409px 1293px #FFF, 47px 1400px #FFF, 1473px 1150px #FFF, 311px 1711px #FFF, 1938px 1000px #FFF, 717px 1331px #FFF, 282px 881px #FFF, 1305px 382px #FFF, 1639px 52px #FFF, 1466px 1228px #FFF, 574px 26px #FFF, 1310px 899px #FFF, 15px 1795px #FFF, 1138px 941px #FFF, 1235px 1416px #FFF, 27px 375px #FFF, 1333px 1470px #FFF, 1462px 1837px #FFF, 1830px 1217px #FFF, 1521px 1848px #FFF, 730px 515px #FFF, 514px 1869px #FFF, 468px 1906px #FFF, 1931px 259px #FFF, 1612px 151px #FFF, 1495px 735px #FFF, 710px 1096px #FFF, 1976px 546px #FFF, 50px 741px #FFF, 1313px 381px #FFF, 54px 102px #FFF, 1873px 1009px #FFF, 1696px 688px #FFF, 626px 922px #FFF, 244px 1438px #FFF, 1746px 1787px #FFF, 1824px 1437px #FFF, 1730px 1219px #FFF, 785px 198px #FFF, 1174px 931px #FFF, 909px 517px #FFF, 1283px 662px #FFF, 1074px 194px #FFF, 847px 1945px #FFF, 113px 427px #FFF, 728px 352px #FFF, 1205px 1316px #FFF, 786px 668px #FFF, 64px 427px #FFF, 548px 1370px #FFF, 1102px 616px #FFF, 676px 1192px #FFF, 1652px 1264px #FFF, 649px 69px #FFF, 1593px 645px #FFF, 1651px 816px #FFF, 1914px 977px #FFF, 80px 1006px #FFF, 1252px 742px #FFF, 1291px 981px #FFF, 1325px 273px #FFF, 831px 1581px #FFF, 344px 1503px #FFF, 1885px 1849px #FFF, 745px 1030px #FFF, 764px 1396px #FFF, 1241px 829px #FFF, 1281px 160px #FFF, 1210px 1860px #FFF, 1998px 411px #FFF, 1752px 1816px #FFF, 21px 1656px #FFF, 1863px 1988px #FFF, 1860px 331px #FFF, 79px 512px #FFF;
+.banner {
+  font-family: "Monaco", sans-serif;
+  position: relative;
+  background-color: #01504a;
+  color: #bff4df;
+  font-size:22px;
 }
 
-.stars2 {
-	width: 2px;
-	height: 2px;
-	background: transparent;
-	box-shadow: 1124px 1500px #FFF, 916px 1039px #FFF, 1281px 2000px #FFF, 1702px 518px #FFF, 246px 953px #FFF, 1889px 287px #FFF, 1438px 1139px #FFF, 1824px 1739px #FFF, 1090px 1205px #FFF, 1514px 392px #FFF, 87px 1797px #FFF, 342px 25px #FFF, 134px 1624px #FFF, 1246px 426px #FFF, 453px 559px #FFF, 609px 308px #FFF, 506px 972px #FFF, 684px 733px #FFF, 85px 1641px #FFF, 1576px 320px #FFF, 145px 809px #FFF, 1822px 1000px #FFF, 21px 1512px #FFF, 173px 1775px #FFF, 1283px 1564px #FFF, 224px 1353px #FFF, 451px 785px #FFF, 703px 1983px #FFF, 508px 1345px #FFF, 957px 1209px #FFF, 698px 162px #FFF, 159px 1835px #FFF, 712px 227px #FFF, 1234px 295px #FFF, 310px 958px #FFF, 889px 31px #FFF, 1321px 1156px #FFF, 501px 274px #FFF, 914px 96px #FFF, 1637px 1954px #FFF, 774px 1326px #FFF, 304px 550px #FFF, 1249px 425px #FFF, 649px 1851px #FFF, 723px 1114px #FFF, 1115px 1524px #FFF, 1937px 1932px #FFF, 44px 1353px #FFF, 850px 1872px #FFF, 1175px 1628px #FFF, 318px 248px #FFF, 291px 521px #FFF, 1246px 1707px #FFF, 1640px 1608px #FFF, 1961px 343px #FFF, 964px 1144px #FFF, 1729px 361px #FFF, 1493px 799px #FFF, 1503px 1030px #FFF, 426px 1162px #FFF, 991px 1700px #FFF, 697px 630px #FFF, 897px 1692px #FFF, 457px 1816px #FFF, 667px 729px #FFF, 1753px 1618px #FFF, 1132px 1095px #FFF, 954px 1846px #FFF, 1938px 1179px #FFF, 135px 434px #FFF, 1134px 1216px #FFF, 491px 543px #FFF, 525px 1114px #FFF, 1769px 1830px #FFF, 1641px 1422px #FFF, 873px 548px #FFF, 1519px 1249px #FFF, 934px 1084px #FFF, 753px 1528px #FFF, 1139px 478px #FFF, 1533px 356px #FFF, 264px 1956px #FFF, 899px 487px #FFF, 1932px 1084px #FFF, 1846px 64px #FFF, 46px 1255px #FFF, 102px 1775px #FFF, 678px 1579px #FFF, 1406px 368px #FFF, 1808px 32px #FFF, 741px 775px #FFF, 225px 1338px #FFF, 124px 731px #FFF, 411px 135px #FFF, 1640px 1276px #FFF, 54px 1998px #FFF, 1126px 1912px #FFF, 1896px 1754px #FFF, 819px 827px #FFF, 1063px 125px #FFF, 955px 1357px #FFF, 945px 1808px #FFF, 777px 1591px #FFF, 508px 1351px #FFF, 966px 983px #FFF, 168px 9px #FFF, 1700px 533px #FFF, 785px 1700px #FFF, 558px 749px #FFF, 56px 1463px #FFF, 1482px 371px #FFF, 1201px 1930px #FFF, 207px 240px #FFF, 538px 146px #FFF, 893px 1156px #FFF, 662px 973px #FFF, 1126px 641px #FFF, 354px 1792px #FFF, 1483px 1367px #FFF, 1032px 1516px #FFF, 322px 1338px #FFF, 1804px 1170px #FFF, 1899px 561px #FFF, 698px 1947px #FFF, 1377px 1501px #FFF, 1966px 1196px #FFF, 108px 1889px #FFF, 790px 1309px #FFF, 1206px 42px #FFF, 1903px 373px #FFF, 465px 113px #FFF, 1776px 1878px #FFF, 1363px 639px #FFF, 1142px 1969px #FFF, 1427px 840px #FFF, 212px 1412px #FFF, 1333px 1905px #FFF, 817px 261px #FFF, 1590px 1046px #FFF, 1139px 89px #FFF, 1852px 311px #FFF, 1618px 1155px #FFF, 387px 1975px #FFF, 290px 1660px #FFF, 1094px 957px #FFF, 1145px 1157px #FFF, 825px 1179px #FFF, 1456px 1133px #FFF, 1214px 922px #FFF, 290px 1880px #FFF, 852px 1027px #FFF, 275px 557px #FFF, 1115px 724px #FFF, 1713px 1698px #FFF, 1819px 1196px #FFF, 1778px 179px #FFF, 401px 610px #FFF, 1288px 1286px #FFF, 1603px 493px #FFF, 497px 306px #FFF, 457px 1005px #FFF, 675px 1814px #FFF, 850px 1719px #FFF, 467px 932px #FFF, 1312px 1366px #FFF, 812px 1643px #FFF, 356px 1170px #FFF, 1915px 787px #FFF, 1923px 1453px #FFF, 542px 860px #FFF, 1496px 832px #FFF, 1689px 90px #FFF, 1404px 73px #FFF, 991px 357px #FFF, 1534px 1469px #FFF, 1036px 822px #FFF, 595px 819px #FFF, 432px 1908px #FFF, 221px 1519px #FFF, 1744px 1507px #FFF, 505px 564px #FFF, 1220px 1959px #FFF, 544px 1880px #FFF, 744px 516px #FFF, 547px 307px #FFF, 1862px 247px #FFF, 1560px 410px #FFF, 736px 282px #FFF, 986px 1452px #FFF, 808px 1942px #FFF, 194px 1307px #FFF, 639px 842px #FFF, 717px 272px #FFF, 580px 103px #FFF, 566px 1916px #FFF, 1847px 91px #FFF, 1583px 629px #FFF, 1270px 1517px #FFF, 1452px 1905px #FFF, 1161px 1965px #FFF;
-	animation: animStar 100s linear infinite;
+.banner span {
+  display: inline-block;
+  padding-inline-end: 20px;
+  font-size: 24px;
 }
 
-.stars2:after {
-	content: " ";
-	position: absolute;
-	top: 2000px;
-	width: 2px;
-	height: 2px;
-	background: transparent;
-	box-shadow: 1124px 1500px #FFF, 916px 1039px #FFF, 1281px 2000px #FFF, 1702px 518px #FFF, 246px 953px #FFF, 1889px 287px #FFF, 1438px 1139px #FFF, 1824px 1739px #FFF, 1090px 1205px #FFF, 1514px 392px #FFF, 87px 1797px #FFF, 342px 25px #FFF, 134px 1624px #FFF, 1246px 426px #FFF, 453px 559px #FFF, 609px 308px #FFF, 506px 972px #FFF, 684px 733px #FFF, 85px 1641px #FFF, 1576px 320px #FFF, 145px 809px #FFF, 1822px 1000px #FFF, 21px 1512px #FFF, 173px 1775px #FFF, 1283px 1564px #FFF, 224px 1353px #FFF, 451px 785px #FFF, 703px 1983px #FFF, 508px 1345px #FFF, 957px 1209px #FFF, 698px 162px #FFF, 159px 1835px #FFF, 712px 227px #FFF, 1234px 295px #FFF, 310px 958px #FFF, 889px 31px #FFF, 1321px 1156px #FFF, 501px 274px #FFF, 914px 96px #FFF, 1637px 1954px #FFF, 774px 1326px #FFF, 304px 550px #FFF, 1249px 425px #FFF, 649px 1851px #FFF, 723px 1114px #FFF, 1115px 1524px #FFF, 1937px 1932px #FFF, 44px 1353px #FFF, 850px 1872px #FFF, 1175px 1628px #FFF, 318px 248px #FFF, 291px 521px #FFF, 1246px 1707px #FFF, 1640px 1608px #FFF, 1961px 343px #FFF, 964px 1144px #FFF, 1729px 361px #FFF, 1493px 799px #FFF, 1503px 1030px #FFF, 426px 1162px #FFF, 991px 1700px #FFF, 697px 630px #FFF, 897px 1692px #FFF, 457px 1816px #FFF, 667px 729px #FFF, 1753px 1618px #FFF, 1132px 1095px #FFF, 954px 1846px #FFF, 1938px 1179px #FFF, 135px 434px #FFF, 1134px 1216px #FFF, 491px 543px #FFF, 525px 1114px #FFF, 1769px 1830px #FFF, 1641px 1422px #FFF, 873px 548px #FFF, 1519px 1249px #FFF, 934px 1084px #FFF, 753px 1528px #FFF, 1139px 478px #FFF, 1533px 356px #FFF, 264px 1956px #FFF, 899px 487px #FFF, 1932px 1084px #FFF, 1846px 64px #FFF, 46px 1255px #FFF, 102px 1775px #FFF, 678px 1579px #FFF, 1406px 368px #FFF, 1808px 32px #FFF, 741px 775px #FFF, 225px 1338px #FFF, 124px 731px #FFF, 411px 135px #FFF, 1640px 1276px #FFF, 54px 1998px #FFF, 1126px 1912px #FFF, 1896px 1754px #FFF, 819px 827px #FFF, 1063px 125px #FFF, 955px 1357px #FFF, 945px 1808px #FFF, 777px 1591px #FFF, 508px 1351px #FFF, 966px 983px #FFF, 168px 9px #FFF, 1700px 533px #FFF, 785px 1700px #FFF, 558px 749px #FFF, 56px 1463px #FFF, 1482px 371px #FFF, 1201px 1930px #FFF, 207px 240px #FFF, 538px 146px #FFF, 893px 1156px #FFF, 662px 973px #FFF, 1126px 641px #FFF, 354px 1792px #FFF, 1483px 1367px #FFF, 1032px 1516px #FFF, 322px 1338px #FFF, 1804px 1170px #FFF, 1899px 561px #FFF, 698px 1947px #FFF, 1377px 1501px #FFF, 1966px 1196px #FFF, 108px 1889px #FFF, 790px 1309px #FFF, 1206px 42px #FFF, 1903px 373px #FFF, 465px 113px #FFF, 1776px 1878px #FFF, 1363px 639px #FFF, 1142px 1969px #FFF, 1427px 840px #FFF, 212px 1412px #FFF, 1333px 1905px #FFF, 817px 261px #FFF, 1590px 1046px #FFF, 1139px 89px #FFF, 1852px 311px #FFF, 1618px 1155px #FFF, 387px 1975px #FFF, 290px 1660px #FFF, 1094px 957px #FFF, 1145px 1157px #FFF, 825px 1179px #FFF, 1456px 1133px #FFF, 1214px 922px #FFF, 290px 1880px #FFF, 852px 1027px #FFF, 275px 557px #FFF, 1115px 724px #FFF, 1713px 1698px #FFF, 1819px 1196px #FFF, 1778px 179px #FFF, 401px 610px #FFF, 1288px 1286px #FFF, 1603px 493px #FFF, 497px 306px #FFF, 457px 1005px #FFF, 675px 1814px #FFF, 850px 1719px #FFF, 467px 932px #FFF, 1312px 1366px #FFF, 812px 1643px #FFF, 356px 1170px #FFF, 1915px 787px #FFF, 1923px 1453px #FFF, 542px 860px #FFF, 1496px 832px #FFF, 1689px 90px #FFF, 1404px 73px #FFF, 991px 357px #FFF, 1534px 1469px #FFF, 1036px 822px #FFF, 595px 819px #FFF, 432px 1908px #FFF, 221px 1519px #FFF, 1744px 1507px #FFF, 505px 564px #FFF, 1220px 1959px #FFF, 544px 1880px #FFF, 744px 516px #FFF, 547px 307px #FFF, 1862px 247px #FFF, 1560px 410px #FFF, 736px 282px #FFF, 986px 1452px #FFF, 808px 1942px #FFF, 194px 1307px #FFF, 639px 842px #FFF, 717px 272px #FFF, 580px 103px #FFF, 566px 1916px #FFF, 1847px 91px #FFF, 1583px 629px #FFF, 1270px 1517px #FFF, 1452px 1905px #FFF, 1161px 1965px #FFF;
+
+</>
+<style>
+  /* Basic Global Style */
+  * {
+      font-family: "Monaco", sans-serif !important;
+  }
+
+  /* Target known tags */
+  body, div, span, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
+      font-family: "Monaco", sans-serif !important;
+  }
+
+  /* Handle iframe content (assuming they can be accessed) */
+  iframe::content body, iframe::content div, iframe::content p {
+      font-family: "Monaco", sans-serif !important;
+  }
+
+  .content {
+  position: relative;
 }
 
-.stars3 {
-	width: 3px;
-	height: 3px;
-	background: transparent;
-	box-shadow: 1106px 1979px #FFF, 1572px 505px #FFF, 25px 1324px #FFF, 650px 558px #FFF, 558px 1555px #FFF, 782px 1910px #FFF, 95px 1646px #FFF, 1794px 169px #FFF, 1104px 1373px #FFF, 965px 1386px #FFF, 1818px 948px #FFF, 1848px 760px #FFF, 1789px 937px #FFF, 761px 1565px #FFF, 945px 1788px #FFF, 1553px 93px #FFF, 1344px 281px #FFF, 832px 138px #FFF, 819px 412px #FFF, 386px 1164px #FFF, 36px 1157px #FFF, 1150px 651px #FFF, 63px 1824px #FFF, 338px 202px #FFF, 1203px 764px #FFF, 1825px 1211px #FFF, 204px 1892px #FFF, 228px 313px #FFF, 1511px 783px #FFF, 497px 522px #FFF, 744px 96px #FFF, 511px 1254px #FFF, 179px 1572px #FFF, 988px 411px #FFF, 1539px 1119px #FFF, 687px 1122px #FFF, 1615px 475px #FFF, 512px 399px #FFF, 816px 1040px #FFF, 341px 103px #FFF, 450px 505px #FFF, 1161px 742px #FFF, 1926px 1476px #FFF, 764px 1893px #FFF, 995px 1047px #FFF, 572px 593px #FFF, 143px 499px #FFF, 963px 861px #FFF, 575px 178px #FFF, 1492px 424px #FFF, 1890px 1467px #FFF, 612px 1453px #FFF, 573px 346px #FFF, 1151px 945px #FFF, 107px 45px #FFF, 345px 593px #FFF, 1659px 456px #FFF, 1984px 1612px #FFF, 1103px 350px #FFF, 696px 908px #FFF, 1227px 1093px #FFF, 1525px 1198px #FFF, 294px 648px #FFF, 955px 378px #FFF, 1553px 114px #FFF, 1355px 1009px #FFF, 911px 1568px #FFF, 1807px 27px #FFF, 933px 1952px #FFF, 493px 1501px #FFF, 1573px 1849px #FFF, 962px 471px #FFF, 1078px 1745px #FFF, 711px 381px #FFF, 1617px 574px #FFF, 666px 1277px #FFF, 1589px 1435px #FFF, 41px 21px #FFF, 1427px 252px #FFF, 748px 351px #FFF, 1826px 261px #FFF, 730px 1705px #FFF, 30px 459px #FFF, 953px 1573px #FFF, 725px 1653px #FFF, 1628px 1144px #FFF, 1070px 1879px #FFF, 362px 603px #FFF, 605px 714px #FFF, 749px 1979px #FFF, 1569px 1753px #FFF, 335px 491px #FFF, 1618px 1237px #FFF, 362px 1735px #FFF, 105px 489px #FFF, 806px 836px #FFF, 1523px 781px #FFF, 411px 1405px #FFF, 858px 220px #FFF, 273px 89px #FFF;
-	animation: animStar 150s linear infinite;
-}
-
-.stars3:after {
-	content: " ";
-	position: absolute;
-	top: 2000px;
-	width: 3px;
-	height: 3px;
-	background: transparent;
-	box-shadow: 1106px 1979px #FFF, 1572px 505px #FFF, 25px 1324px #FFF, 650px 558px #FFF, 558px 1555px #FFF, 782px 1910px #FFF, 95px 1646px #FFF, 1794px 169px #FFF, 1104px 1373px #FFF, 965px 1386px #FFF, 1818px 948px #FFF, 1848px 760px #FFF, 1789px 937px #FFF, 761px 1565px #FFF, 945px 1788px #FFF, 1553px 93px #FFF, 1344px 281px #FFF, 832px 138px #FFF, 819px 412px #FFF, 386px 1164px #FFF, 36px 1157px #FFF, 1150px 651px #FFF, 63px 1824px #FFF, 338px 202px #FFF, 1203px 764px #FFF, 1825px 1211px #FFF, 204px 1892px #FFF, 228px 313px #FFF, 1511px 783px #FFF, 497px 522px #FFF, 744px 96px #FFF, 511px 1254px #FFF, 179px 1572px #FFF, 988px 411px #FFF, 1539px 1119px #FFF, 687px 1122px #FFF, 1615px 475px #FFF, 512px 399px #FFF, 816px 1040px #FFF, 341px 103px #FFF, 450px 505px #FFF, 1161px 742px #FFF, 1926px 1476px #FFF, 764px 1893px #FFF, 995px 1047px #FFF, 572px 593px #FFF, 143px 499px #FFF, 963px 861px #FFF, 575px 178px #FFF, 1492px 424px #FFF, 1890px 1467px #FFF, 612px 1453px #FFF, 573px 346px #FFF, 1151px 945px #FFF, 107px 45px #FFF, 345px 593px #FFF, 1659px 456px #FFF, 1984px 1612px #FFF, 1103px 350px #FFF, 696px 908px #FFF, 1227px 1093px #FFF, 1525px 1198px #FFF, 294px 648px #FFF, 955px 378px #FFF, 1553px 114px #FFF, 1355px 1009px #FFF, 911px 1568px #FFF, 1807px 27px #FFF, 933px 1952px #FFF, 493px 1501px #FFF, 1573px 1849px #FFF, 962px 471px #FFF, 1078px 1745px #FFF, 711px 381px #FFF, 1617px 574px #FFF, 666px 1277px #FFF, 1589px 1435px #FFF, 41px 21px #FFF, 1427px 252px #FFF, 748px 351px #FFF, 1826px 261px #FFF, 730px 1705px #FFF, 30px 459px #FFF, 953px 1573px #FFF, 725px 1653px #FFF, 1628px 1144px #FFF, 1070px 1879px #FFF, 362px 603px #FFF, 605px 714px #FFF, 749px 1979px #FFF, 1569px 1753px #FFF, 335px 491px #FFF, 1618px 1237px #FFF, 362px 1735px #FFF, 105px 489px #FFF, 806px 836px #FFF, 1523px 781px #FFF, 411px 1405px #FFF, 858px 220px #FFF, 273px 89px #FFF;
-}
-
-@keyframes animStar {
-	from {
-		transform: translateY(0px);
-	}
-	to {
-		transform: translateY(-2000px);
-	}
+.scroll-limit {
+  position: fixed;
+  inset-block-start: 50vh;
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: transparent;
 }
 </style>
+
+<script>
+function forceFontFamily() {
+    const allElements = document.querySelectorAll('*');
+
+    const exemptPhrases = [
+        "polygenic predisposition", 
+        "predisposition to intellectual", 
+        "unexplained hyperlipidemia",
+        "cutting-edge insights",
+        "into your patients",
+        "multi-gene",
+        "stroke",
+        "ADHD",
+        "Cardiovascular & cardiometabolic illnesses",
+        "Neurogenomics",
+        "Rare diseases",
+        "with complex presentation",
+        "Expand test capabilities",
+        "Integrate precision medicine into your practice",
+        "Insights into your own data",
+        "Ensuring our services are available to everyone, irrespective of their socioeconomic background",
+        "Actively working to reduce health disparities by offering free genetic testing",
+        "Check if your zip code or income makes you eligible for free genetic analysis",
+        "You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address",
+        "unsolved disease", 
+        "certain mental health conditions.",
+        "non-monogenic",
+        "SNP array testing", 
+        "should be evaluated",
+        "in-depth analysis", 
+        "PolyVar enables", 
+        "height, red hair", 
+        "We ensure our services are available to everyone, irrespective of their socioeconomic background",
+        "We actively working to reduce health disparities by offering free genetic testing",
+        "Check if your zip code or income makes you eligible for free genetic analysis",
+        "Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020",
+        "You may use either your home address, your doctor's address, or if you are a clinician, your clinical practice's address",
+        "Zip code eligibility for free analysis: any zip code with an average of less than $42,000 in adjusted gross income in 2020",
+        "Income eligibility for free analysis: any household income under $90K",
+        "Genomic ",
+        "personalized, precise",
+		"symphony",
+		"with each letter a note",
+		"listen to just single notes of",
+		"music. So why analyze your genome one gene at a",
+		"time? At PolyVar, we don’t look at single genes:",
+		"our cutting-edge report contains millions of",
+		"on’t look at ",
+		"nalyze your genom",
+		"genetic contributions, added up into a final",
+		"set of scores.",
+        "Reach out to us for any inquiries or questions. We're here to help!",
+        "in touch",
+        "testing:",
+        "The polygenic score must perform",
+        "The polygenic score should demonstrate",
+        "The polygenic score must be",
+		//"Financial accessibility & free testing",
+		"We will work with you to ensure your financial",
+		"Some people are eligible to receive free or",
+		"If you live in a zip code with an average of less than",
+		"If you live in a household with total combined income"
+
+    ];
+
+    // Helper function to remove content from simple style tags
+    function stripStyleTags(content) {
+        const dummyDiv = document.createElement("div");
+        dummyDiv.innerHTML = content;
+        ["b", "i", "del", "small"].forEach(tag => {
+            const elements = dummyDiv.querySelectorAll(tag);
+            elements.forEach(el => el.outerHTML = el.innerHTML);
+        });
+        return dummyDiv.textContent.toLowerCase();
+    }
+
+    for (let elem of allElements) {
+        const strippedTextContent = stripStyleTags(elem.innerHTML);
+
+        // Check for the class exemption
+        const hasExemptClass = elem.classList.contains('mRNA-heading-title') || elem.classList.contains('mRNA-size-default');
+
+        // Check for the text content exemption
+        const hasExemptPhrases = exemptPhrases.some(phrase => strippedTextContent.includes(phrase.toLowerCase()));
+
+        if (hasExemptClass || hasExemptPhrases) {
+            elem.style.setProperty('font-family', 'Helvetica, sans-serif', 'important');
+            continue;
+        } else {
+            elem.style.setProperty('font-family', '"Monaco", sans-serif', 'important');
+        }
+    }
+}
+
+  // Call the function immediately
+  forceFontFamily();
+
+  // Handle dynamically added content
+  const observer = new MutationObserver(mutations => {
+      for (let mutation of mutations) {
+          if (mutation.addedNodes) {
+              for (let node of mutation.addedNodes) {
+                  if (node.nodeType === 1) { // Element node
+                      node.style.setProperty('font-family', '"Monaco", sans-serif', 'important');
+                      const childElements = node.querySelectorAll('*');
+                      for (let child of childElements) {
+                          child.style.setProperty('font-family', '"Monaco", sans-serif', 'important');
+                      }
+                  }
+              }
+          }
+      }
+  });
+
+  observer.observe(document.body, {
+      childList: true,
+      subtree: true
+  });
+
+  // Handling Stylesheets
+  window.addEventListener('load', () => {
+      const linkElem = document.createElement('link');
+      linkElem.rel = 'stylesheet';
+      linkElem.href = '../css/override.css';
+      document.head.appendChild(linkElem);
+  });
+
+  // Override Inline Styles after an interval
+  setInterval(() => {
+      forceFontFamily();
+  }, 1);
+
+
+  function enforceFont() {
+    const elements = document.querySelectorAll('body, body *');
+    elements.forEach(elem => {
+        elem.style.setProperty('font-family', 'Monaco', 'important');
+    });
+}
+
+// Run once at the start.
+enforceFont();
+</script>
+
+
+<script>
+const observer = new MutationObserver(() => {
+  enforceFont();
+});
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ['style', 'class']
+});
+</script>
+
+
+<style>
+  @font-face {
+      font-family: 'Monaco';
+      src: url('https://github.com/springfox/springfox/raw/master/springfox-swagger-ui/src/web/fonts/titillium-web-v6-latin-regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  body, 
+  body div,
+  body span,
+  body p, 
+  body a, 
+  body button, 
+  body input, 
+  body select, 
+  body textarea,
+  body *[class*=""], 
+  body *[id*=""] {
+      font-family: 'Monaco' !important;
+  }
+
+  @font-face {
+    font-family: 'Monaco';
+    src: url('https://github.com/springfox/springfox/raw/master/springfox-swagger-ui/src/web/fonts/titillium-web-v6-latin-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Universal selector for base specificity */
+body, body * {
+    font-family: 'Monaco' !important;
+}
+
+/* Increased specificity for provided classes */
+body .skip-link,
+body .screen-reader-text,
+body .mRNA-button-text {
+    font-family: 'Monaco' !important;
+}
+
+/* Targeting data attributes */
+body [data-mRNA-type="header"],
+body [data-mRNA-type="wp-page"],
+body [data-mRNA-id="212"],
+body [data-mRNA-id="2852"],
+body [data-smartmenus-id="16772983981068403"] {
+    font-family: 'Monaco' !important;
+}
+
+</style>
+
+<script>
+function enforceFontDirectlyFromURL() {
+    // Create a dynamic stylesheet
+    let styleSheet = null;
+    if (!window.enforcedStyleSheet) {
+        const styleElement = document.createElement("style");
+        document.head.appendChild(styleElement);
+        styleSheet = styleElement.sheet;
+        window.enforcedStyleSheet = styleSheet;
+
+        // Add @font-face rule directly from the provided URL
+        styleSheet.insertRule(`
+            @font-face {
+                font-family: 'DirectlyEnforcedTitillium';
+                src: url('https://github.com/springfox/springfox/raw/master/springfox-swagger-ui/src/web/fonts/titillium-web-v6-latin-regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+        `, styleSheet.cssRules.length);
+    } else {
+        styleSheet = window.enforcedStyleSheet;
+    }
+
+    // Traverse all nodes using TreeWalker
+    const walker = document.createTreeWalker(
+        document.documentElement,
+        NodeFilter.SHOW_ALL,
+        null,
+        false
+    );
+
+    do {
+        const node = walker.currentNode;
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            // For element nodes, forcibly set the font-family with our enforced font and make it !important
+            node.style.setProperty('font-family', 'DirectlyEnforcedTitillium, sans-serif', 'important');
+        } else if (node.nodeType === Node.TEXT_NODE && node.parentNode && node.textContent.trim() !== "") {
+            // For standalone text nodes, wrap them in a span and enforce the font
+            const span = document.createElement('span');
+            node.before(span);
+            span.appendChild(node);
+            span.style.setProperty('font-family', 'DirectlyEnforcedTitillium, sans-serif', 'important');
+        }
+    } while (walker.nextNode());
+}
+
+// Run the function immediately to set the font on page load
+enforceFontDirectlyFromURL();
+
+// Set an interval to keep enforcing the font every second
+//const intervalID = setInterval(enforceFontDirectlyFromURL, 1000);
+</script>
+
+<script>
+function enforceFontOnEverything() {
+    // Retrieve all nodes including text nodes and others
+    const walker = document.createTreeWalker(
+        document.documentElement, 
+        NodeFilter.SHOW_ALL,
+        null,
+        false
+    );
+
+    do {
+        const node = walker.currentNode;
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            // For element nodes, forcibly set the font-family with 'Monaco' and make it !important
+            node.style.setProperty('font-family', 'Monaco, sans-serif', 'important');
+        } else if (node.nodeType === Node.TEXT_NODE && node.parentNode && node.textContent.trim() !== "") {
+            // For text nodes with actual content, wrap them in a span and enforce the font if they aren't already inside an element enforcing the font
+            const span = document.createElement('span');
+            node.before(span);
+            span.appendChild(node);
+            span.style.setProperty('font-family', 'Monaco, sans-serif', 'important');
+        }
+    } while (walker.nextNode());
+}
+
+// Run the function immediately to set the font on page load
+enforceFontOnEverything();
+
+// Set an interval to keep enforcing the font every second
+//const intervalID = setInterval(enforceFontOnEverything, 1000);
+
+</script>
+
+<script>// Injecting the @font-face
+  const fontFaceStyle = document.createElement('style');
+  fontFaceStyle.textContent = `
+  @font-face {
+      font-family: 'DirectlyEnforcedTitillium';
+      src: url('https://github.com/springfox/springfox/raw/master/springfox-swagger-ui/src/web/fonts/titillium-web-v6-latin-regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+  `;
+  document.head.appendChild(fontFaceStyle);
+  
+  function enforceFont() {
+      const allElements = document.querySelectorAll('*');
+  
+      allElements.forEach(el => {
+          el.style.setProperty('font-family', 'DirectlyEnforcedTitillium, sans-serif', 'important');
+      });
+  }
+  
+  enforceFont();
+  //setInterval(enforceFont, 1000);
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Set the title once the document has completely loaded
+    $(document).ready(function(){
+        document.title = "PolyVar Bio"; 
+    });
+</script>
+
+
+
+<style>
+  .container-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  min-block-size: 70vh;
+  background-color: #f0f0f0;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 70vh;
+  background-color: #f0f0f0;
+}
+
+.main-container {
+  inline-size: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.main-container-zip,
+.main-container-eligibility {
+  inline-size: 80%;
+  display: flex;
+  justify-content: space-between; /* Spread elements horizontally */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#zipcodeInput, #incomeInput, #familySizeInput {
+  inline-size: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-block-end: 20px;
+}
+
+#zipcodeInput {
+  margin-inline-end: 10px; /* Add spacing between input boxes */
+}
+
+#checkButton, #eligibilityButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-container {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+#message, #loading, #eligibilityMessage {
+  display: none;
+  margin-block-start: 20px;
+}
+
+.eligible {
+  color: green;
+}
+
+.ineligible {
+  color: red;
+}
+  </style>
+<style>
+
+.animatedGradient3 {
+    block-size: 30px; /* Example height */
+      overflow: hidden;
+      background: linear-gradient(
+          to bottom,
+          rgb(0, 0, 0) 0%,
+          rgb(8, 180, 140) 50%,
+          rgba(210, 255, 237, 0.699) 100%
+      );
+  }
+</style>
+
+
+
+<style>
+  .animatedGradient2 {
+    block-size: 30px; /* Example height */
+      overflow: hidden;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgb(0, 0, 0) 48%,
+          rgb(165, 255, 234) 50%,
+          rgb(255, 255, 255) 100%
+      );
+  }
+  
+  .blob2:before, .blob2:after {
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      position: absolute;
+      inline-size: 20px;
+      block-size: 20px;
+      background-color: rgb(115, 255, 243);
+      border-radius: 50%;
+      animation: moveAround1 4s infinite alternate, changeShape1 5s infinite alternate;
+      inset-block-start: 20%;
+      inset-inline-start: 10%;
+      filter: blur(100px);
+      z-index: 0;
+  }
+  
+  .blob2:after {
+      background-color: rgb(255, 71, 209);
+      inset-block-start: 25%;
+      inset-inline-start: 70%;
+      animation-delay: 5s, 4s;
+  }
+  
+  .blob2-content {
+      position: relative;
+      z-index: 200;
+  }
+  
+  @keyframes moveAround1 {
+      0%, 100% {
+          transform: translate(0, 0);
+      }
+      50% {
+          transform: translate(3px, 2px);
+      }
+  }
+  
+  @keyframes changeShape1 { 
+      0%, 100% {
+          border-radius: 50%;
+      }
+      50% {
+          border-radius: 20% 80%;
+      }
+  }
+  </style>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.animatedGradient1 {
+    content: '';
+overflow: hidden;
+
+
+  overflow: hidden;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255) 25%,
+        rgb(200, 200, 255) 75%,
+        rgb(126, 126, 255) 115%,
+        rgb(9, 0, 44) 123%
+    );
+}
+  
+  .blob1:before, .blob1:after {
+      content: '';
+      position: absolute;
+      inline-size: 20px;  /* Reduced width */
+      block-size: 20; /* Reduced height */
+      background-color: rgb(115, 255, 243);
+      border-radius: 50%;
+      animation: moveAround1 4s infinite alternate, changeShape1 5s infinite alternate;
+      inset-block-start: 20%;  /* Adjusted to start 20% from top */
+      inset-inline-start: 10%;
+      filter: blur(100px); /* Blur applied to the blobs */
+      z-index: 0; /* Make sure blobs are below the content */
+  }
+  
+  .blob1:after {
+      background-color: rgb(255, 71, 209);
+      inset-block-start: 25%;  /* Adjusted to start slightly below the first blob */
+      inset-inline-start: 70%;
+      animation-delay: 5s, 4s;
+  }
+  
+  .blob1-content { /* Content container to ensure text and other content stay sharp */
+      position: relative;
+      z-index: 2; /* Content will stay on top of everything else */
+  }
+  
+  @keyframes moveAround1 {
+      0%, 100% {
+          transform: translate(0, 0);
+      }
+      50% {
+          transform: translate(3px, 2px);
+      }
+  }
+  
+  @keyframes changeShape {
+      0%, 100% {
+          border-radius: 50%;
+      }
+      50% {
+          border-radius: 20% 80%;
+      }
+  
+</style>
+
+<style>
+.animatedGradient {
+  content: '';
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+    to bottom, 
+    rgb(255, 255, 255) 0%, 
+    rgb(222, 222, 255) 85%, 
+    rgb(93, 93, 255) 94%, 
+    rgb(0, 0, 0) 98%
+);
+}
+#loading {
+    display: none;
+    margin-block-start: 20px;
+}
+
+.blob:before, .blob:after {
+    content: '';
+    position: absolute;
+    inline-size: 800px;  /* Reduced width */
+    block-size: 800px; /* Reduced height */
+    background-color: rgba(115, 255, 243, 0.299);
+    border-radius: 50%;
+    animation: moveAround 15s infinite alternate, changeShape 8s infinite alternate;
+    inset-block-start: 20%;  /* Adjusted to start 20% from top */
+    inset-inline-start: 10%;
+    filter: blur(100px); /* Blur applied to the blobs */
+    z-index: 0; /* Make sure blobs are below the content */
+}
+
+.blob:after {
+    background-color: rgba(255, 71, 209, 0.269);
+    inset-block-start: 25%;  /* Adjusted to start slightly below the first blob */
+    inset-inline-start: 70%;
+    animation-delay: 5s, 4s;
+}
+
+.blob-content { /* Content container to ensure text and other content stay sharp */
+    position: relative;
+    z-index: 2; /* Content will stay on top of everything else */
+}
+
+@keyframes moveAround {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(300px, 200px);  /* Modify to ensure it doesn't touch top or bottom */
+    }
+}
+
+@keyframes changeShape {
+    0%, 100% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 20% 80%;
+    }
+}
+</style>
+
+
+# Finalizing the embeddable version of the DNA Matrix Animation
+
+embeddable_dna_matrix_content = """
+<div id="dnaMatrixEmbeddableWindow" style="inline-size:100%; block-size:700px; overflow:hidden; position:relative; background-color:black;">
+    <canvas id="dnaMatrixEmbeddableCanvas" style="position:absolute; inset-block-start:0; inset-inline-start:0;"></canvas>
+</div>
+
+<style>
+    #dnaMatrixEmbeddableWindow canvas {
+        display: block;
+    }
+</style>
+
+<script>
+    const dnaMatrixEmbeddableCanvas = document.getElementById('dnaMatrixEmbeddableCanvas');
+    const dnaMatrixEmbeddableCtx = dnaMatrixEmbeddableCanvas.getContext('2d');
+
+    dnaMatrixEmbeddableCanvas.width = dnaMatrixEmbeddableCanvas.parentElement.offsetWidth;
+    dnaMatrixEmbeddableCanvas.height = dnaMatrixEmbeddableCanvas.parentElement.offsetHeight;
+
+    const dnaMatrixEmbeddableLetters = ['G', 'C', 'T', 'A'];
+    const dnaMatrixEmbeddableBaseColors = {
+        'A': 'hsl(330, 100%, 75%)', 
+        'G': 'hsl(180, 100%, 40%)', 
+        'C': 'hsl(240, 100%, 35%)', 
+        'T': 'hsl(300, 100%, 40%)'
+    };
+    const dnaMatrixEmbeddableParticles = [];
+
+    function dnaMatrixEmbeddableAdjustColor(baseColor) {
+        const [hue, sat, light] = baseColor.match(/\\d+/g).map(Number);
+        const randomSat = sat + (Math.random() - 0.5) * 20;  
+        const randomLight = light + (Math.random() - 0.5) * 10;
+        return `hsl(${hue}, ${Math.min(100, Math.max(0, randomSat))}%, ${Math.min(100, Math.max(0, randomLight))}%)`;
+    }
+
+    class DnaMatrixEmbeddableParticle {
+        constructor(fontSize, baseSpeed) {
+            this.x = Math.random() * dnaMatrixEmbeddableCanvas.width;
+            this.y = Math.random() * dnaMatrixEmbeddableCanvas.height;
+            this.originalX = this.x;
+            this.fontSize = fontSize;
+            this.speed = baseSpeed; 
+            this.letter = dnaMatrixEmbeddableLetters[Math.floor(Math.random() * dnaMatrixEmbeddableLetters.length)];
+            this.color = dnaMatrixEmbeddableAdjustColor(dnaMatrixEmbeddableBaseColors[this.letter]);
+            this.opacity = 0.8;
+            this.angle = Math.random() * Math.PI * 2;
+            this.shouldMoveHorizontally = Math.random() < 0.1;
+            this.directionFactor = Math.random() < 0.5 ? -1 : 1;
+        }
+
+        draw() {
+            dnaMatrixEmbeddableCtx.globalAlpha = this.opacity;
+            dnaMatrixEmbeddableCtx.font = `${this.fontSize}px monospace`;
+            dnaMatrixEmbeddableCtx.fillStyle = this.color;
+            dnaMatrixEmbeddableCtx.shadowColor = this.color;
+            dnaMatrixEmbeddableCtx.shadowBlur = (this.fontSize / 2) * 0.95;
+            dnaMatrixEmbeddableCtx.fillText(this.letter, this.x, this.y);
+            dnaMatrixEmbeddableCtx.shadowBlur = 0;
+        }
+
+        update() {
+            if (this.shouldMoveHorizontally) {
+                this.angle += 0.01 * this.directionFactor;
+                this.x = this.originalX + Math.sin(this.angle) * (dnaMatrixEmbeddableCanvas.width * 0.01);
+            }
+            this.y -= this.speed;
+            if (this.y < -this.fontSize) {
+                this.y = dnaMatrixEmbeddableCanvas.height + this.fontSize;
+                this.x = Math.random() * dnaMatrixEmbeddableCanvas.width;
+                this.originalX = this.x;
+                this.angle = Math.random() * Math.PI * 2;
+                this.directionFactor = Math.random() < 0.5 ? -1 : 1;
+            }
+        }
+    }
+
+    function dnaMatrixEmbeddableInit() {
+        dnaMatrixEmbeddableParticles.length = 0;
+        const numberOfParticles = 2200;
+
+        for (let i = 0; i < numberOfParticles; i++) {
+            let fontSize, baseSpeed;
+
+            const rand = Math.random();
+            if (rand < 0.25) {
+                fontSize = 4;
+                baseSpeed = 0.15 + Math.random() * 0.2;
+            } else if (rand < 0.35) {
+                fontSize = 8;
+                baseSpeed = 0.2 + Math.random() * 0.2;
+            } else if (rand < 0.55) {
+                fontSize = 16;
+                baseSpeed = 0.4 + Math.random() * 0.4;
+            } else if (rand < 0.8) {
+                fontSize = 32;
+                baseSpeed = 0.8 + Math.random() * 0.6;
+            } else if (rand < 0.95) {
+                fontSize = 64;
+                baseSpeed = 1.6 + Math.random() * 0.8;
+            } else {
+                fontSize = 96;
+                baseSpeed = 2 + Math.random() * 1;
+            }
+
+            dnaMatrixEmbeddableParticles.push(new DnaMatrixEmbeddableParticle(fontSize, baseSpeed));
+        }
+
+        dnaMatrixEmbeddableParticles.sort((a, b) => a.fontSize - b.fontSize);
+    }
+
+    function dnaMatrixEmbeddableAnimate() {
+        dnaMatrixEmbeddableCtx.clearRect(0, 0, dnaMatrixEmbeddableCanvas.width, dnaMatrixEmbeddableCanvas.height);
+        dnaMatrixEmbeddableParticles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+        requestAnimationFrame(dnaMatrixEmbeddableAnimate);
+    }
+
+    dnaMatrixEmbeddableInit();
+    dnaMatrixEmbeddableAnimate();
+</script>
+"""
+
+<style>
+  /* Method 1 */
+  .mRNA, {
+    block-size: 50% !important;
+  }
+
+.mRNA-widget-wrap, .mRNA-element:nth-child(3n) {
+  block-size: 50% !important;
+</style>
+
+<script></script>
